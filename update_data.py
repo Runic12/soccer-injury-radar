@@ -2,19 +2,21 @@ import os
 import http.client
 import json
 
-API_KEY = os.environ.get("RAPIDAPI_KEY")
+API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
 
+print(f"DEBUG: Key length detected: {len(API_KEY)}")
 if not API_KEY:
-    print("Warning: RAPIDAPI_KEY secret not found in environment.")
+    print("CRITICAL: RAPIDAPI_KEY secret is completely empty!")
 
 conn = http.client.HTTPSConnection("v3.football.api-sports.io")
 
 headers = {
     'x-rapidapi-host': "v3.football.api-sports.io",
-    'x-rapidapi-key': API_KEY or ""
+    'x-rapidapi-key': API_KEY,
+    'x-apisports-key': API_KEY
 }
 
-# Major D1 Leagues: Premier League (39), La Liga (140), Serie A (135), Bundesliga (78), MLS (253)
+# Key D1 Leagues: Premier League (39), La Liga (140), Serie A (135), Bundesliga (78), MLS (253)
 LEAGUES = {
     "epl": {"id": 39, "name": "Premier League"},
     "laliga": {"id": 140, "name": "La Liga"},
@@ -23,12 +25,14 @@ LEAGUES = {
     "mls": {"id": 253, "name": "MLS"}
 }
 
+# The active European campaign year
+SEASON = 2024
+
 output_database = {}
-CURRENT_SEASON = 2026
 
 for key, meta in LEAGUES.items():
-    print(f"Fetching injury telemetry for {meta['name']}...")
-    endpoint = f"/injuries?league={meta['id']}&season={CURRENT_SEASON}"
+    endpoint = f"/injuries?league={meta['id']}&season={SEASON}"
+    print(f"\n--- Requesting {meta['name']} (ID: {meta['id']}, Season: {SEASON}) ---")
     
     try:
         conn.request("GET", endpoint, headers=headers)
@@ -36,8 +40,14 @@ for key, meta in LEAGUES.items():
         raw = res.read().decode("utf-8")
         data = json.loads(raw)
         
+        if "errors" in data and data["errors"]:
+            print(f"API Error details: {data['errors']}")
+            
+        results = data.get("response", [])
+        print(f"Total entries found: {len(results)}")
+        
         teams_map = {}
-        for entry in data.get("response", []):
+        for entry in results:
             team_info = entry.get("team", {})
             t_name = team_info.get("name", "Unknown")
             t_id = str(team_info.get("id", ""))
@@ -45,6 +55,7 @@ for key, meta in LEAGUES.items():
             player_info = entry.get("player", {})
             reason = player_info.get("reason", "Undisclosed Strain")
             
+            # Categorize failure mechanism
             lower_r = reason.lower()
             if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf"]):
                 cat = "Soft-Tissue"
@@ -76,9 +87,9 @@ for key, meta in LEAGUES.items():
             "teams": list(teams_map.values())
         }
     except Exception as e:
-        print(f"Error fetching {meta['name']}: {e}")
+        print(f"Connection/JSON error on {meta['name']}: {e}")
 
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("Telemetry sync complete. Written to data.json.")
+print("\nWrite complete: data.json saved.")
