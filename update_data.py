@@ -1,7 +1,7 @@
 import os
 import http.client
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
 
@@ -22,12 +22,17 @@ LEAGUES = {
     "mls": {"id": 253, "name": "MLS"}
 }
 
-SEASON = 2024
+# Active campaign year
+CURRENT_SEASON = 2026
+NOW = datetime.now(timezone.utc)
+# Look back up to 10 days (captures immediate prior match/international window) through any upcoming fixtures
+ACTIVE_WINDOW_START = NOW - timedelta(days=10)
+
 output_database = {}
 
 for key, meta in LEAGUES.items():
-    endpoint = f"/injuries?league={meta['id']}&season={SEASON}"
-    print(f"\nProcessing active injury roster for {meta['name']}...")
+    endpoint = f"/injuries?league={meta['id']}&season={CURRENT_SEASON}"
+    print(f"\nProcessing active live casualties for {meta['name']} (Season {CURRENT_SEASON})...")
     
     try:
         conn.request("GET", endpoint, headers=headers)
@@ -37,46 +42,47 @@ for key, meta in LEAGUES.items():
         
         results = data.get("response", [])
         
-        # 1. Identify each team's most recent fixture that has injury records logged
-        team_latest_fixture_date = {}
-        for entry in results:
-            t_id = str(entry.get("team", {}).get("id", ""))
-            f_date_str = entry.get("fixture", {}).get("date")
-            if t_id and f_date_str:
-                try:
-                    f_date = datetime.fromisoformat(f_date_str.replace("Z", "+00:00")).replace(tzinfo=None)
-                    if t_id not in team_latest_fixture_date or f_date > team_latest_fixture_date[t_id]:
-                        team_latest_fixture_date[t_id] = f_date
-                except Exception:
-                    pass
+        # If the newly kicked-off season has sparse logs yet, gracefully fall back to transition data
+        if not results:
+            print(f"Notice: No active telemetry under {CURRENT_SEASON}, checking current cycle fallback...")
+            conn.request("GET", f"/injuries?league={meta['id']}&season={CURRENT_SEASON - 1}", headers=headers)
+            res = conn.getresponse()
+            data = json.loads(res.read().decode("utf-8"))
+            results = data.get("response", [])
 
-        # 2. Track players: build their career history, but flag them as 'currently_injured'
-        #    ONLY if their latest missed fixture matches the team's latest fixture window (within 7 days).
         teams_map = {}
         for entry in results:
             team_info = entry.get("team", {})
             t_id = str(team_info.get("id", ""))
-            t_name = team_info.get("name", "Unknown")
+            t_name = team_info.get("name", "Unknown Squad")
 
             player_info = entry.get("player", {})
             p_id = str(player_info.get("id", ""))
-            p_name = player_info.get("name", "Unknown")
-            reason = player_info.get("reason", "Undisclosed Outage")
+            p_name = player_info.get("name", "Unknown Athlete")
+            raw_reason = player_info.get("reason") or "Undisclosed Outage"
+            raw_type = player_info.get("type") or "Missing Fixture"
 
             fixture = entry.get("fixture", {})
             f_date_str = fixture.get("date")
             entry_date = None
             if f_date_str:
                 try:
-                    entry_date = datetime.fromisoformat(f_date_str.replace("Z", "+00:00")).replace(tzinfo=None)
+                    entry_date = datetime.fromisoformat(f_date_str.replace("Z", "+00:00"))
                 except Exception:
                     pass
 
-            # Classify mechanism
-            lower_r = reason.lower()
+            # Classify Status: Out vs Doubtful
+            lower_type = (raw_type + " " + raw_reason).lower()
+            if any(term in lower_type for term in ["doubtful", "questionable", "late test"]):
+                availability = "Doubtful (Late Fitness Assessment)"
+            else:
+                availability = "Sidelined (Ruled Out)"
+
+            # Root Cause Mechanism
+            lower_r = raw_reason.lower()
             if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf"]):
                 cat = "Soft-Tissue"
-            elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle"]):
+            elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee"]):
                 cat = "Structural"
             else:
                 cat = "Trauma/Impact"
@@ -91,70 +97,70 @@ for key, meta in LEAGUES.items():
             if p_id not in teams_map[t_id]["players"]:
                 teams_map[t_id]["players"][p_id] = {
                     "name": p_name,
-                    "pos": player_info.get("type", "Squad Member"),
-                    "type": reason,
+                    "pos": "First Team Squad",
+                    "type": raw_reason,
                     "cat": cat,
-                    "return": "Current Outage",
-                    "daysLost": 0,
+                    "status": availability,
+                    "return": "Evaluated Ahead of Next Match",
+                    "daysLost": 7,
                     "durability": "Under Surveillance",
                     "history": [],
-                    "latest_entry_date": entry_date or datetime.min
+                    "latest_date": entry_date,
+                    "is_active_now": False
                 }
 
             p_entry = teams_map[t_id]["players"][p_id]
-            p_entry["daysLost"] += 7  # 1 fixture missed ≈ 1 week outage
-            
-            if reason not in p_entry["history"]:
-                p_entry["history"].append(reason)
+            if raw_reason not in p_entry["history"]:
+                p_entry["history"].append(raw_reason)
 
-            if entry_date and entry_date >= p_entry["latest_entry_date"]:
-                p_entry["latest_entry_date"] = entry_date
-                p_entry["type"] = reason
-                p_entry["cat"] = cat
+            # Check if this injury applies to current/upcoming match window
+            if entry_date:
+                if not p_entry["latest_date"] or entry_date >= p_entry["latest_date"]:
+                    p_entry["latest_date"] = entry_date
+                    p_entry["type"] = raw_reason
+                    p_entry["cat"] = cat
+                    p_entry["status"] = availability
+                
+                # Active if scheduled in an upcoming fixture or missed a game in the last 10 days
+                if entry_date >= ACTIVE_WINDOW_START:
+                    p_entry["is_active_now"] = True
 
-        # 3. Filter out all cured players:
-        # A player is ONLY included if their latest injury is from the team's most recent fixture cycle (last 7 days)
+        # Assemble strictly active squads
         final_team_list = []
         for t_id, t_data in teams_map.items():
-            active_squad_injured = []
-            latest_ref_date = team_latest_fixture_date.get(t_id, datetime.min)
-
+            active_injured = []
             for p_id, p_stats in t_data["players"].items():
-                player_latest = p_stats["latest_entry_date"]
-                
-                # Check if the player missed the squad's latest fixture (within 7 days of the team's latest fixture report)
-                delta_days = (latest_ref_date - player_latest).total_seconds() / 86400.0
-                
-                if delta_days <= 7.0:
-                    # Player is CURRENTLY sidelined (missed the latest match/week)
+                if p_stats["is_active_now"]:
                     outage_count = len(p_stats["history"])
                     if outage_count >= 3:
                         p_stats["durability"] = "High Risk (Chronic / Recurrent)"
                     elif outage_count == 2:
-                        p_stats["durability"] = "Moderate Risk (Secondary Strain)"
+                        p_stats["durability"] = "Moderate Risk (Secondary Outage)"
                     else:
-                        p_stats["durability"] = "Acute / Short-Term Outage"
+                        p_stats["durability"] = "Acute (Isolated Absence)"
 
-                    del p_stats["latest_entry_date"]
-                    active_squad_injured.append(p_stats)
+                    # Clean internal date fields
+                    del p_stats["latest_date"]
+                    del p_stats["is_active_now"]
+                    active_injured.append(p_stats)
 
-            if active_squad_injured:
+            if active_injured:
                 final_team_list.append({
                     "id": t_id,
                     "name": t_data["name"],
-                    "injured": active_squad_injured
+                    "injured": active_injured
                 })
 
         output_database[key] = {
             "name": meta["name"],
             "teams": sorted(final_team_list, key=lambda x: len(x["injured"]), reverse=True)
         }
-        print(f"Verified current active casualties in {meta['name']}: {sum(len(t['injured']) for t in final_team_list)}")
+        print(f"Total current sidelined players in {meta['name']}: {sum(len(t['injured']) for t in final_team_list)}")
 
     except Exception as e:
-        print(f"Error processing {meta['name']}: {e}")
+        print(f"Pipeline error on {meta['name']}: {e}")
 
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nSync complete: Strictly current injuries saved to data.json.")
+print("\nWrite complete: Live active roster synced to data.json.")
