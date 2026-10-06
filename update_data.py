@@ -22,19 +22,22 @@ LEAGUES = {
     "mls": {"id": 253, "name": "MLS", "matches": 14}
 }
 
-ACTIVE_SEASON = 2026
 output_database = {}
 
 for key, meta in LEAGUES.items():
     print(f"\n--- Fetching latest matchday fixtures for {meta['name']} ---")
     
     try:
-        # 1. Fetch the most recent matchday fixtures
-        conn.request("GET", f"/fixtures?league={meta['id']}&season={ACTIVE_SEASON}&last={meta['matches']}", headers=headers)
+        # API-Football rule: 'last' cannot be combined with 'season'. We query by league + last.
+        conn.request("GET", f"/fixtures?league={meta['id']}&last={meta['matches']}", headers=headers)
         res = conn.getresponse()
         raw = res.read().decode("utf-8")
         data = json.loads(raw)
         
+        # Print errors if the API blocks us
+        if data.get("errors"):
+            print(f"API Error (Fixtures): {data['errors']}")
+            
         fixtures = data.get("response", [])
         fixture_ids = [str(f["fixture"]["id"]) for f in fixtures if "fixture" in f]
         
@@ -42,11 +45,15 @@ for key, meta in LEAGUES.items():
         
         teams_map = {}
         
-        # 2. Pull the exact injury sheet for each recent fixture
+        # Pull the exact injury sheet for each recent fixture
         for fid in fixture_ids:
             conn.request("GET", f"/injuries?fixture={fid}", headers=headers)
             res_inj = conn.getresponse()
             inj_data = json.loads(res_inj.read().decode("utf-8"))
+            
+            if inj_data.get("errors"):
+                print(f"API Error (Injuries for Fixture {fid}): {inj_data['errors']}")
+                
             results = inj_data.get("response", [])
             
             for entry in results:
@@ -83,7 +90,7 @@ for key, meta in LEAGUES.items():
                         "injured": {}
                     }
 
-                # Dictionary prevents duplicates of the same player
+                # Dictionary prevents duplicates
                 teams_map[t_id]["injured"][p_id] = {
                     "name": p_name,
                     "pos": "First Team Squad",
@@ -96,10 +103,10 @@ for key, meta in LEAGUES.items():
                     "history": [raw_reason]
                 }
                 
-            # Brief pause to prevent hitting API rate limits (10 calls/sec)
+            # Prevent hitting API rate limits (10 calls/sec)
             time.sleep(0.3) 
 
-        # 3. Format JSON structure
+        # Format JSON structure
         final_team_list = []
         for t_id, t_data in teams_map.items():
             injured_list = list(t_data["injured"].values())
