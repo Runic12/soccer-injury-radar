@@ -1,181 +1,129 @@
-import os
-import http.client
+import urllib.request
 import json
-import random
-from datetime import datetime, timedelta
+from datetime import datetime
 
-API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
-conn = http.client.HTTPSConnection("api.bigballsdata.com")
-
-headers = {
-    'x-api-key': API_KEY,
-    'Accept': 'application/json'
-}
-
+# ESPN uses specific League IDs (eng.1 for EPL, esp.1 for La Liga, etc.)
 LEAGUES = {
-    "epl": {"id": "EPL", "name": "Premier League"},
-    "laliga": {"id": "LALIGA", "name": "La Liga"},
-    "seriea": {"id": "SERIE_A", "name": "Serie A"},
-    "bundesliga": {"id": "BUNDESLIGA", "name": "Bundesliga"},
-    "mls": {"id": "MLS", "name": "MLS"}
+    "epl": {"id": "eng.1", "name": "Premier League"},
+    "laliga": {"id": "esp.1", "name": "La Liga"},
+    "seriea": {"id": "ita.1", "name": "Serie A"},
+    "bundesliga": {"id": "ger.1", "name": "Bundesliga"},
+    "mls": {"id": "usa.1", "name": "MLS"}
 }
 
-# The Master Override: Forces the scrambled API players into their correct real-world clubs and leagues
-PLAYER_DATABASE = {
-    # La Liga
-    "Alvarez": {"club": "Atletico Madrid", "league": "laliga"},
-    "Sorloth": {"club": "Atletico Madrid", "league": "laliga"},
-    "Barrios": {"club": "Atletico Madrid", "league": "laliga"},
-    "Garces": {"club": "Atletico Madrid", "league": "laliga"},
-    "Foyth": {"club": "Villarreal", "league": "laliga"},
-    "Femenia": {"club": "Villarreal", "league": "laliga"},
-    "Diakhaby": {"club": "Valencia", "league": "laliga"},
-    "Jong": {"club": "Barcelona", "league": "laliga"},
-    "Odriozola": {"club": "Real Sociedad", "league": "laliga"},
-    "Gorosabel": {"club": "Athletic Club", "league": "laliga"},
-    "Vivian": {"club": "Athletic Club", "league": "laliga"},
-    "Ruibal": {"club": "Real Betis", "league": "laliga"},
-    "Sotelo": {"club": "Celta Vigo", "league": "laliga"},
-    "Yamal": {"club": "Barcelona", "league": "laliga"},
-    "Gavi": {"club": "Barcelona", "league": "laliga"},
-    "Vinicius": {"club": "Real Madrid", "league": "laliga"},
-    "Bellingham": {"club": "Real Madrid", "league": "laliga"},
-    
-    # Premier League
-    "Gakpo": {"club": "Liverpool", "league": "epl"},
-    "Gomez": {"club": "Liverpool", "league": "epl"},
-    "Chiesa": {"club": "Liverpool", "league": "epl"},
-    "Saliba": {"club": "Arsenal", "league": "epl"},
-    "White": {"club": "Arsenal", "league": "epl"},
-    "Odegaard": {"club": "Arsenal", "league": "epl"},
-    "Foden": {"club": "Manchester City", "league": "epl"},
-    "Doku": {"club": "Manchester City", "league": "epl"},
-    "Rodri": {"club": "Manchester City", "league": "epl"},
-    "de Ligt": {"club": "Manchester United", "league": "epl"},
-    "Shaw": {"club": "Manchester United", "league": "epl"},
-    "Maddison": {"club": "Tottenham Hotspur", "league": "epl"},
-    "Richarlison": {"club": "Tottenham Hotspur", "league": "epl"},
-    "Palmer": {"club": "Chelsea", "league": "epl"},
-    
-    # Serie A
-    "Angelino": {"club": "Roma", "league": "seriea"},
-    "Cajuste": {"club": "Napoli", "league": "seriea"},
-    "Barella": {"club": "Inter Milan", "league": "seriea"},
-    "Leao": {"club": "AC Milan", "league": "seriea"},
-    "Bremer": {"club": "Juventus", "league": "seriea"},
-    
-    # Bundesliga
-    "Kane": {"club": "Bayern Munich", "league": "bundesliga"},
-    "Sane": {"club": "Bayern Munich", "league": "bundesliga"},
-    "Wirtz": {"club": "Bayer Leverkusen", "league": "bundesliga"},
-    "Adeyemi": {"club": "Borussia Dortmund", "league": "bundesliga"},
-    
-    # MLS
-    "Messi": {"club": "Inter Miami", "league": "mls"},
-    "Bouanga": {"club": "LAFC", "league": "mls"}
-}
+def fetch_json(url):
+    """Safely fetch and parse JSON from ESPN's public endpoints."""
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req) as response:
+        return json.loads(response.read().decode('utf-8'))
 
-output_database = {k: {"name": v["name"], "teams": []} for k, v in LEAGUES.items()}
-league_team_map = {k: {} for k in LEAGUES.keys()}
-
-def extract_records(obj, required_key):
+def extract_injured_athletes(obj):
+    """Smart hunter function that recursively finds any athlete object containing an 'injuries' array."""
     out = []
     if isinstance(obj, dict):
-        if required_key in obj:
+        # If this dictionary has a populated injuries list, we caught an injured player
+        if "injuries" in obj and obj.get("injuries"):
             out.append(obj)
-        for k, v in obj.items():
-            out.extend(extract_records(v, required_key))
+        else:
+            for k, v in obj.items():
+                out.extend(extract_injured_athletes(v))
     elif isinstance(obj, list):
         for item in obj:
-            out.extend(extract_records(item, required_key))
+            out.extend(extract_injured_athletes(item))
     return out
 
-print("\n--- Fetching global injury dump ---")
-processed_players = set()
+output_database = {}
 
 for key, meta in LEAGUES.items():
+    print(f"\n--- Fetching live injury sheets for {meta['name']} ---")
+    teams_map = {}
+    
     try:
-        conn.request("GET", f"/v1/injuries?league={meta['id']}", headers=headers)
-        res = conn.getresponse()
-        data = json.loads(res.read().decode("utf-8"))
+        # 1. Fetch the official team list for the league
+        teams_url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{meta['id']}/teams"
+        teams_data = fetch_json(teams_url)
         
-        results = extract_records(data, "current_team_id")
+        # Safely navigate ESPN's team structure
+        sports = teams_data.get("sports", [])
+        if not sports:
+            continue
+        leagues_data = sports[0].get("leagues", [])
+        if not leagues_data:
+            continue
+        teams = leagues_data[0].get("teams", [])
         
-        for entry in results:
-            p_name = entry.get("display_name") or entry.get("full_name", "Unknown Athlete")
+        print(f"Intercepted {len(teams)} clubs. Scanning rosters for casualties...")
+        
+        # 2. Iterate through every team and pull their active roster
+        for t_entry in teams:
+            team_info = t_entry.get("team", {})
+            t_id = team_info.get("id")
+            t_name = team_info.get("displayName", "Unknown Club")
             
-            # Prevent double-counting if the API glitches and repeats players
-            if p_name in processed_players:
+            if not t_id:
                 continue
-            processed_players.add(p_name)
+                
+            roster_url = f"https://site.api.espn.com/apis/site/v2/sports/soccer/{meta['id']}/teams/{t_id}/roster"
+            roster_data = fetch_json(roster_url)
             
-            assigned_club = None
-            assigned_league = None
+            # 3. Hunt down the injured players in the roster payload
+            injured_athletes = extract_injured_athletes(roster_data)
             
-            for anchor_name, db_data in PLAYER_DATABASE.items():
-                if anchor_name.lower() in p_name.lower():
-                    assigned_club = db_data["club"]
-                    assigned_league = db_data["league"]
-                    break
+            if injured_athletes:
+                clean_t_id = t_name.lower().replace(" ", "_")
+                if clean_t_id not in teams_map:
+                    teams_map[clean_t_id] = {
+                        "id": clean_t_id,
+                        "name": t_name,
+                        "injured": []
+                    }
+                
+                # Format the real data for your frontend dashboard
+                for athlete in injured_athletes:
+                    p_name = athlete.get("fullName") or athlete.get("displayName", "Unknown Athlete")
+                    injuries = athlete.get("injuries", [])
                     
-            if not assigned_club:
-                continue
-                
-            raw_reason = entry.get("injury_type")
-            if not raw_reason:
-                raw_reason = random.choices(
-                    ["Hamstring Strain", "Groin Strain", "Ankle Sprain", "Knee Injury (Meniscus)", "Calf Strain", "Muscular Fatigue"],
-                    weights=[30, 20, 15, 10, 15, 10], k=1
-                )[0]
-                
-            raw_status = entry.get("status", "out").lower()
-            return_date = entry.get("return_date")
-            if not return_date:
-                recovery_days = random.randint(7, 21) if "Strain" in raw_reason else random.randint(30, 60)
-                return_date = (datetime.now() + timedelta(days=recovery_days)).strftime("%b %d, %Y")
+                    # Grab real medical context and status
+                    raw_reason = injuries[0].get("details", "Undisclosed Injury") if injuries else "Undisclosed Injury"
+                    status = injuries[0].get("status", "Sidelined") if injuries else "Sidelined"
+                    
+                    # ESPN return dates can sometimes be missing; fallback gracefully
+                    return_date = injuries[0].get("returnDate", "Pending Assessment") if injuries else "Pending Assessment"
+                    
+                    # Categorize the real injury for the Pie Chart
+                    lower_r = raw_reason.lower()
+                    if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
+                        cat = "Soft-Tissue"
+                    elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee", "surgery"]):
+                        cat = "Structural"
+                    else:
+                        cat = "Trauma/Impact"
+                        
+                    teams_map[clean_t_id]["injured"].append({
+                        "name": p_name,
+                        "pos": "First Team Squad",
+                        "type": raw_reason.title(),
+                        "cat": cat,
+                        "status": status.title(),
+                        "return": return_date,
+                        "daysLost": 7,
+                        "durability": "Active Casualty",
+                        "history": [raw_reason.title()]
+                    })
 
-            availability = "Doubtful (Late Fitness)" if raw_status in ["day-to-day", "questionable"] else "Sidelined (Ruled Out)"
-            
-            lower_r = raw_reason.lower()
-            if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "fatigue", "strain"]):
-                cat = "Soft-Tissue"
-            elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee"]):
-                cat = "Structural"
-            else:
-                cat = "Trauma/Impact"
-
-            if assigned_club not in league_team_map[assigned_league]:
-                league_team_map[assigned_league][assigned_club] = []
-
-            league_team_map[assigned_league][assigned_club].append({
-                "name": p_name,
-                "pos": "First Team Squad",
-                "type": raw_reason,
-                "cat": cat,
-                "status": availability,
-                "return": return_date,
-                "daysLost": 7,
-                "durability": "Active Casualty",
-                "history": [raw_reason]
-            })
+        # Assemble final output sorted alphabetically by team name
+        final_team_list = list(teams_map.values())
+        output_database[key] = {
+            "name": meta["name"],
+            "teams": sorted(final_team_list, key=lambda x: x["name"])
+        }
+        print(f"Recorded {sum(len(t['injured']) for t in final_team_list)} authentic casualties for {meta['name']}.")
 
     except Exception as e:
         print(f"Error processing {meta['name']}: {e}")
 
-# Assemble final output
-for l_key, teams in league_team_map.items():
-    formatted_teams = []
-    for t_name, injured_list in teams.items():
-        formatted_teams.append({
-            "id": t_name.lower().replace(" ", "_"),
-            "name": t_name,
-            "injured": injured_list
-        })
-    
-    output_database[l_key]["teams"] = sorted(formatted_teams, key=lambda x: x["name"])
-    print(f"{LEAGUES[l_key]['name']} processed: {len(formatted_teams)} squads resolved.")
-
+# Save the structured database
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nWrite complete: Clean, correctly sorted database saved.")
+print("\nWrite complete: Authentic, unscrambled casualty sheets saved.")
