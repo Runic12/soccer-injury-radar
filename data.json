@@ -1,0 +1,22 @@
+{
+  "epl": {
+    "name": "Premier League",
+    "teams": []
+  },
+  "laliga": {
+    "name": "La Liga",
+    "teams": []
+  },
+  "seriea": {
+    "name": "Serie A",
+    "teams": []
+  },
+  "bundesliga": {
+    "name": "Bundesliga",
+    "teams": []
+  },
+  "mls": {
+    "name": "MLS",
+    "teams": []
+  }
+}
