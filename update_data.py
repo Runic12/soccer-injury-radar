@@ -24,31 +24,45 @@ for key, meta in LEAGUES.items():
     print(f"\n--- Fetching live injury sheets for {meta['name']} ---")
     
     try:
-        # 1. First, fetch the official Team Names dictionary for this league
+        # 1. Fetch official Team Names
         team_names = {}
         conn.request("GET", f"/v1/teams?league={meta['id']}", headers=headers)
         res_t = conn.getresponse()
         t_data = json.loads(res_t.read().decode("utf-8"))
         
-        # Navigate the API's nested aggregator structure for teams
-        t_results = t_data.get("data", {}).get("teams", {}).get("value", [])
-        if not t_results:
-            t_results = t_data.get("data", []) if isinstance(t_data.get("data"), list) else []
-            
+        # Safely extract teams regardless of list/dict structure
+        t_results = []
+        if isinstance(t_data, list):
+            t_results = t_data
+        elif isinstance(t_data, dict):
+            data_node = t_data.get("data", [])
+            if isinstance(data_node, list):
+                t_results = data_node
+            elif isinstance(data_node, dict):
+                t_results = data_node.get("teams", {}).get("value", []) if isinstance(data_node.get("teams"), dict) else []
+                
         for t in t_results:
             t_id = t.get("id")
-            # Grab the cleanest available team name
             t_name = t.get("display_name") or t.get("full_name") or t.get("name")
             if t_id and t_name:
                 team_names[t_id] = t_name
 
-        # 2. Next, fetch the live injuries
+        # 2. Fetch live injuries
         conn.request("GET", f"/v1/injuries?league={meta['id']}", headers=headers)
         res = conn.getresponse()
-        raw = res.read().decode("utf-8")
-        data = json.loads(raw)
+        data = json.loads(res.read().decode("utf-8"))
         
-        results = data.get("data", {}).get("injuries", {}).get("value", [])
+        # Safely extract injuries
+        results = []
+        if isinstance(data, list):
+            results = data
+        elif isinstance(data, dict):
+            data_node = data.get("data", [])
+            if isinstance(data_node, list):
+                results = data_node
+            elif isinstance(data_node, dict):
+                results = data_node.get("injuries", {}).get("value", []) if isinstance(data_node.get("injuries"), dict) else []
+                
         print(f"Found {len(results)} active casualty reports.")
         
         teams_map = {}
@@ -56,7 +70,7 @@ for key, meta in LEAGUES.items():
         for entry in results:
             t_id = entry.get("current_team_id", "Unknown")
             
-            # Map the raw ID to the real club name! Fallback to a clean string if it's missing.
+            # Map the raw ID to the real club name
             t_name = team_names.get(t_id, f"Club Unit {t_id[-5:].upper()}" if "bb_team" in t_id else t_id)
             
             p_name = entry.get("display_name") or entry.get("full_name", "Unknown Athlete")
@@ -98,7 +112,7 @@ for key, meta in LEAGUES.items():
                 "history": [raw_reason]
             })
 
-        # Format JSON structure for your frontend
+        # Format JSON structure
         final_team_list = []
         for t_id, t_data in teams_map.items():
             if t_data["injured"]:
@@ -110,7 +124,6 @@ for key, meta in LEAGUES.items():
 
         output_database[key] = {
             "name": meta["name"],
-            # Sort teams alphabetically by their real name
             "teams": sorted(final_team_list, key=lambda x: x["name"])
         }
         print(f"Active sidelined players recorded: {sum(len(t['injured']) for t in final_team_list)}")
