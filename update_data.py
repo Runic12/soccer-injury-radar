@@ -24,25 +24,42 @@ for key, meta in LEAGUES.items():
     print(f"\n--- Fetching live injury sheets for {meta['name']} ---")
     
     try:
+        # 1. First, fetch the official Team Names dictionary for this league
+        team_names = {}
+        conn.request("GET", f"/v1/teams?league={meta['id']}", headers=headers)
+        res_t = conn.getresponse()
+        t_data = json.loads(res_t.read().decode("utf-8"))
+        
+        # Navigate the API's nested aggregator structure for teams
+        t_results = t_data.get("data", {}).get("teams", {}).get("value", [])
+        if not t_results:
+            t_results = t_data.get("data", []) if isinstance(t_data.get("data"), list) else []
+            
+        for t in t_results:
+            t_id = t.get("id")
+            # Grab the cleanest available team name
+            t_name = t.get("display_name") or t.get("full_name") or t.get("name")
+            if t_id and t_name:
+                team_names[t_id] = t_name
+
+        # 2. Next, fetch the live injuries
         conn.request("GET", f"/v1/injuries?league={meta['id']}", headers=headers)
         res = conn.getresponse()
         raw = res.read().decode("utf-8")
         data = json.loads(raw)
         
-        # Navigate the exact JSON path revealed by your diagnostic test
         results = data.get("data", {}).get("injuries", {}).get("value", [])
         print(f"Found {len(results)} active casualty reports.")
         
         teams_map = {}
         
         for entry in results:
-            # Group by Team ID since the free tier omits the full club string
             t_id = entry.get("current_team_id", "Unknown")
-            t_name = f"Club Unit {t_id[-5:].upper()}" if "bb_team" in t_id else t_id
+            
+            # Map the raw ID to the real club name! Fallback to a clean string if it's missing.
+            t_name = team_names.get(t_id, f"Club Unit {t_id[-5:].upper()}" if "bb_team" in t_id else t_id)
             
             p_name = entry.get("display_name") or entry.get("full_name", "Unknown Athlete")
-            
-            # Since the aggregator omits exact medicals, we apply safe fallbacks for the dashboard
             raw_reason = entry.get("injury_type", "Undisclosed Outage") 
             raw_status = entry.get("status", "out").lower()
             return_date = entry.get("return_date", "Pending Assessment")
@@ -93,7 +110,8 @@ for key, meta in LEAGUES.items():
 
         output_database[key] = {
             "name": meta["name"],
-            "teams": sorted(final_team_list, key=lambda x: len(x["injured"]), reverse=True)
+            # Sort teams alphabetically by their real name
+            "teams": sorted(final_team_list, key=lambda x: x["name"])
         }
         print(f"Active sidelined players recorded: {sum(len(t['injured']) for t in final_team_list)}")
 
@@ -103,4 +121,4 @@ for key, meta in LEAGUES.items():
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nWrite complete: Live direct casualty sheets saved to data.json.")
+print("\nWrite complete: Live direct casualty sheets with Club Names saved to data.json.")
