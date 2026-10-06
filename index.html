@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global D1 Soccer Injury & Reliability Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js for Mechanism Distribution Graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 sm:p-8 font-mono">
+  <div class="max-w-5xl mx-auto space-y-6">
+
+    <!-- Global Header -->
+    <header class="border border-slate-800 bg-slate-900/90 p-6 rounded-xl flex flex-wrap justify-between items-center gap-4">
+      <div>
+        <div class="flex items-center space-x-2 text-xs uppercase tracking-widest text-emerald-400 font-bold mb-1">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Global D1 Telemetry Network</span>
+        </div>
+        <h1 class="text-2xl font-black tracking-tight text-white">WORLD FOOTBALL INJURY & ROOT-CAUSE RADAR</h1>
+        <p class="text-xs text-slate-400 mt-1">Multi-league surveillance, player reliability reports, and fault categorization.</p>
+      </div>
+      <div class="text-right text-xs text-slate-400 border border-slate-800 p-3 rounded bg-slate-950">
+        <div>API Provider: <span class="text-cyan-400 font-bold">API-Football</span></div>
+        <div>Coverage: <span class="text-slate-200">Global D1 Top Flights</span></div>
+      </div>
+    </header>
+
+    <!-- Navigation / Selectors -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="border border-slate-800 bg-slate-900/50 p-4 rounded-lg">
+        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">1. Select D1 League</label>
+        <select id="leagueSelect" class="w-full bg-slate-950 border border-slate-700 text-slate-100 p-2.5 rounded text-sm focus:border-cyan-500 focus:outline-none">
+          <option value="epl">Premier League (England)</option>
+          <option value="laliga">La Liga (Spain)</option>
+          <option value="seriea">Serie A (Italy)</option>
+          <option value="bundesliga">Bundesliga (Germany)</option>
+          <option value="mls">MLS (USA)</option>
+        </select>
+      </div>
+
+      <div class="border border-slate-800 bg-slate-900/50 p-4 rounded-lg">
+        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">2. Select Squad Unit</label>
+        <select id="teamSelect" class="w-full bg-slate-950 border border-slate-700 text-slate-100 p-2.5 rounded text-sm focus:border-cyan-500 focus:outline-none"></select>
+      </div>
+    </div>
+
+    <!-- Main Team Dashboard -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Left 2 Cols: Injury List & Correlation Analysis -->
+      <div class="lg:col-span-2 space-y-6">
+        
+        <!-- Sidelined Roster -->
+        <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl">
+          <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
+            <h2 class="text-sm font-bold tracking-wider uppercase text-white flex items-center gap-2">
+              <span class="text-rose-500">●</span> Active Sidelined Roster
+            </h2>
+            <span id="outCountBadge" class="text-xs px-2.5 py-1 rounded bg-rose-950/80 border border-rose-800 text-rose-300 font-bold">0 Sidelined</span>
+          </div>
+
+          <p class="text-[11px] text-slate-400 mb-3">Click on any player row to view their individual reliability dossier.</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="text-[10px] uppercase text-slate-500 border-b border-slate-800">
+                <tr>
+                  <th class="pb-2">Athlete</th>
+                  <th class="pb-2">Pos</th>
+                  <th class="pb-2">Injury / Mechanism</th>
+                  <th class="pb-2">Expected Return</th>
+                  <th class="pb-2 text-right">Dossier</th>
+                </tr>
+              </thead>
+              <tbody id="playerTableBody" class="divide-y divide-slate-800/80 text-slate-300"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Failure Analysis Correlation Card -->
+        <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl space-y-3">
+          <div class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Root Cause Correlation Report</div>
+          <div id="correlationSummary" class="text-sm text-slate-200 leading-relaxed font-sans"></div>
+          <div id="correlationMetrics" class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-800 text-xs"></div>
+        </div>
+
+      </div>
+
+      <!-- Right 1 Col: Failure Mechanism Chart -->
+      <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl flex flex-col justify-between">
+        <div>
+          <h2 class="text-xs uppercase tracking-wider text-slate-300 font-bold border-b border-slate-800 pb-3 mb-4">
+            Injury Type Distribution
+          </h2>
+          <div class="relative h-64 w-full">
+            <canvas id="mechanismChart"></canvas>
+          </div>
+        </div>
+        <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+          <span class="text-white font-bold">FA Metric:</span> High concentrations of muscular strains point to fatigue accumulation rather than accidental pitch trauma.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Player Dossier Modal -->
+  <div id="playerModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
+    <div class="bg-slate-900 border border-slate-700 max-w-lg w-full p-6 rounded-xl space-y-5 shadow-2xl">
+      <div class="flex justify-between items-start border-b border-slate-800 pb-3">
+        <div>
+          <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player Dossier</h3>
+          <p id="modalPlayerPos" class="text-xs text-slate-400"></p>
+        </div>
+        <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg">✕</button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3 text-xs">
+        <div class="bg-slate-950 p-3 rounded border border-slate-800">
+          <div class="text-[10px] text-slate-500 uppercase">Season Days Lost</div>
+          <div id="modalDaysLost" class="text-base font-bold text-rose-400 mt-0.5">--</div>
+        </div>
+        <div class="bg-slate-950 p-3 rounded border border-slate-800">
+          <div class="text-[10px] text-slate-500 uppercase">Durability Rating</div>
+          <div id="modalDurability" class="text-base font-bold text-cyan-400 mt-0.5">--</div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-xs uppercase tracking-wider text-slate-400 mb-2">Historical Outage Log</h4>
+        <ul id="modalHistoryList" class="space-y-2 text-xs"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Built-in fallback database so it runs locally right away
+    let database = {
+      epl: {
+        name: "Premier League",
+        teams: [
+          {
+            id: "che",
+            name: "Chelsea FC",
+            injured: [
+              { name: "Reece James", pos: "RB", type: "Hamstring Strain", cat: "Soft-Tissue", return: "2-3 weeks", daysLost: 112, durability: "High Risk (Recurring)", history: ["Hamstring Strain", "Knee Meniscus"] },
+              { name: "Wesley Fofana", pos: "CB", type: "ACL Reconstruction", cat: "Structural", return: "End of season", daysLost: 240, durability: "Critical Joint Vulnerability", history: ["Cruciate Ligament", "Fibular Fracture"] },
+              { name: "Roméo Lavia", pos: "CM", type: "Thigh Muscle Tear", cat: "Soft-Tissue", return: "4 weeks", daysLost: 180, durability: "Chronic Muscular Fatigue", history: ["Thigh Strain", "Ankle Joint"] },
+              { name: "Robert Sánchez", pos: "GK", type: "Knee Contusion", cat: "Trauma/Impact", return: "Next week", daysLost: 14, durability: "Nominal Baseline", history: ["Knee Contusion"] }
+            ]
+          },
+          {
+            id: "ars",
+            name: "Arsenal FC",
+            injured: [
+              { name: "Martin Ødegaard", pos: "CAM", type: "Ankle Ligament Sprain", cat: "Structural", return: "1-2 weeks", daysLost: 35, durability: "High Durability Baseline", history: ["Ankle Knock"] },
+              { name: "Bukayo Saka", pos: "RW", type: "Hamstring Tightness", cat: "Soft-Tissue", return: "Day-to-day", daysLost: 10, durability: "High Workload Fatigue", history: ["Muscular Fatigue"] }
+            ]
+          }
+        ]
+      },
+      laliga: {
+        name: "La Liga",
+        teams: [
+          {
+            id: "rma",
+            name: "Real Madrid",
+            injured: [
+              { name: "Dani Carvajal", pos: "RB", type: "Triple Knee Ligament Rupture", cat: "Structural", return: "8-10 months", daysLost: 210, durability: "Severe Structural Failure", history: ["ACL Rupture", "Calf Strain"] },
+              { name: "Éder Militão", pos: "CB", type: "ACL Tear", cat: "Structural", return: "9 months", daysLost: 195, durability: "Bilateral Knee Trauma", history: ["Left ACL", "Right ACL"] }
+            ]
+          }
+        ]
+      }
+    };
+
+    let chartInstance = null;
+
+    const leagueSelect = document.getElementById('leagueSelect');
+    const teamSelect = document.getElementById('teamSelect');
+    const playerTableBody = document.getElementById('playerTableBody');
+    const outCountBadge = document.getElementById('outCountBadge');
+    const correlationSummary = document.getElementById('correlationSummary');
+    const correlationMetrics = document.getElementById('correlationMetrics');
+    const modal = document.getElementById('playerModal');
+
+    // Attempt to load live data.json produced by your GitHub Action script
+    fetch('data.json')
+      .then(res => {
+        if (!res.ok) throw new Error("Local/fallback data will be used");
+        return res.json();
+      })
+      .then(remoteData => {
+        if (remoteData && Object.keys(remoteData).length > 0) {
+          database = remoteData;
+          populateTeams();
+        }
+      })
+      .catch(() => {
+        // Fall back gracefully to built-in sample data
+        populateTeams();
+      });
+
+    function populateTeams() {
+      const leagueKey = leagueSelect.value;
+      const league = database[leagueKey];
+      teamSelect.innerHTML = '';
+
+      if (!league || !league.teams || !league.teams.length) {
+        teamSelect.innerHTML = '<option value="">No squad data synced</option>';
+        renderTeam({ name: "None", injured: [] });
+        return;
+      }
+
+      league.teams.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t.id;
+        opt.textContent = `${t.name} (${t.injured.length} Injured)`;
+        teamSelect.appendChild(opt);
+      });
+
+      renderTeam(league.teams[0]);
+    }
+
+    function renderTeam(team) {
+      if (!team) return;
+
+      outCountBadge.textContent = `${team.injured.length} Sidelined`;
+      playerTableBody.innerHTML = '';
+
+      const categoryCounts = { "Soft-Tissue": 0, "Structural": 0, "Trauma/Impact": 0 };
+      
+      if (team.injured.length === 0) {
+        playerTableBody.innerHTML = `<tr><td colspan="5" class="py-4 text-center text-slate-500 italic">No component failures reported. 100% operational squad.</td></tr>`;
+      }
+
+      team.injured.forEach(player => {
+        categoryCounts[player.cat] = (categoryCounts[player.cat] || 0) + 1;
+
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-800/40 cursor-pointer transition";
+        tr.innerHTML = `
+          <td class="py-3 font-bold text-white">${player.name}</td>
+          <td class="py-3 text-slate-400">${player.pos}</td>
+          <td class="py-3"><span class="px-2 py-0.5 rounded text-[10px] ${
+            player.cat === 'Soft-Tissue' ? 'bg-amber-950 text-amber-300 border border-amber-800' :
+            player.cat === 'Structural' ? 'bg-rose-950 text-rose-300 border border-rose-800' :
+            'bg-blue-950 text-blue-300 border border-blue-800'
+          }">${player.type}</span></td>
+          <td class="py-3 text-slate-300">${player.return}</td>
+          <td class="py-3 text-right"><button class="text-cyan-400 hover:underline">View Dossier</button></td>
+        `;
+        tr.addEventListener('click', () => openModal(player));
+        playerTableBody.appendChild(tr);
+      });
+
+      renderCorrelation(team, categoryCounts);
+      renderChart(categoryCounts);
+    }
+
+    function renderCorrelation(team, counts) {
+      const total = team.injured.length;
+      if (total === 0) {
+        correlationSummary.innerHTML = `<span class="text-emerald-400 font-bold">Optimal Durability:</span> Zero recorded squad casualties.`;
+        correlationMetrics.innerHTML = '';
+        return;
+      }
+
+      const softPct = Math.round(((counts["Soft-Tissue"] || 0) / total) * 100);
+      const structPct = Math.round(((counts["Structural"] || 0) / total) * 100);
+
+      let diagnosis = "";
+      if (softPct >= 50) {
+        diagnosis = `<strong class="text-amber-400">High Muscular Overload Correlation (${softPct}%):</strong> Failures are clustered around soft-tissue groups (hamstring/adductor/calf). Strong correlation with schedule congestion and sprint fatigue rather than collision accidents.`;
+      } else if (structPct >= 50) {
+        diagnosis = `<strong class="text-rose-400">Structural Joint Vulnerability (${structPct}%):</strong> Failures involve critical connective ligaments and cartilage. Indicates severe mechanical trauma or chronic joint fatigue.`;
+      } else {
+        diagnosis = `<strong class="text-cyan-400">Balanced Casualty Distribution:</strong> Failures are evenly distributed across contact trauma and workload strain.`;
+      }
+
+      correlationSummary.innerHTML = diagnosis;
+
+      correlationMetrics.innerHTML = `
+        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+          <div class="text-[10px] text-slate-500 uppercase">Soft-Tissue Ratio</div>
+          <div class="text-sm font-bold text-amber-400 mt-0.5">${softPct}%</div>
+        </div>
+        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+          <div class="text-[10px] text-slate-500 uppercase">Structural Trauma</div>
+          <div class="text-sm font-bold text-rose-400 mt-0.5">${structPct}%</div>
+        </div>
+        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+          <div class="text-[10px] text-slate-500 uppercase">Total Outages</div>
+          <div class="text-sm font-bold text-white mt-0.5">${total} Units</div>
+        </div>
+      `;
+    }
+
+    function renderChart(counts) {
+      const ctx = document.getElementById('mechanismChart').getContext('2d');
+      if (chartInstance) chartInstance.destroy();
+
+      chartInstance = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Soft-Tissue (Fatigue)', 'Structural (Joints)', 'Trauma (Contact)'],
+          datasets: [{
+            data: [counts['Soft-Tissue'] || 0, counts['Structural'] || 0, counts['Trauma/Impact'] || 0],
+            backgroundColor: ['#f59e0b', '#f43f5e', '#38bdf8'],
+            borderColor: '#020617',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { color: '#94a3b8', font: { family: 'monospace', size: 10 } }
+            }
+          }
+        }
+      });
+    }
+
+    function openModal(player) {
+      document.getElementById('modalPlayerName').textContent = player.name;
+      document.getElementById('modalPlayerPos').textContent = `${player.pos} // Mechanism: ${player.type}`;
+      document.getElementById('modalDaysLost').textContent = `${player.daysLost} Days`;
+      document.getElementById('modalDurability').textContent = player.durability;
+
+      const list = document.getElementById('modalHistoryList');
+      list.innerHTML = '';
+      (player.history || []).forEach(item => {
+        const li = document.createElement('li');
+        li.className = "p-2 bg-slate-950 rounded border border-slate-800 flex justify-between";
+        li.innerHTML = `<span>${item}</span><span class="text-rose-400 font-bold">RECORDED</span>`;
+        list.appendChild(li);
+      });
+
+      modal.classList.remove('hidden');
+    }
+
+    document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+
+    leagueSelect.addEventListener('change', populateTeams);
+    teamSelect.addEventListener('change', () => {
+      const league = database[leagueSelect.value];
+      if (league && league.teams) {
+        const team = league.teams.find(t => t.id === teamSelect.value);
+        renderTeam(team);
+      }
+    });
+
+    populateTeams();
+  </script>
+</body>
+</html>
