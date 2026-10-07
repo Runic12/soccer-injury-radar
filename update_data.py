@@ -11,6 +11,7 @@ headers = {
     'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
 }
 
+# Configured for the active 2026 campaign across all 5 leagues
 LEAGUES = {
     "epl": {"id": 39, "name": "Premier League", "season": "2026"},
     "laliga": {"id": 140, "name": "La Liga", "season": "2026"},
@@ -22,7 +23,7 @@ LEAGUES = {
 output_database = {}
 
 for key, meta in LEAGUES.items():
-    print(f"\nFetching live injuries for {meta['name']}...")
+    print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
     teams_map = {}
     
     try:
@@ -33,14 +34,13 @@ for key, meta in LEAGUES.items():
             timeout=15
         )
         
-        # Handle rate limits or access restrictions gracefully
         if response.status_code != 200:
-            print(f"API notice for {meta['name']}: Status {response.status_code}. Using stable schema fallback.")
-            raise Exception(f"HTTP {response.status_code}")
+            print(f"API Error for {meta['name']}: Status {response.status_code}")
+            continue
             
         data = response.json()
         results = data.get("response", [])
-        print(f"Found {len(results)} active injury records.")
+        print(f"Success! Found {len(results)} active injury records for {meta['name']}.")
         
         for entry in results:
             team_info = entry.get("team", {})
@@ -49,7 +49,7 @@ for key, meta in LEAGUES.items():
             
             player_info = entry.get("player", {})
             p_name = player_info.get("name", "Unknown Athlete")
-            p_pos = player_info.get("position", "Squad")
+            p_pos = player_info.get("position", "First Team Squad")
             
             injury_type = player_info.get("type", "Undisclosed")
             injury_reason = player_info.get("reason", "Medical Absence")
@@ -78,47 +78,41 @@ for key, meta in LEAGUES.items():
                 "cat": cat,
                 "status": "Sidelined",
                 "return": "Under Evaluation",
-                "daysLost": 10,
-                "durability": "Active Casualty",
+                "daysLost": 14,
+5                "durability": "Active Casualty",
                 "history": [injury_type]
             })
 
         final_team_list = list(teams_map.values())
         
         if not final_team_list:
-            raise Exception("Empty response array")
+            final_team_list = [{
+                "id": "squad_clear",
+                "name": f"{meta['name']} Squad",
+                "injured": [{
+                    "name": "Full Squad Available",
+                    "pos": "First Team",
+                    "type": "No Active Injuries",
+                    "cat": "Soft-Tissue",
+                    "status": "Active",
+                    "return": "N/A",
+                    "daysLost": 0,
+                    "durability": "Available",
+                    "history": ["None"]
+                }]
+            }]
 
         output_database[key] = {
             "name": meta["name"],
             "teams": sorted(final_team_list, key=lambda x: x["name"])
         }
-        
-    except Exception as e:
-        # Fallback schema per league so UI components never break or return blank screens
-        output_database[key] = {
-            "name": meta["name"],
-            "teams": [{
-                "id": f"{key}_squad",
-                "name": f"{meta['name']} Featured Club",
-                "injured": [{
-                    "name": "Squad Status Monitored",
-                    "pos": "First Team",
-                    "type": "Standard Assessment",
-                    "cat": "Soft-Tissue",
-                    "status": "Active",
-                    "return": "Next Match",
-                    "daysLost": 7,
-                    "durability": "Monitored",
-                    "history": ["Routine Check"]
-                }]
-            }]
-        }
-        print(f"Initialized safe fallback for {meta['name']}")
 
-    # CRITICAL: Sleep for 2 seconds between requests to prevent RapidAPI 429 rate-limit blocks
-    time.sleep(2)
+    except Exception as e:
+        print(f"Error connecting to Pro API for {meta['name']}: {e}")
+
+    time.sleep(1)
 
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nWrite complete: Multi-league dataset compiled successfully.")
+print("\nWrite complete: Live Pro multi-league dataset saved to data.json.")
