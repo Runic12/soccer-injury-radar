@@ -3,12 +3,16 @@ import json
 import time
 import requests
 
+# Pulls your direct API-Sports key from your updated RAPIDAPI_KEY secret
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
-URL = "https://api-football-v1.p.rapidapi.com/v3/injuries"
 
+# Routes to the official API-Football direct servers
+URL = "https://v3.football.api-sports.io/injuries"
+
+# Uses the direct API-Sports authentication header
 headers = {
-    'x-rapidapi-key': API_KEY,
-    'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
+    'x-apisports-key': API_KEY,
+    'Accept': 'application/json'
 }
 
 # Configured for the active 2026 campaign across all 5 leagues
@@ -108,11 +112,4 @@ for key, meta in LEAGUES.items():
         }
 
     except Exception as e:
-        print(f"Error connecting to Pro API for {meta['name']}: {e}")
-
-    time.sleep(1)
-
-with open("data.json", "w") as f:
-    json.dump(output_database, f, indent=2)
-
-print("\nWrite complete: Live Pro multi-league dataset saved to data.json.")
+        print(f"Error connecting to Pro API
