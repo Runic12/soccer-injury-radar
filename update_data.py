@@ -112,4 +112,12 @@ for key, meta in LEAGUES.items():
         }
 
     except Exception as e:
-        print(f"Error connecting to Pro API
+        print(f"Error connecting to Pro API for {meta['name']}: {e}")
+
+    # Standard pacing to respect server limits
+    time.sleep(1)
+
+with open("data.json", "w") as f:
+    json.dump(output_database, f, indent=2)
+
+print("\nWrite complete: Live Pro multi-league dataset saved to data.json.")
