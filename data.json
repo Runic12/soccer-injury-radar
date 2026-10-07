@@ -2131,10 +2131,10 @@
           {
             "name": "D. Murillo",
             "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Questionable: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2161,19 +2161,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "H. Abaida",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6031,19 +6018,6 @@
             ]
           },
           {
-            "name": "A. Saletros",
-            "pos": "First Team Squad",
-            "type": "Questionable: Lower-Body Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "N. Allen",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
@@ -6072,14 +6046,14 @@
           {
             "name": "P. Dithejane",
             "pos": "First Team Squad",
-            "type": "Questionable: International Duty",
+            "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
