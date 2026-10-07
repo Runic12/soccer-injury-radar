@@ -1,1 +1,122 @@
-{}
+{
+  "epl": {
+    "name": "Premier League",
+    "teams": [
+      {
+        "id": "epl_squad",
+        "name": "Premier League Featured Club",
+        "injured": [
+          {
+            "name": "Squad Status Monitored",
+            "pos": "First Team",
+            "type": "Standard Assessment",
+            "cat": "Soft-Tissue",
+            "status": "Active",
+            "return": "Next Match",
+            "daysLost": 7,
+            "durability": "Monitored",
+            "history": [
+              "Routine Check"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "laliga": {
+    "name": "La Liga",
+    "teams": [
+      {
+        "id": "laliga_squad",
+        "name": "La Liga Featured Club",
+        "injured": [
+          {
+            "name": "Squad Status Monitored",
+            "pos": "First Team",
+            "type": "Standard Assessment",
+            "cat": "Soft-Tissue",
+            "status": "Active",
+            "return": "Next Match",
+            "daysLost": 7,
+            "durability": "Monitored",
+            "history": [
+              "Routine Check"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "seriea": {
+    "name": "Serie A",
+    "teams": [
+      {
+        "id": "seriea_squad",
+        "name": "Serie A Featured Club",
+        "injured": [
+          {
+            "name": "Squad Status Monitored",
+            "pos": "First Team",
+            "type": "Standard Assessment",
+            "cat": "Soft-Tissue",
+            "status": "Active",
+            "return": "Next Match",
+            "daysLost": 7,
+            "durability": "Monitored",
+            "history": [
+              "Routine Check"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "bundesliga": {
+    "name": "Bundesliga",
+    "teams": [
+      {
+        "id": "bundesliga_squad",
+        "name": "Bundesliga Featured Club",
+        "injured": [
+          {
+            "name": "Squad Status Monitored",
+            "pos": "First Team",
+            "type": "Standard Assessment",
+            "cat": "Soft-Tissue",
+            "status": "Active",
+            "return": "Next Match",
+            "daysLost": 7,
+            "durability": "Monitored",
+            "history": [
+              "Routine Check"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mls": {
+    "name": "MLS",
+    "teams": [
+      {
+        "id": "mls_squad",
+        "name": "MLS Featured Club",
+        "injured": [
+          {
+            "name": "Squad Status Monitored",
+            "pos": "First Team",
+            "type": "Standard Assessment",
+            "cat": "Soft-Tissue",
+            "status": "Active",
+            "return": "Next Match",
+            "daysLost": 7,
+            "durability": "Monitored",
+            "history": [
+              "Routine Check"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
