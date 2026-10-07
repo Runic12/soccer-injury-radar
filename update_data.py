@@ -2,7 +2,7 @@ import os
 import json
 import time
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Pulls your direct API-Sports key from your updated RAPIDAPI_KEY secret
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
@@ -24,9 +24,6 @@ LEAGUES = {
 
 output_database = {}
 
-# Creates a 14-day rolling window to identify currently injured players
-cutoff_date = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
-
 for key, meta in LEAGUES.items():
     print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
     
@@ -45,35 +42,51 @@ for key, meta in LEAGUES.items():
         data = response.json()
         results = data.get("response", [])
         
-        # 1. Find the absolute latest missed match for every individual player
         player_latest_records = {}
+        team_latest_date = {}
+        
+        # 1. First pass: Find the most recent fixture date for each Team, and the latest missed match for each Player
         for entry in results:
             p_info = entry.get("player") or {}
             p_name = p_info.get("name")
             
+            t_info = entry.get("team") or {}
+            t_name = t_info.get("name") or "Unknown Club"
+            t_id = t_name.lower().replace(" ", "_")
+            
             f_info = entry.get("fixture") or {}
             f_date = str(f_info.get("date", ""))[:10]
             
-            if not p_name or not f_date:
+            if not p_name or not f_date or not t_id:
                 continue
                 
-            if p_name not in player_latest_records:
-                player_latest_records[p_name] = {"date": f_date, "entry": entry}
-            else:
-                if f_date > player_latest_records[p_name]["date"]:
-                    player_latest_records[p_name] = {"date": f_date, "entry": entry}
-        
-        # 2. Filter active injuries based on the 14-day cutoff window
+            if t_id not in team_latest_date or f_date > team_latest_date[t_id]:
+                team_latest_date[t_id] = f_date
+                
+            if p_name not in player_latest_records or f_date > player_latest_records[p_name]["date"]:
+                player_latest_records[p_name] = {
+                    "date": f_date,
+                    "entry": entry,
+                    "t_name": t_name,
+                    "t_id": t_id
+                }
+
         teams_map = {}
         active_injuries = 0
         
+        # 2. Second pass: Filter players dynamically based on their team's schedule
         for p_name, record in player_latest_records.items():
-            if record["date"] >= cutoff_date:
+            t_id = record["t_id"]
+            p_date_str = record["date"]
+            t_latest_str = team_latest_date[t_id]
+            
+            p_dt = datetime.strptime(p_date_str, "%Y-%m-%d")
+            t_dt = datetime.strptime(t_latest_str, "%Y-%m-%d")
+            
+            # If the player missed a match within 14 days of the team's most recent fixture, they are still sidelined.
+            # If the difference is larger, the team has played recent matches without them on the injury list (healed).
+            if (t_dt - p_dt).days <= 14:
                 entry = record["entry"]
-                
-                t_info = entry.get("team") or {}
-                t_name = t_info.get("name") or "Unknown Club"
-                t_id = t_name.lower().replace(" ", "_")
                 
                 p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
                 injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
@@ -92,7 +105,7 @@ for key, meta in LEAGUES.items():
                 if t_id not in teams_map:
                     teams_map[t_id] = {
                         "id": t_id,
-                        "name": t_name,
+                        "name": record["t_name"],
                         "injured": []
                     }
 
