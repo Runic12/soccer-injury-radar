@@ -2,16 +2,17 @@ import os
 import json
 import requests
 
-# Retrieve your API key securely from GitHub Actions secrets
-API_KEY = os.environ.get("API_FOOTBALL_KEY", "").strip()
-BASE_URL = "https://v3.football.api-sports.io/injuries"
+# Retrieve your RapidAPI key securely
+API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
+URL = "https://api-football-v1.p.rapidapi.com/v3/injuries"
 
 headers = {
-    'x-apisports-key': API_KEY,
+    'x-rapidapi-key': API_KEY,
+    'x-rapidapi-host': 'api-football-v1.p.rapidapi.com',
     'Accept': 'application/json'
 }
 
-# Target leagues mapping
+# Target leagues mapping for 2026 season
 LEAGUES = {
     "epl": {"id": 39, "name": "Premier League", "season": "2026"},
     "laliga": {"id": 140, "name": "La Liga", "season": "2026"},
@@ -27,8 +28,12 @@ for key, meta in LEAGUES.items():
     teams_map = {}
     
     try:
-        url = f"{BASE_URL}?league={meta['id']}&season={meta['season']}"
-        response = requests.get(url, headers=headers, timeout=15)
+        response = requests.get(
+            URL, 
+            headers=headers, 
+            params={"league": meta["id"], "season": meta["season"]}, 
+            timeout=15
+        )
         
         if response.status_code != 200:
             print(f"API Error for {meta['name']}: Status {response.status_code}")
@@ -47,14 +52,12 @@ for key, meta in LEAGUES.items():
             p_name = player_info.get("name", "Unknown Athlete")
             p_pos = player_info.get("position", "First Team Squad")
             
-            # API-Football fixture/injury attributes
             injury_type = player_info.get("type", "Undisclosed Injury")
             injury_reason = player_info.get("reason", "Medical Absence")
             
             full_desc = f"{injury_type}: {injury_reason}"
             lower_r = full_desc.lower()
             
-            # Categorization logic for your dashboard metrics
             if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
                 cat = "Soft-Tissue"
             elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee", "surgery"]):
@@ -83,7 +86,6 @@ for key, meta in LEAGUES.items():
 
         final_team_list = list(teams_map.values())
         
-        # Fallback safeguard if a league returns empty array during off-seasons
         if not final_team_list:
             final_team_list = [{
                 "id": "squad_sync",
@@ -110,8 +112,7 @@ for key, meta in LEAGUES.items():
     except Exception as e:
         print(f"Error connecting to API for {meta['name']}: {e}")
 
-# Write structured database to data.json for your frontend
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nWrite complete: Live API data saved to data.json.")
+print("\nWrite complete: RapidAPI data saved to data.json.")
