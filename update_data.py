@@ -2,7 +2,7 @@ import os
 import json
 import time
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Pulls your direct API-Sports key from your updated RAPIDAPI_KEY secret
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
@@ -24,12 +24,11 @@ LEAGUES = {
 
 output_database = {}
 
-# Capture today's date to filter out past (healed) injuries
-today_str = datetime.now().strftime("%Y-%m-%d")
+# Creates a 14-day rolling window to identify currently injured players
+cutoff_date = (datetime.now() - timedelta(days=14)).strftime("%Y-%m-%d")
 
 for key, meta in LEAGUES.items():
     print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
-    teams_map = {}
     
     try:
         response = requests.get(
@@ -46,50 +45,58 @@ for key, meta in LEAGUES.items():
         data = response.json()
         results = data.get("response", [])
         
-        active_injuries = 0
-        
+        # 1. Find the absolute latest missed match for every individual player
+        player_latest_records = {}
         for entry in results:
-            # 1. Filter out past fixtures to remove healed players
-            fixture_info = entry.get("fixture") or {}
-            fixture_date = str(fixture_info.get("date", ""))[:10]
+            p_info = entry.get("player") or {}
+            p_name = p_info.get("name")
             
-            if fixture_date and fixture_date < today_str:
+            f_info = entry.get("fixture") or {}
+            f_date = str(f_info.get("date", ""))[:10]
+            
+            if not p_name or not f_date:
                 continue
                 
-            # 2. Use 'or' fallbacks to prevent NoneType crashes
-            team_info = entry.get("team") or {}
-            t_name = team_info.get("name") or "Unknown Club"
-            t_id = t_name.lower().replace(" ", "_")
-            
-            player_info = entry.get("player") or {}
-            p_name = player_info.get("name") or "Unknown Athlete"
-            p_pos = player_info.get("position") or "First Team Squad"
-            
-            injury_type = player_info.get("type") or "Undisclosed"
-            injury_reason = player_info.get("reason") or "Medical Absence"
-            
-            full_desc = f"{injury_type}: {injury_reason}"
-            lower_r = full_desc.lower()
-            
-            if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
-                cat = "Soft-Tissue"
-            elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee", "surgery"]):
-                cat = "Structural"
+            if p_name not in player_latest_records:
+                player_latest_records[p_name] = {"date": f_date, "entry": entry}
             else:
-                cat = "Trauma/Impact"
+                if f_date > player_latest_records[p_name]["date"]:
+                    player_latest_records[p_name] = {"date": f_date, "entry": entry}
+        
+        # 2. Filter active injuries based on the 14-day cutoff window
+        teams_map = {}
+        active_injuries = 0
+        
+        for p_name, record in player_latest_records.items():
+            if record["date"] >= cutoff_date:
+                entry = record["entry"]
+                
+                t_info = entry.get("team") or {}
+                t_name = t_info.get("name") or "Unknown Club"
+                t_id = t_name.lower().replace(" ", "_")
+                
+                p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
+                injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
+                injury_reason = (entry.get("player") or {}).get("reason") or "Medical Absence"
+                
+                full_desc = f"{injury_type}: {injury_reason}"
+                lower_r = full_desc.lower()
+                
+                if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
+                    cat = "Soft-Tissue"
+                elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee", "surgery"]):
+                    cat = "Structural"
+                else:
+                    cat = "Trauma/Impact"
 
-            if t_id not in teams_map:
-                teams_map[t_id] = {
-                    "id": t_id,
-                    "name": t_name,
-                    "injured": {}
-                }
+                if t_id not in teams_map:
+                    teams_map[t_id] = {
+                        "id": t_id,
+                        "name": t_name,
+                        "injured": []
+                    }
 
-            # 3. Use a dictionary keyed by player name to prevent duplicate entries 
-            # if a player is scheduled to miss multiple future matches
-            if p_name not in teams_map[t_id]["injured"]:
-                active_injuries += 1
-                teams_map[t_id]["injured"][p_name] = {
+                teams_map[t_id]["injured"].append({
                     "name": p_name,
                     "pos": p_pos,
                     "type": full_desc.title(),
@@ -99,14 +106,10 @@ for key, meta in LEAGUES.items():
                     "daysLost": "N/A",
                     "durability": "Active Casualty",
                     "history": [injury_type]
-                }
+                })
+                active_injuries += 1
 
-        # Convert the dictionary of players back to a standard list
-        final_team_list = []
-        for t_id, t_data in teams_map.items():
-            t_data["injured"] = list(t_data["injured"].values())
-            final_team_list.append(t_data)
-            
+        final_team_list = list(teams_map.values())
         print(f"Success! Filtered down to {active_injuries} currently active injuries for {meta['name']}.")
         
         if not final_team_list:
