@@ -45,7 +45,7 @@ for key, meta in LEAGUES.items():
         player_latest_records = {}
         team_latest_date = {}
         
-        # 1. First pass: Find the most recent fixture date for each Team, and the latest missed match for each Player
+        # 1. Track the most recent fixture date per club and latest missed match per player
         for entry in results:
             p_info = entry.get("player") or {}
             p_name = p_info.get("name")
@@ -74,7 +74,7 @@ for key, meta in LEAGUES.items():
         teams_map = {}
         active_injuries = 0
         
-        # 2. Second pass: Filter players dynamically based on their team's schedule
+        # 2. Filter active injuries dynamically and estimate return windows
         for p_name, record in player_latest_records.items():
             t_id = record["t_id"]
             p_date_str = record["date"]
@@ -83,8 +83,7 @@ for key, meta in LEAGUES.items():
             p_dt = datetime.strptime(p_date_str, "%Y-%m-%d")
             t_dt = datetime.strptime(t_latest_str, "%Y-%m-%d")
             
-            # If the player missed a match within 14 days of the team's most recent fixture, they are still sidelined.
-            # If the difference is larger, the team has played recent matches without them on the injury list (healed).
+            # Sidelined if player's latest missed game is within 14 days of team's most recent fixture
             if (t_dt - p_dt).days <= 14:
                 entry = record["entry"]
                 
@@ -95,12 +94,22 @@ for key, meta in LEAGUES.items():
                 full_desc = f"{injury_type}: {injury_reason}"
                 lower_r = full_desc.lower()
                 
-                if any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
-                    cat = "Soft-Tissue"
-                elif any(w in lower_r for w in ["acl", "cruciate", "ligament", "meniscus", "fracture", "ankle", "knee", "surgery"]):
+                # Dynamic clinical categorization and recovery window estimator
+                if any(w in lower_r for w in ["acl", "cruciate"]):
                     cat = "Structural"
+                    expected_return = "6-9 Months"
+                elif any(w in lower_r for w in ["ligament", "meniscus", "fracture", "surgery", "ankle", "knee"]):
+                    cat = "Structural"
+                    expected_return = "2-4 Months"
+                elif any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
+                    cat = "Soft-Tissue"
+                    expected_return = "3-4 Weeks"
+                elif any(w in lower_r for w in ["knock", "impact", "dead leg", "contusion"]):
+                    cat = "Trauma/Impact"
+                    expected_return = "Day-to-Day"
                 else:
                     cat = "Trauma/Impact"
+                    expected_return = "Pending Assessment"
 
                 if t_id not in teams_map:
                     teams_map[t_id] = {
@@ -115,7 +124,7 @@ for key, meta in LEAGUES.items():
                     "type": full_desc.title(),
                     "cat": cat,
                     "status": "Sidelined",
-                    "return": "Pending Assessment",
+                    "return": expected_return,
                     "daysLost": "N/A",
                     "durability": "Active Casualty",
                     "history": [injury_type]
