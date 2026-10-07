@@ -79,7 +79,7 @@ for key, meta in LEAGUES.items():
                 "status": "Sidelined",
                 "return": "Under Evaluation",
                 "daysLost": 14,
-5                "durability": "Active Casualty",
+                "durability": "Active Casualty",
                 "history": [injury_type]
             })
 
