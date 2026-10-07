@@ -2,14 +2,13 @@ name: Daily Injury Sync
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Runs every day at 6:00 AM UTC
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    - cron: '0 6 * * *'
+  workflow_dispatch:
 
 jobs:
   sync-data:
     runs-on: ubuntu-latest
     
-    # Grants permission to commit changes back to the repository
     permissions:
       contents: write
 
@@ -23,12 +22,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Run API sync script
         env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
         run: python update_data.py
 
       - name: Commit and push updated data.json
@@ -36,4 +34,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update live API data.json [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update live RapidAPI data.json [skip ci]" && git push)
