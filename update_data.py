@@ -2,14 +2,12 @@ import os
 import json
 import time
 import requests
+from datetime import datetime
 
 # Pulls your direct API-Sports key from your updated RAPIDAPI_KEY secret
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
-
-# Routes to the official API-Football direct servers
 URL = "https://v3.football.api-sports.io/injuries"
 
-# Uses the direct API-Sports authentication header
 headers = {
     'x-apisports-key': API_KEY,
     'Accept': 'application/json'
@@ -25,6 +23,9 @@ LEAGUES = {
 }
 
 output_database = {}
+
+# Capture today's date to filter out past (healed) injuries
+today_str = datetime.now().strftime("%Y-%m-%d")
 
 for key, meta in LEAGUES.items():
     print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
@@ -44,19 +45,28 @@ for key, meta in LEAGUES.items():
             
         data = response.json()
         results = data.get("response", [])
-        print(f"Success! Found {len(results)} active injury records for {meta['name']}.")
+        
+        active_injuries = 0
         
         for entry in results:
-            team_info = entry.get("team", {})
-            t_name = team_info.get("name", "Unknown Club")
+            # 1. Filter out past fixtures to remove healed players
+            fixture_info = entry.get("fixture") or {}
+            fixture_date = str(fixture_info.get("date", ""))[:10]
+            
+            if fixture_date and fixture_date < today_str:
+                continue
+                
+            # 2. Use 'or' fallbacks to prevent NoneType crashes
+            team_info = entry.get("team") or {}
+            t_name = team_info.get("name") or "Unknown Club"
             t_id = t_name.lower().replace(" ", "_")
             
-            player_info = entry.get("player", {})
-            p_name = player_info.get("name", "Unknown Athlete")
-            p_pos = player_info.get("position", "First Team Squad")
+            player_info = entry.get("player") or {}
+            p_name = player_info.get("name") or "Unknown Athlete"
+            p_pos = player_info.get("position") or "First Team Squad"
             
-            injury_type = player_info.get("type", "Undisclosed")
-            injury_reason = player_info.get("reason", "Medical Absence")
+            injury_type = player_info.get("type") or "Undisclosed"
+            injury_reason = player_info.get("reason") or "Medical Absence"
             
             full_desc = f"{injury_type}: {injury_reason}"
             lower_r = full_desc.lower()
@@ -72,22 +82,32 @@ for key, meta in LEAGUES.items():
                 teams_map[t_id] = {
                     "id": t_id,
                     "name": t_name,
-                    "injured": []
+                    "injured": {}
                 }
 
-            teams_map[t_id]["injured"].append({
-                "name": p_name,
-                "pos": p_pos,
-                "type": full_desc.title(),
-                "cat": cat,
-                "status": "Sidelined",
-                "return": "Under Evaluation",
-                "daysLost": 14,
-                "durability": "Active Casualty",
-                "history": [injury_type]
-            })
+            # 3. Use a dictionary keyed by player name to prevent duplicate entries 
+            # if a player is scheduled to miss multiple future matches
+            if p_name not in teams_map[t_id]["injured"]:
+                active_injuries += 1
+                teams_map[t_id]["injured"][p_name] = {
+                    "name": p_name,
+                    "pos": p_pos,
+                    "type": full_desc.title(),
+                    "cat": cat,
+                    "status": "Sidelined",
+                    "return": "Pending Assessment",
+                    "daysLost": "N/A",
+                    "durability": "Active Casualty",
+                    "history": [injury_type]
+                }
 
-        final_team_list = list(teams_map.values())
+        # Convert the dictionary of players back to a standard list
+        final_team_list = []
+        for t_id, t_data in teams_map.items():
+            t_data["injured"] = list(t_data["injured"].values())
+            final_team_list.append(t_data)
+            
+        print(f"Success! Filtered down to {active_injuries} currently active injuries for {meta['name']}.")
         
         if not final_team_list:
             final_team_list = [{
@@ -100,7 +120,7 @@ for key, meta in LEAGUES.items():
                     "cat": "Soft-Tissue",
                     "status": "Active",
                     "return": "N/A",
-                    "daysLost": 0,
+                    "daysLost": "0",
                     "durability": "Available",
                     "history": ["None"]
                 }]
@@ -114,7 +134,6 @@ for key, meta in LEAGUES.items():
     except Exception as e:
         print(f"Error connecting to Pro API for {meta['name']}: {e}")
 
-    # Standard pacing to respect server limits
     time.sleep(1)
 
 with open("data.json", "w") as f:
