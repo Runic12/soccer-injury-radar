@@ -20,32 +20,6 @@
             ]
           },
           {
-            "name": "C. Mosquera",
-            "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
-            "name": "E. Konsa",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "C. Tzolis",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
@@ -59,7 +33,33 @@
             ]
           },
           {
+            "name": "M. Dowman",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "K. Havertz",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "E. Konsa",
             "pos": "First Team Squad",
             "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -114,19 +114,6 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Cash",
-            "pos": "First Team Squad",
-            "type": "Questionable: Leg Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
             ]
           }
         ]
@@ -190,14 +177,14 @@
           {
             "name": "J. Kluivert",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -434,19 +421,6 @@
             ]
           },
           {
-            "name": "L. Dunk",
-            "pos": "First Team Squad",
-            "type": "Questionable: Neck Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "P. Struijk",
             "pos": "First Team Squad",
             "type": "Questionable: Muscle Injury",
@@ -507,14 +481,14 @@
           {
             "name": "Joao Pedro",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -524,32 +498,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "R. James",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "C. Palmer",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -699,19 +647,6 @@
             ]
           },
           {
-            "name": "I. Sarr",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "A. Disasi",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
@@ -738,16 +673,29 @@
             ]
           },
           {
-            "name": "E. Nketiah",
+            "name": "A. Khalaili",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "T. Tomiyasu",
+            "pos": "First Team Squad",
+            "type": "Questionable: Calf Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -759,27 +707,27 @@
           {
             "name": "C. Norgaard",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
+            "type": "Questionable: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "M. Rohl",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -849,14 +797,14 @@
           {
             "name": "C. Hughes",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
+            "type": "Questionable: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -875,27 +823,27 @@
           {
             "name": "H. Morita",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Calf Injury",
+            "type": "Questionable: Calf Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
-            "name": "O. Zambrano",
+            "name": "T. Iroegbunam",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -912,55 +860,55 @@
             ]
           },
           {
-            "name": "M. Crooks",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "P. McNair",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "N. Mendy",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Concussion",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "M. Targett",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "B. Norton-Cuffy",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "E. Stroud",
+            "pos": "First Team Squad",
+            "type": "Questionable: Illness",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -1073,19 +1021,6 @@
             ]
           },
           {
-            "name": "J. Gomez",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "G. Leoni",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -1101,14 +1036,53 @@
           {
             "name": "F. Chiesa",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Back Injury",
+            "type": "Questionable: Back Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "C. Gakpo",
+            "pos": "First Team Squad",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "A. Isak",
+            "pos": "First Team Squad",
+            "type": "Questionable: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "J. Jacquet",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -1118,12 +1092,12 @@
         "name": "Manchester City",
         "injured": [
           {
-            "name": "J. Doku",
+            "name": "P. Foden",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Calf Injury",
-            "cat": "Soft-Tissue",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "3-4 Weeks",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -1131,9 +1105,9 @@
             ]
           },
           {
-            "name": "P. Foden",
+            "name": "N. O'Reilly",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
+            "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -1152,14 +1126,14 @@
           {
             "name": "T. Heaton",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Abdominal Strain",
+            "type": "Questionable: Abdominal Strain",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -1204,7 +1178,7 @@
           {
             "name": "B. Sesko",
             "pos": "First Team Squad",
-            "type": "Questionable: Inactive",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -1212,32 +1186,6 @@
             "durability": "Active Casualty",
             "history": [
               "Questionable"
-            ]
-          },
-          {
-            "name": "K. Mainoo",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Rashford",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Health Problems",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
             ]
           },
           {
@@ -1267,9 +1215,35 @@
             ]
           },
           {
+            "name": "K. Mainoo",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "N. Mazraoui",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "M. Rashford",
+            "pos": "First Team Squad",
+            "type": "Questionable: Health Problems",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -1398,27 +1372,14 @@
           {
             "name": "N. Savona",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "N. Milenkovic",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -1512,6 +1473,19 @@
             ]
           },
           {
+            "name": "P. Porro",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "X. Simons",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -1540,40 +1514,14 @@
           {
             "name": "M. Mudryk",
             "pos": "First Team Squad",
-            "type": "Questionable: Ankle Injury",
+            "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
-            ]
-          },
-          {
-            "name": "Richarlison",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
               "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. P. van Hecke",
-            "pos": "First Team Squad",
-            "type": "Questionable: Leg Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
             ]
           }
         ]
@@ -1646,6 +1594,32 @@
             ]
           },
           {
+            "name": "A. Djalo",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "O. Sancet",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "N. Williams",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
@@ -1665,16 +1639,42 @@
         "name": "Atletico Madrid",
         "injured": [
           {
-            "name": "A. Sorloth",
+            "name": "J. Alvarez",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "A. Sorloth",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "P. Barrios",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
             ]
           }
         ]
@@ -1755,42 +1755,16 @@
         "name": "Celta Vigo",
         "injured": [
           {
-            "name": "B. Iglesias",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Febas",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ribs Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "A. Antanon",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -1807,16 +1781,42 @@
             ]
           },
           {
-            "name": "I. Aspas",
+            "name": "M. Roman",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
+            "type": "Missing Fixture: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "3-4 Weeks",
+            "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "C. Starfelt",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "S. Caceres",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -1828,7 +1828,33 @@
           {
             "name": "N. Carrillo",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "M. Casado",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Collarbone Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "P. Aubameyang",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
@@ -1839,16 +1865,29 @@
             ]
           },
           {
-            "name": "Angelino",
+            "name": "L. Amatucci",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "Z. Eddahchouri",
+            "pos": "First Team Squad",
+            "type": "Questionable: Wrist Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -1860,14 +1899,40 @@
           {
             "name": "Y. Santiago",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "F. Redondo Solari",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "Buba Sangare",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -1890,29 +1955,16 @@
             ]
           },
           {
-            "name": "J. Puado",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "Jofre",
             "pos": "First Team Squad",
-            "type": "Questionable: Groin Injury",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -1945,19 +1997,6 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Kiko Femenia",
-            "pos": "First Team Squad",
-            "type": "Questionable: Hamstring Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
             ]
           },
           {
@@ -2040,27 +2079,27 @@
           {
             "name": "M. Diarra",
             "pos": "First Team Squad",
-            "type": "Questionable: Calf Injury",
+            "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "D. Murillo",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -2092,14 +2131,14 @@
           {
             "name": "J. Cajuste",
             "pos": "First Team Squad",
-            "type": "Questionable: Injury",
+            "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -2124,14 +2163,14 @@
           {
             "name": "V. Rosier",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -2148,22 +2187,9 @@
             ]
           },
           {
-            "name": "A. Oroz",
+            "name": "R. Moro",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Gomez",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
@@ -2180,55 +2206,16 @@
         "name": "Racing Santander",
         "injured": [
           {
-            "name": "I. Luque",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Martin",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "S. Eriksson",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Shoulder Injury",
+            "type": "Questionable: Shoulder Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Almeida",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -2262,6 +2249,19 @@
             "history": [
               "Missing Fixture"
             ]
+          },
+          {
+            "name": "I. Balliu",
+            "pos": "First Team Squad",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
           }
         ]
       },
@@ -2270,38 +2270,25 @@
         "name": "Real Betis",
         "injured": [
           {
-            "name": "J. Morante",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Coach'S Decision",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "A. Ruibal",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
-            "name": "D. Llorente",
+            "name": "J. Firpo",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Broken Nose",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Groin Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2309,16 +2296,16 @@
             ]
           },
           {
-            "name": "I. Losada",
+            "name": "M. Bartra",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -2328,16 +2315,29 @@
         "name": "Real Madrid",
         "injured": [
           {
+            "name": "R. Asencio",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Broken Leg",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "Eder Militao",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -2365,17 +2365,11 @@
             "history": [
               "Missing Fixture"
             ]
-          }
-        ]
-      },
-      {
-        "id": "real_sociedad",
-        "name": "Real Sociedad",
-        "injured": [
+          },
           {
-            "name": "P. Marin",
+            "name": "D. Huijsen",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -2385,6 +2379,25 @@
               "Missing Fixture"
             ]
           },
+          {
+            "name": "F. Valverde",
+            "pos": "First Team Squad",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "real_sociedad",
+        "name": "Real Sociedad",
+        "injured": [
           {
             "name": "A. Odriozola",
             "pos": "First Team Squad",
@@ -2399,22 +2412,35 @@
             ]
           },
           {
-            "name": "J. Martin",
+            "name": "H. Fort",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "I. Zubeldia",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "O. Oskarsson",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -2517,14 +2543,14 @@
           {
             "name": "D. Foulquier",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -2534,45 +2560,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "L. Rioja",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. De Haas",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "G. Rodriguez",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2595,27 +2582,40 @@
           {
             "name": "M. Diakhaby",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "C. Tarrega",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "A. Danjuma",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -2625,25 +2625,12 @@
         "name": "Villarreal",
         "injured": [
           {
-            "name": "J. Foyth",
+            "name": "T. Buchanan",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Achilles Tendon Injury",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Comesana",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2662,72 +2649,7 @@
         "name": "AC Milan",
         "injured": [
           {
-            "name": "Y. Fofana",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Gimenez",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "R. Leao",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "C. Nkunku",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "F. Tomori",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Gabbia",
+            "name": "A. Saelemaekers",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -2737,6 +2659,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "P. Estupinan",
+            "pos": "First Team Squad",
+            "type": "Questionable: Knee Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -2797,7 +2732,20 @@
         "name": "Bologna",
         "injured": [
           {
-            "name": "O. El Azzouzi",
+            "name": "A. Dovbyk",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "E. Holm",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2810,38 +2758,12 @@
             ]
           },
           {
-            "name": "R. Orsolini",
+            "name": "J. Odgaard",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Dovbyk",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "N. Zortea",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Hip Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2874,16 +2796,29 @@
         "name": "Como",
         "injured": [
           {
-            "name": "J. Addai",
+            "name": "M. Kean",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Achilles Tendon Injury",
+            "type": "Questionable: Health Problems",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "I. Smolcic",
+            "pos": "First Team Squad",
+            "type": "Questionable: Illness",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -2976,7 +2911,39 @@
         "name": "Inter",
         "injured": [
           {
-            "name": "H. Calhanoglu",
+            "name": "J. Stones",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "C. Jones",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "juventus",
+        "name": "Juventus",
+        "injured": [
+          {
+            "name": "J. Ekhator",
             "pos": "First Team Squad",
             "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2989,41 +2956,9 @@
             ]
           },
           {
-            "name": "J. Stones",
+            "name": "A. Milik",
             "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "juventus",
-        "name": "Juventus",
-        "injured": [
-          {
-            "name": "J. Ekhator",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Bruise",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "K. Y\u0131ld\u0131z",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
+            "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -3036,33 +2971,20 @@
           {
             "name": "J. Cabal",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Problems",
+            "type": "Questionable: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. Boga",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Bruise",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "K. Thuram",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Jumpers Knee",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
@@ -3075,7 +2997,7 @@
           {
             "name": "M. Locatelli",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Jumpers Knee",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
@@ -3086,12 +3008,38 @@
             ]
           },
           {
+            "name": "J. Boga",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "K. Grabara",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Jumpers Knee",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "K. Yildiz",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Foot Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3126,53 +3074,14 @@
           {
             "name": "M. Berisha",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lacking Match Fitness",
+            "type": "Questionable: Lacking Match Fitness",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "W. Geubbels",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "O. Gandelman",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Tiago Gabriel",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -3182,35 +3091,22 @@
         "name": "Monza",
         "injured": [
           {
-            "name": "I. Tour\u00e9",
+            "name": "I. Toure",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Contusion",
+            "type": "Questionable: Contusion",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Day-to-Day",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. Zi\u00f3\u0142kowski",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "M. Pessina",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Jumpers Knee",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
@@ -3218,6 +3114,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "J. Ziolkowski",
+            "pos": "First Team Squad",
+            "type": "Questionable: Foot Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -3288,6 +3197,19 @@
             "name": "D. Drobnic",
             "pos": "First Team Squad",
             "type": "Questionable: Arm Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "M. Frigan",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -3411,16 +3333,29 @@
             ]
           },
           {
-            "name": "P. Okon-Engstler",
+            "name": "T. Dallinga",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "A. Castro-Montes",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -3499,6 +3434,19 @@
             "history": [
               "Missing Fixture"
             ]
+          },
+          {
+            "name": "C. Kofane",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
           }
         ]
       },
@@ -3552,19 +3500,6 @@
             ]
           },
           {
-            "name": "N. Schlotterbeck",
-            "pos": "First Team Squad",
-            "type": "Questionable: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "G. Konstantelias",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -3597,6 +3532,19 @@
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "K. Karetsas",
+            "pos": "First Team Squad",
+            "type": "Questionable: Illness",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3649,45 +3597,6 @@
             ]
           },
           {
-            "name": "Y. Konoplya",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Z. Uno",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lacking Match Fitness",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "D. Hashioka",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Neck Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "E. Leopold",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -3701,12 +3610,12 @@
             ]
           },
           {
-            "name": "T. Kleindienst",
+            "name": "N. Kuhn",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3714,7 +3623,7 @@
             ]
           },
           {
-            "name": "N. Kuhn",
+            "name": "F. Honorat",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3746,16 +3655,42 @@
             ]
           },
           {
+            "name": "F. Chaibi",
+            "pos": "First Team Squad",
+            "type": "Questionable: Lacking Match Fitness",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "J. Maluze",
             "pos": "First Team Squad",
-            "type": "Questionable: Thigh Injury",
+            "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "M. Pimpong",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
             ]
           }
         ]
@@ -3767,40 +3702,27 @@
           {
             "name": "T. Breithaupt",
             "pos": "First Team Squad",
-            "type": "Questionable: Toe Injury",
+            "type": "Missing Fixture: Toe Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "S. Mounie",
             "pos": "First Team Squad",
-            "type": "Questionable: Injury",
+            "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
-            ]
-          },
-          {
-            "name": "A. Kade",
-            "pos": "First Team Squad",
-            "type": "Questionable: Calf Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -3817,16 +3739,16 @@
             ]
           },
           {
-            "name": "U. Ogundu",
+            "name": "N. Banks",
             "pos": "First Team Squad",
-            "type": "Questionable: Abdominal Strain",
-            "cat": "Soft-Tissue",
+            "type": "Missing Fixture: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "3-4 Weeks",
+            "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -3835,32 +3757,6 @@
         "id": "fc_schalke_04",
         "name": "FC Schalke 04",
         "injured": [
-          {
-            "name": "T. Kalas",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lacking Match Fitness",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "R. Schallenberg",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
           {
             "name": "D. Ljubicic",
             "pos": "First Team Squad",
@@ -3872,6 +3768,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "T. Becker",
+            "pos": "First Team Squad",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -3946,19 +3855,6 @@
             ]
           },
           {
-            "name": "A. Caci",
-            "pos": "First Team Squad",
-            "type": "Questionable: Face Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "O. Ruoppi",
             "pos": "First Team Squad",
             "type": "Questionable: Knee Injury",
@@ -4030,12 +3926,12 @@
             ]
           },
           {
-            "name": "T. Moffi",
+            "name": "Z. El Ouahdi",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
-            "cat": "Structural",
+            "type": "Questionable: Illness",
+            "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "2-4 Months",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -4167,27 +4063,27 @@
           {
             "name": "N. Awortwie-Grant",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "L. Eickel",
             "pos": "First Team Squad",
-            "type": "Questionable: Back Injury",
+            "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -4197,6 +4093,19 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "S. Klaas",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -4229,6 +4138,19 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "F. Onyeka",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Foot Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -4318,19 +4240,6 @@
             "history": [
               "Questionable"
             ]
-          },
-          {
-            "name": "J. Juranovic",
-            "pos": "First Team Squad",
-            "type": "Questionable: Achilles Tendon Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
           }
         ]
       },
@@ -4341,66 +4250,53 @@
           {
             "name": "J. Diehl",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
-            ]
-          },
-          {
-            "name": "L. Jaquez",
-            "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "N. Nartey",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "D. Zagadou",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "T. Tomas",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -4477,14 +4373,14 @@
           {
             "name": "S. Lynen",
             "pos": "First Team Squad",
-            "type": "Questionable: Hip Injury",
+            "type": "Missing Fixture: Hip Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -4516,27 +4412,14 @@
           {
             "name": "S. Musah",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Surgery",
-            "cat": "Structural",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "2-4 Months",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
-            ]
-          },
-          {
-            "name": "N. Stark",
-            "pos": "First Team Squad",
-            "type": "Questionable: Hip Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
             ]
           }
         ]
@@ -4676,14 +4559,14 @@
           {
             "name": "P. Placheta",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -4697,6 +4580,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "Z. Kolmanic",
+            "pos": "First Team Squad",
+            "type": "Questionable: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -4868,35 +4764,9 @@
         "name": "Charlotte",
         "injured": [
           {
-            "name": "H. Toffolo",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Westwood",
+            "name": "T. Ream",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "D. Schnegg",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -4948,7 +4818,7 @@
           {
             "name": "A. Goodwin",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -4995,6 +4865,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "B. Bronico",
+            "pos": "First Team Squad",
+            "type": "Questionable: Lower-Body Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -5071,14 +4954,14 @@
           {
             "name": "R. Turdean",
             "pos": "First Team Squad",
-            "type": "Questionable: Inactive",
+            "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5140,32 +5023,6 @@
             ]
           },
           {
-            "name": "R. Cannon",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "K. Thompson",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "T. Ku-DiPietro",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
@@ -5194,40 +5051,27 @@
           {
             "name": "M. Diop",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "K. Stewart-Baynes",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "Y. Maziz",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -5243,32 +5087,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Bangoura",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "R. Camacho",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -5323,14 +5141,14 @@
           {
             "name": "G. Segal",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5405,35 +5223,9 @@
             ]
           },
           {
-            "name": "O. Nwobodo",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "A. Chirila",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Evander",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -5459,14 +5251,14 @@
           {
             "name": "E. Echenique",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
+            "type": "Questionable: Inactive",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -5478,27 +5270,14 @@
           {
             "name": "Geovane Jesus",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. A. Julio Santos",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5541,16 +5320,16 @@
             ]
           },
           {
-            "name": "O. Urhoghide",
+            "name": "Daniel",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5575,46 +5354,33 @@
           {
             "name": "J. Maurer",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Concussion",
+            "type": "Questionable: Concussion",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Saracchi",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "L. Foster",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "A. Resch",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Lower-Body Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "H. Herrera",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -5657,6 +5423,19 @@
             ]
           },
           {
+            "name": "Y. Bright",
+            "pos": "First Team Squad",
+            "type": "Questionable: Foot Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "M. Silvetti",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
@@ -5672,20 +5451,33 @@
           {
             "name": "T. Segovia",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "I. Fray",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Groin Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "S. Morales",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -5746,6 +5538,19 @@
             "history": [
               "Missing Fixture"
             ]
+          },
+          {
+            "name": "F. Mura",
+            "pos": "First Team Squad",
+            "type": "Questionable: Ankle Injury",
+            "cat": "Structural",
+            "status": "Sidelined",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
           }
         ]
       },
@@ -5795,40 +5600,27 @@
           {
             "name": "T. Tillman",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "T. Hasal",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Arm Injury",
+            "type": "Questionable: Arm Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "R. Porteous",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5890,19 +5682,6 @@
             ]
           },
           {
-            "name": "E. Wynder",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "J. Paintsil",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
@@ -5916,16 +5695,16 @@
             ]
           },
           {
-            "name": "S. Roberto",
+            "name": "Joao Klauss",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Shoulder Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5948,29 +5727,16 @@
         "name": "Minnesota United FC",
         "injured": [
           {
-            "name": "M. Boxall",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "P. Stroud",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5987,12 +5753,12 @@
             ]
           },
           {
-            "name": "B. Hlongwane",
+            "name": "J. Diaz",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
+            "type": "Missing Fixture: Yellow Cards",
+            "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "2-4 Months",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6015,23 +5781,23 @@
           {
             "name": "J. Pereyra",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "A. Smir",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: International Duty",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6131,14 +5897,14 @@
           {
             "name": "L. Campana",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6148,19 +5914,6 @@
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "L. Langoni",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6196,10 +5949,10 @@
           {
             "name": "A. Yusuf",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6362,6 +6115,19 @@
         "name": "New York Red Bulls",
         "injured": [
           {
+            "name": "C. Harper",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "A. Marcucci",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -6390,14 +6156,14 @@
           {
             "name": "J. Che",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6455,14 +6221,14 @@
           {
             "name": "J. Marshall-Rutty",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6524,19 +6290,6 @@
             ]
           },
           {
-            "name": "A. Marin",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "D. Brekalo",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
@@ -6552,7 +6305,7 @@
           {
             "name": "T. Spicer",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: International Duty",
+            "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -6591,40 +6344,14 @@
           {
             "name": "B. Ojeda",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
+            "type": "Questionable: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Griezmann",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Iago Teodoro",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Suspended",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6662,10 +6389,23 @@
           {
             "name": "P. Ndinga",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "J. Sery Larsen",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Yellow Cards",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6731,42 +6471,29 @@
         "name": "Portland Timbers",
         "injured": [
           {
-            "name": "D. Da Costa",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Concussion",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "O. Fernandez",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "Z. McGraw",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
+            "type": "Questionable: Back Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6783,22 +6510,9 @@
             ]
           },
           {
-            "name": "J. Caicedo",
+            "name": "A. Bonetig",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Aravena",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Hip Injury",
+            "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -6806,6 +6520,19 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "J. Caicedo",
+            "pos": "First Team Squad",
+            "type": "Questionable: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
@@ -6882,14 +6609,14 @@
           {
             "name": "J. J. Arias",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6908,14 +6635,14 @@
           {
             "name": "Z. Booth",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6934,14 +6661,14 @@
           {
             "name": "L. Engel",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -6960,40 +6687,14 @@
           {
             "name": "G. Dillon",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
+            "type": "Questionable: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Spierings",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Junqua",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Concussion",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7012,14 +6713,14 @@
           {
             "name": "A. Katranis",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
+            "type": "Questionable: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7051,14 +6752,14 @@
           {
             "name": "D. Zagar",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
+            "type": "Questionable: Inactive",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -7070,66 +6771,40 @@
           {
             "name": "A. Pellegrino",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "S. Vines",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Ingvartsen",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "Gabriel Pirani",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "A. Mighten",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7170,19 +6845,6 @@
             "history": [
               "Missing Fixture"
             ]
-          },
-          {
-            "name": "O. Verhoeven",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Yellow Cards",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
           }
         ]
       },
@@ -7190,32 +6852,6 @@
         "id": "san_jose_earthquakes",
         "name": "San Jose Earthquakes",
         "injured": [
-          {
-            "name": "E. Edwards",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "T. Werner",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
           {
             "name": "D. Jones",
             "pos": "First Team Squad",
@@ -7232,7 +6868,20 @@
           {
             "name": "N. Adimabua",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
+            "type": "Questionable: Hernia",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "R. Roberts",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -7246,45 +6895,6 @@
             "name": "R. Vieira",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "D. Johnson",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Lower-Body Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "P. Judd",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Floriani",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -7366,19 +6976,6 @@
             ]
           },
           {
-            "name": "Y. Gomez Andrade",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "N. Petkovic",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
@@ -7394,14 +6991,27 @@
           {
             "name": "J. Ferreira",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "P. Kingston",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
@@ -7439,53 +7049,53 @@
           {
             "name": "O. Wolff",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "I. James",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "Diego Borges",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
+            "type": "Questionable: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "L. Johnsen",
+            "pos": "First Team Squad",
+            "type": "Questionable: Hamstring Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
             "name": "M. Mosquera",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7504,27 +7114,27 @@
           {
             "name": "J. Davis",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "Capita",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -7691,14 +7301,14 @@
           {
             "name": "K. G. Cabrera Nakamura",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
+            "type": "Questionable: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7756,14 +7366,14 @@
           {
             "name": "J. Badwal",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
