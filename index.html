@@ -2,17 +2,46 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0FND6PVSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0FND6PVSS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-C0FND6PVSS');
-</script>
+    gtag('config', 'G-C0FND6PVSS');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global D1 Soccer Injury & Reliability Platform</title>
+
+  <!-- Core SEO Meta Tags -->
+  <title>Injured Soccer Players | Real-Time Football Injury & Reliability Radar</title>
+  <meta name="description" content="Live database tracking injured soccer players, return timelines, injury mechanisms, and squad reliability across top world football leagues.">
+  <meta name="keywords" content="injured soccer players, soccer injuries, premier league injury updates, football injury tracker, soccer injury report, expected return dates">
+  <link rel="canonical" href="https://injuredsoccerplayers.com/">
+
+  <!-- Open Graph / Social Sharing Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://injuredsoccerplayers.com/">
+  <meta property="og:title" content="Injured Soccer Players | Real-Time Football Injury & Reliability Radar">
+  <meta property="og:description" content="Track live soccer injuries, recovery timelines, and squad durability metrics across global D1 leagues.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Injured Soccer Players Tracker">
+  <meta name="twitter:description" content="Real-time multi-league injured soccer players surveillance and reliability metrics.">
+
+  <!-- Schema.org WebApplication Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Injured Soccer Players Radar",
+    "url": "https://injuredsoccerplayers.com",
+    "description": "Live multi-league tracking for injured soccer players, recovery timelines, and root-cause durability analysis.",
+    "applicationCategory": "SportsApplication",
+    "operatingSystem": "All"
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js for Mechanism Distribution Graphs -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -27,11 +56,13 @@
           <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
           <span>Global D1 Telemetry Network</span>
         </div>
-        <h1 class="text-2xl font-black tracking-tight text-white">WORLD FOOTBALL INJURY & ROOT-CAUSE RADAR</h1>
+        <h1 class="text-2xl font-black tracking-tight text-white uppercase">
+          Injured Soccer Players Radar
+        </h1>
         <p class="text-xs text-slate-400 mt-1">Multi-league surveillance, player reliability reports, and fault categorization.</p>
       </div>
       <div class="text-right text-xs text-slate-400 border border-slate-800 p-3 rounded bg-slate-950">
-        <div>API Provider: <span class="text-cyan-400 font-bold">API-API-FOOTBALL</span></div>
+        <div>API Provider: <span class="text-cyan-400 font-bold">API-FOOTBALL</span></div>
         <div>Coverage: <span class="text-slate-200">Global D1 Top Flights</span></div>
       </div>
     </header>
@@ -39,7 +70,7 @@
     <!-- Navigation / Selectors -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="border border-slate-800 bg-slate-900/50 p-4 rounded-lg">
-        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">1. Select D1 League</label>
+        <label for="leagueSelect" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">1. Select D1 League</label>
         <select id="leagueSelect" class="w-full bg-slate-950 border border-slate-700 text-slate-100 p-2.5 rounded text-sm focus:border-cyan-500 focus:outline-none">
           <option value="epl">Premier League (England)</option>
           <option value="laliga">La Liga (Spain)</option>
@@ -50,7 +81,7 @@
       </div>
 
       <div class="border border-slate-800 bg-slate-900/50 p-4 rounded-lg">
-        <label class="block text-xs uppercase tracking-wider text-slate-400 mb-2">2. Select Squad Unit</label>
+        <label for="teamSelect" class="block text-xs uppercase tracking-wider text-slate-400 mb-2">2. Select Squad Unit</label>
         <select id="teamSelect" class="w-full bg-slate-950 border border-slate-700 text-slate-100 p-2.5 rounded text-sm focus:border-cyan-500 focus:outline-none"></select>
       </div>
     </div>
@@ -65,12 +96,12 @@
         <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl">
           <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
             <h2 class="text-sm font-bold tracking-wider uppercase text-white flex items-center gap-2">
-              <span class="text-rose-500">●</span> Active Sidelined Roster
+              <span class="text-rose-500">●</span> Active Sidelined Soccer Players
             </h2>
             <span id="outCountBadge" class="text-xs px-2.5 py-1 rounded bg-rose-950/80 border border-rose-800 text-rose-300 font-bold">0 Sidelined</span>
           </div>
 
-          <p class="text-[11px] text-slate-400 mb-3">Click on any player row to view their individual reliability dossier.</p>
+          <p class="text-[11px] text-slate-400 mb-3">Click on any injured soccer player row to view their individual durability and recovery dossier.</p>
 
           <div class="overflow-x-auto">
             <table class="w-full text-left text-xs">
@@ -90,7 +121,7 @@
 
         <!-- Failure Analysis Correlation Card -->
         <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl space-y-3">
-          <div class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Root Cause Correlation Report</div>
+          <h2 class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Root Cause Correlation Report</h2>
           <div id="correlationSummary" class="text-sm text-slate-200 leading-relaxed font-sans"></div>
           <div id="correlationMetrics" class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-800 text-xs"></div>
         </div>
@@ -124,7 +155,7 @@
           <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player Dossier</h3>
           <p id="modalPlayerPos" class="text-xs text-slate-400"></p>
         </div>
-        <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg">✕</button>
+        <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg" aria-label="Close modal">✕</button>
       </div>
 
       <div class="grid grid-cols-2 gap-3 text-xs">
@@ -166,7 +197,7 @@
             name: "Arsenal FC",
             injured: [
               { name: "Martin Ødegaard", pos: "CAM", type: "Ankle Ligament Sprain", cat: "Structural", return: "1-2 weeks", daysLost: 35, durability: "High Durability Baseline", history: ["Ankle Knock"] },
-              { name: "Bukayo Saka", pos: "RW", type: "Hamstring Tightness", cat: "Soft-Tissue", return: "Day-to-day", daysLost: 10, durability: "High Workload Fatigue", history: ["Muscular Fatigue"] }
+              { name: Bukayo_Saka = "Bukayo Saka", pos: "RW", type: "Hamstring Tightness", cat: "Soft-Tissue", return: "Day-to-day", daysLost: 10, durability: "High Workload Fatigue", history: ["Muscular Fatigue"] }
             ]
           }
         ]
