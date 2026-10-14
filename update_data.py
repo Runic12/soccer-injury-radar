@@ -2,13 +2,11 @@ import os
 import json
 import time
 import requests
-from datetime import datetime
 
 # Pulls your direct API-Sports key from your updated RAPIDAPI_KEY secret
 API_KEY = os.environ.get("RAPIDAPI_KEY", "").strip()
-URL = "https://v3.football.api-sports.io/injuries"
 
-headers = {
+HEADERS = {
     'x-apisports-key': API_KEY,
     'Accept': 'application/json'
 }
@@ -23,119 +21,125 @@ LEAGUES = {
 }
 
 output_database = {}
-current_date = datetime.now()
 
 for key, meta in LEAGUES.items():
-    print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
+    print(f"\n[{meta['name']}] Fetching list of all active clubs...")
     
     try:
-        response = requests.get(
-            URL, 
-            headers=headers, 
-            params={"league": meta["id"], "season": meta["season"]}, 
-            timeout=15
-        )
+        # 1. Fetch all teams in this specific league
+        teams_url = "https://v3.football.api-sports.io/teams"
+        teams_resp = requests.get(teams_url, headers=HEADERS, params={"league": meta["id"], "season": meta["season"]}, timeout=15)
+        teams_data = teams_resp.json().get("response", [])
         
-        if response.status_code != 200:
-            print(f"API Error for {meta['name']}: Status {response.status_code}")
-            continue
-            
-        data = response.json()
-        results = data.get("response", [])
+        final_team_list = []
+        league_active_injuries = 0
         
-        player_latest_records = {}
-        
-        # 1. Track the absolute latest missed match for every player
-        for entry in results:
-            p_info = entry.get("player") or {}
-            p_name = p_info.get("name")
+        # 2. Loop through every single team
+        for t_data in teams_data:
+            team_info = t_data.get("team", {})
+            t_id_num = team_info.get("id")
+            t_name = team_info.get("name", "Unknown Club")
+            t_id_str = t_name.lower().replace(" ", "_")
             
-            t_info = entry.get("team") or {}
-            t_name = t_info.get("name") or "Unknown Club"
-            t_id = t_name.lower().replace(" ", "_")
-            
-            f_info = entry.get("fixture") or {}
-            f_date = str(f_info.get("date", ""))[:10]
-            
-            if not p_name or not f_date or not t_id:
+            if not t_id_num:
                 continue
                 
-            if p_name not in player_latest_records or f_date > player_latest_records[p_name]["date"]:
-                player_latest_records[p_name] = {
-                    "date": f_date,
-                    "entry": entry,
-                    "t_name": t_name,
-                    "t_id": t_id
-                }
-
-        teams_map = {}
-        active_injuries = 0
-        
-        # 2. The 21-Day Magic Window
-        for p_name, record in player_latest_records.items():
-            t_id = record["t_id"]
-            p_date_str = record["date"]
+            print(f"  -> Scanning multi-competition injury reports for {t_name}...")
             
-            p_dt = datetime.strptime(p_date_str, "%Y-%m-%d")
-            days_since_missed = (current_date - p_dt).days
+            inj_url = "https://v3.football.api-sports.io/injuries"
+            # NOTE: We omit 'league' to catch all competitions (Champions League, Cups, etc)
+            inj_resp = requests.get(inj_url, headers=HEADERS, params={"team": t_id_num, "season": meta["season"]}, timeout=15)
+            inj_records = inj_resp.json().get("response", [])
             
-            # TRUE IF: Player missed a game within the last 3 weeks, OR is tagged for a future game
-            if days_since_missed <= 21:
-                entry = record["entry"]
+            player_latest_records = {}
+            all_team_dates = set()
+            
+            # Track the absolute latest missed match for each player AND all dates the team had an injury report
+            for entry in inj_records:
+                p_name = (entry.get("player") or {}).get("name")
+                f_date = str((entry.get("fixture") or {}).get("date", ""))[:10]
                 
-                p_photo = (entry.get("player") or {}).get("photo")
-                p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
-                injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
-                injury_reason = (entry.get("player") or {}).get("reason") or "Medical Absence"
-                
-                full_desc = f"{injury_type}: {injury_reason}"
-                lower_r = full_desc.lower()
-                
-                # Filter out players who left the club on transfer/loan
-                if "transfer" in lower_r or "loan" in lower_r:
+                if not p_name or not f_date:
                     continue
+                    
+                all_team_dates.add(f_date)
                 
-                # Dynamic clinical categorization and recovery window estimator
-                if any(w in lower_r for w in ["acl", "cruciate"]):
-                    cat = "Structural"
-                    expected_return = "6-9 Months"
-                elif any(w in lower_r for w in ["ligament", "meniscus", "fracture", "surgery", "ankle", "knee"]):
-                    cat = "Structural"
-                    expected_return = "2-4 Months"
-                elif any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
-                    cat = "Soft-Tissue"
-                    expected_return = "3-4 Weeks"
-                elif any(w in lower_r for w in ["knock", "impact", "dead leg", "contusion"]):
-                    cat = "Trauma/Impact"
-                    expected_return = "Day-to-Day"
-                else:
-                    cat = "Trauma/Impact"
-                    expected_return = "Pending Assessment"
-
-                if t_id not in teams_map:
-                    teams_map[t_id] = {
-                        "id": t_id,
-                        "name": record["t_name"],
-                        "injured": []
+                if p_name not in player_latest_records or f_date > player_latest_records[p_name]["date"]:
+                    player_latest_records[p_name] = {
+                        "date": f_date,
+                        "entry": entry
                     }
-
-                teams_map[t_id]["injured"].append({
-                    "name": p_name,
-                    "photo": p_photo,
-                    "pos": p_pos,
-                    "type": full_desc.title(),
-                    "cat": cat,
-                    "status": "Sidelined",
-                    "return": expected_return,
-                    "daysLost": "N/A",
-                    "durability": "Active Casualty",
-                    "history": [injury_type]
+            
+            # Sort all dates to find the most recent ones
+            sorted_dates = sorted(list(all_team_dates), reverse=True)
+            # We take the top 2 most recent dates. This covers the "next" match and the "just played" match.
+            valid_active_dates = sorted_dates[:2]
+            
+            team_injured_list = []
+            
+            for p_name, record in player_latest_records.items():
+                
+                # TRUE IF: The player was on the injury report for the team's most recent or upcoming match
+                if record["date"] in valid_active_dates:
+                    entry = record["entry"]
+                    
+                    p_photo = (entry.get("player") or {}).get("photo")
+                    p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
+                    injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
+                    injury_reason = (entry.get("player") or {}).get("reason") or "Medical Absence"
+                    
+                    full_desc = f"{injury_type}: {injury_reason}"
+                    lower_r = full_desc.lower()
+                    
+                    # Ignore players who transferred or are out on loan
+                    if "transfer" in lower_r or "loan" in lower_r:
+                        continue
+                    
+                    # Categorize the injury
+                    if any(w in lower_r for w in ["acl", "cruciate"]):
+                        cat = "Structural"
+                        expected_return = "6-9 Months"
+                    elif any(w in lower_r for w in ["ligament", "meniscus", "fracture", "surgery", "ankle", "knee"]):
+                        cat = "Structural"
+                        expected_return = "2-4 Months"
+                    elif any(w in lower_r for w in ["hamstring", "muscle", "groin", "adductor", "thigh", "calf", "strain"]):
+                        cat = "Soft-Tissue"
+                        expected_return = "3-4 Weeks"
+                    elif any(w in lower_r for w in ["knock", "impact", "dead leg", "contusion"]):
+                        cat = "Trauma/Impact"
+                        expected_return = "Day-to-Day"
+                    else:
+                        cat = "Trauma/Impact"
+                        expected_return = "Pending Assessment"
+                        
+                    team_injured_list.append({
+                        "name": p_name,
+                        "photo": p_photo,
+                        "pos": p_pos,
+                        "type": full_desc.title(),
+                        "cat": cat,
+                        "status": "Sidelined",
+                        "return": expected_return,
+                        "daysLost": "N/A",
+                        "durability": "Active Casualty",
+                        "history": [injury_type]
+                    })
+                    league_active_injuries += 1
+            
+            # If the team has injured players, add them to the master list
+            if team_injured_list:
+                final_team_list.append({
+                    "id": t_id_str,
+                    "name": t_name,
+                    "injured": sorted(team_injured_list, key=lambda x: x["name"])
                 })
-                active_injuries += 1
-
-        final_team_list = list(teams_map.values())
-        print(f"Success! Filtered down to {active_injuries} currently active injuries for {meta['name']}.")
+                
+            # Sleep briefly to ensure we don't trip any API rate limits
+            time.sleep(0.2)
+            
+        print(f"Success! {meta['name']} processed. {league_active_injuries} active injuries found.")
         
+        # Fallback if an entire league is somehow 100% healthy
         if not final_team_list:
             final_team_list = [{
                 "id": "squad_clear",
@@ -162,9 +166,8 @@ for key, meta in LEAGUES.items():
     except Exception as e:
         print(f"Error connecting to Pro API for {meta['name']}: {e}")
 
-    time.sleep(1)
-
+# Save the final compiled JSON
 with open("data.json", "w") as f:
     json.dump(output_database, f, indent=2)
 
-print("\nWrite complete: Live Pro multi-league dataset saved to data.json.")
+print("\nWrite complete: Premium multi-competition dataset saved to data.json.")
