@@ -5350,20 +5350,6 @@
             ]
           },
           {
-            "name": "L. Jaquez",
-            "photo": "https://media.api-sports.io/football/players/349344.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "L. Stergiou",
             "photo": "https://media.api-sports.io/football/players/48481.png",
             "pos": "First Team Squad",
@@ -5381,28 +5367,28 @@
             "name": "M. Mittelstadt",
             "photo": "https://media.api-sports.io/football/players/25342.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Heel Injury",
+            "type": "Missing Fixture: Heel Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "N. Nartey",
             "photo": "https://media.api-sports.io/football/players/24806.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
