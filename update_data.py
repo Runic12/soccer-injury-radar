@@ -87,6 +87,8 @@ for key, meta in LEAGUES.items():
             if (t_dt - p_dt).days <= 14:
                 entry = record["entry"]
                 
+                # ---> NEW: Grab the photo URL directly from the API <---
+                p_photo = (entry.get("player") or {}).get("photo")
                 p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
                 injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
                 injury_reason = (entry.get("player") or {}).get("reason") or "Medical Absence"
@@ -120,6 +122,7 @@ for key, meta in LEAGUES.items():
 
                 teams_map[t_id]["injured"].append({
                     "name": p_name,
+                    "photo": p_photo,  # ---> NEW: Adds it to data.json <---
                     "pos": p_pos,
                     "type": full_desc.title(),
                     "cat": cat,
@@ -140,6 +143,7 @@ for key, meta in LEAGUES.items():
                 "name": f"{meta['name']} Squad",
                 "injured": [{
                     "name": "Full Squad Available",
+                    "photo": "",
                     "pos": "First Team",
                     "type": "No Active Injuries",
                     "cat": "Soft-Tissue",
