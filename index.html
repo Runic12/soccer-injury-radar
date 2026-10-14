@@ -145,8 +145,7 @@
 
     </div>
 
-  </div>
-<!-- Global Footer -->
+    <!-- Global Footer -->
     <footer class="border-t border-slate-800/80 pt-6 pb-4 flex flex-wrap justify-between items-center text-xs text-slate-500 gap-4">
       <div>
         <span>&copy; 2026 Injured Soccer Players Radar. All rights reserved.</span>
@@ -157,13 +156,19 @@
         <a href="https://github.com/Runic12/soccer-injury-tracker" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">GitHub</a>
       </div>
     </footer>
+
+  </div>
+
   <!-- Player Dossier Modal -->
   <div id="playerModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4 z-50">
     <div class="bg-slate-900 border border-slate-700 max-w-lg w-full p-6 rounded-xl space-y-5 shadow-2xl">
       <div class="flex justify-between items-start border-b border-slate-800 pb-3">
-        <div>
-          <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player Dossier</h3>
-          <p id="modalPlayerPos" class="text-xs text-slate-400"></p>
+        <div class="flex items-center space-x-3.5">
+          <div id="modalPlayerAvatarContainer"></div>
+          <div>
+            <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player Dossier</h3>
+            <p id="modalPlayerPos" class="text-xs text-slate-400"></p>
+          </div>
         </div>
         <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg" aria-label="Close modal">✕</button>
       </div>
@@ -207,7 +212,7 @@
             name: "Arsenal FC",
             injured: [
               { name: "Martin Ødegaard", pos: "CAM", type: "Ankle Ligament Sprain", cat: "Structural", return: "1-2 weeks", daysLost: 35, durability: "High Durability Baseline", history: ["Ankle Knock"] },
-              { name: Bukayo_Saka = "Bukayo Saka", pos: "RW", type: "Hamstring Tightness", cat: "Soft-Tissue", return: "Day-to-day", daysLost: 10, durability: "High Workload Fatigue", history: ["Muscular Fatigue"] }
+              { name: "Bukayo Saka", pos: "RW", type: "Hamstring Tightness", cat: "Soft-Tissue", return: "Day-to-day", daysLost: 10, durability: "High Workload Fatigue", history: ["Muscular Fatigue"] }
             ]
           }
         ]
@@ -237,7 +242,31 @@
     const correlationMetrics = document.getElementById('correlationMetrics');
     const modal = document.getElementById('playerModal');
 
-    // Attempt to load live data.json produced by your GitHub Action script
+    // Helper to generate circular player avatars (uses photo URL or initials avatar badge)
+    function getPlayerAvatarMarkup(name, photoUrl, size = 'w-9 h-9', textSize = 'text-xs') {
+      const initials = name
+        ? name.split(' ').map(n => n[0]).filter(Boolean).slice(0, 2).join('').toUpperCase()
+        : '⚽';
+
+      if (photoUrl) {
+        return `
+          <img 
+            src="${photoUrl}" 
+            alt="${name}" 
+            class="${size} rounded-full object-cover bg-slate-800 border border-slate-700 shrink-0 shadow-inner"
+            onerror="this.outerHTML='<div class=\\'${size} rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner ${textSize}\\'>${initials}</div>';"
+          />
+        `;
+      }
+
+      return `
+        <div class="${size} rounded-full bg-slate-800/90 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner${textSize} select-none">
+          ${initials}
+        </div>
+      `;
+    }
+
+    // Attempt to load live data.json produced by your scraper/pipeline
     fetch('data.json')
       .then(res => {
         if (!res.ok) throw new Error("Local/fallback data will be used");
@@ -250,7 +279,6 @@
         }
       })
       .catch(() => {
-        // Fall back gracefully to built-in sample data
         populateTeams();
       });
 
@@ -293,121 +321,8 @@
         const tr = document.createElement('tr');
         tr.className = "hover:bg-slate-800/40 cursor-pointer transition";
         tr.innerHTML = `
-          <td class="py-3 font-bold text-white">${player.name}</td>
-          <td class="py-3 text-slate-400">${player.pos}</td>
-          <td class="py-3"><span class="px-2 py-0.5 rounded text-[10px] ${
-            player.cat === 'Soft-Tissue' ? 'bg-amber-950 text-amber-300 border border-amber-800' :
-            player.cat === 'Structural' ? 'bg-rose-950 text-rose-300 border border-rose-800' :
-            'bg-blue-950 text-blue-300 border border-blue-800'
-          }">${player.type}</span></td>
-          <td class="py-3 text-slate-300">${player.return}</td>
-          <td class="py-3 text-right"><button class="text-cyan-400 hover:underline">View Dossier</button></td>
-        `;
-        tr.addEventListener('click', () => openModal(player));
-        playerTableBody.appendChild(tr);
-      });
-
-      renderCorrelation(team, categoryCounts);
-      renderChart(categoryCounts);
-    }
-
-    function renderCorrelation(team, counts) {
-      const total = team.injured.length;
-      if (total === 0) {
-        correlationSummary.innerHTML = `<span class="text-emerald-400 font-bold">Optimal Durability:</span> Zero recorded squad casualties.`;
-        correlationMetrics.innerHTML = '';
-        return;
-      }
-
-      const softPct = Math.round(((counts["Soft-Tissue"] || 0) / total) * 100);
-      const structPct = Math.round(((counts["Structural"] || 0) / total) * 100);
-
-      let diagnosis = "";
-      if (softPct >= 50) {
-        diagnosis = `<strong class="text-amber-400">High Muscular Overload Correlation (${softPct}%):</strong> Failures are clustered around soft-tissue groups (hamstring/adductor/calf). Strong correlation with schedule congestion and sprint fatigue rather than collision accidents.`;
-      } else if (structPct >= 50) {
-        diagnosis = `<strong class="text-rose-400">Structural Joint Vulnerability (${structPct}%):</strong> Failures involve critical connective ligaments and cartilage. Indicates severe mechanical trauma or chronic joint fatigue.`;
-      } else {
-        diagnosis = `<strong class="text-cyan-400">Balanced Casualty Distribution:</strong> Failures are evenly distributed across contact trauma and workload strain.`;
-      }
-
-      correlationSummary.innerHTML = diagnosis;
-
-      correlationMetrics.innerHTML = `
-        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
-          <div class="text-[10px] text-slate-500 uppercase">Soft-Tissue Ratio</div>
-          <div class="text-sm font-bold text-amber-400 mt-0.5">${softPct}%</div>
-        </div>
-        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
-          <div class="text-[10px] text-slate-500 uppercase">Structural Trauma</div>
-          <div class="text-sm font-bold text-rose-400 mt-0.5">${structPct}%</div>
-        </div>
-        <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
-          <div class="text-[10px] text-slate-500 uppercase">Total Outages</div>
-          <div class="text-sm font-bold text-white mt-0.5">${total} Units</div>
-        </div>
-      `;
-    }
-
-    function renderChart(counts) {
-      const ctx = document.getElementById('mechanismChart').getContext('2d');
-      if (chartInstance) chartInstance.destroy();
-
-      chartInstance = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ['Soft-Tissue (Fatigue)', 'Structural (Joints)', 'Trauma (Contact)'],
-          datasets: [{
-            data: [counts['Soft-Tissue'] || 0, counts['Structural'] || 0, counts['Trauma/Impact'] || 0],
-            backgroundColor: ['#f59e0b', '#f43f5e', '#38bdf8'],
-            borderColor: '#020617',
-            borderWidth: 2
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: { color: '#94a3b8', font: { family: 'monospace', size: 10 } }
-            }
-          }
-        }
-      });
-    }
-
-    function openModal(player) {
-      document.getElementById('modalPlayerName').textContent = player.name;
-      document.getElementById('modalPlayerPos').textContent = `${player.pos} // Mechanism: ${player.type}`;
-      document.getElementById('modalDaysLost').textContent = `${player.daysLost} Days`;
-      document.getElementById('modalDurability').textContent = player.durability;
-
-      const list = document.getElementById('modalHistoryList');
-      list.innerHTML = '';
-      (player.history || []).forEach(item => {
-        const li = document.createElement('li');
-        li.className = "p-2 bg-slate-950 rounded border border-slate-800 flex justify-between";
-        li.innerHTML = `<span>${item}</span><span class="text-rose-400 font-bold">RECORDED</span>`;
-        list.appendChild(li);
-      });
-
-      modal.classList.remove('hidden');
-    }
-
-    document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.add('hidden'));
-    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
-
-    leagueSelect.addEventListener('change', populateTeams);
-    teamSelect.addEventListener('change', () => {
-      const league = database[leagueSelect.value];
-      if (league && league.teams) {
-        const team = league.teams.find(t => t.id === teamSelect.value);
-        renderTeam(team);
-      }
-    });
-
-    populateTeams();
-  </script>
-</body>
-</html>
+          <td class="py-2.5 font-bold text-white flex items-center space-x-3">
+            ${getPlayerAvatarMarkup(player.name, player.photo, 'w-8 h-8', 'text-[11px]')} <span>${player.name}</span>
+          </td>
+          <td class="py-2.5 text-slate-400">${player.pos}</td>
+          <td class="py-2.5"><span class="px
