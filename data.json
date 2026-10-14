@@ -35,34 +35,6 @@
             ]
           },
           {
-            "name": "Gabriel Jesus",
-            "photo": "https://media.api-sports.io/football/players/643.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "G. Martinelli",
-            "photo": "https://media.api-sports.io/football/players/127769.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "C. Mosquera",
             "photo": "https://media.api-sports.io/football/players/333682.png",
             "pos": "First Team Squad",
@@ -778,34 +750,6 @@
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "Y. Gboho",
-            "photo": "https://media.api-sports.io/football/players/84128.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Transfer Negotiations",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "S. Mfuni",
-            "photo": "https://media.api-sports.io/football/players/382358.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Loan Agreement",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3150,20 +3094,6 @@
             "photo": "https://media.api-sports.io/football/players/185202.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. Salinas",
-            "photo": "https://media.api-sports.io/football/players/184407.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Loan Agreement",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
