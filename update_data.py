@@ -23,6 +23,7 @@ LEAGUES = {
 }
 
 output_database = {}
+current_date = datetime.now()
 
 for key, meta in LEAGUES.items():
     print(f"\nFetching live injuries for {meta['name']} (Season {meta['season']})...")
@@ -43,9 +44,8 @@ for key, meta in LEAGUES.items():
         results = data.get("response", [])
         
         player_latest_records = {}
-        team_latest_date = {}
         
-        # 1. Track the most recent fixture date per club and latest missed match per player
+        # 1. Track the latest missed match per player
         for entry in results:
             p_info = entry.get("player") or {}
             p_name = p_info.get("name")
@@ -60,9 +60,6 @@ for key, meta in LEAGUES.items():
             if not p_name or not f_date or not t_id:
                 continue
                 
-            if t_id not in team_latest_date or f_date > team_latest_date[t_id]:
-                team_latest_date[t_id] = f_date
-                
             if p_name not in player_latest_records or f_date > player_latest_records[p_name]["date"]:
                 player_latest_records[p_name] = {
                     "date": f_date,
@@ -74,20 +71,20 @@ for key, meta in LEAGUES.items():
         teams_map = {}
         active_injuries = 0
         
-        # 2. Filter active injuries dynamically and estimate return windows
+        # 2. Filter active injuries against TODAY'S date, widening the net to 45 days
         for p_name, record in player_latest_records.items():
             t_id = record["t_id"]
             p_date_str = record["date"]
-            t_latest_str = team_latest_date[t_id]
             
             p_dt = datetime.strptime(p_date_str, "%Y-%m-%d")
-            t_dt = datetime.strptime(t_latest_str, "%Y-%m-%d")
             
-            # Sidelined if player's latest missed game is within 14 days of team's most recent fixture
-            if (t_dt - p_dt).days <= 14:
+            # Check how many days ago this fixture was from TODAY
+            # (Negative numbers mean the API tagged them for a future fixture)
+            days_since_missed = (current_date - p_dt).days
+            
+            if days_since_missed <= 45:
                 entry = record["entry"]
                 
-                # ---> NEW: Grab the photo URL directly from the API <---
                 p_photo = (entry.get("player") or {}).get("photo")
                 p_pos = (entry.get("player") or {}).get("position") or "First Team Squad"
                 injury_type = (entry.get("player") or {}).get("type") or "Undisclosed"
@@ -122,7 +119,7 @@ for key, meta in LEAGUES.items():
 
                 teams_map[t_id]["injured"].append({
                     "name": p_name,
-                    "photo": p_photo,  # ---> NEW: Adds it to data.json <---
+                    "photo": p_photo,
                     "pos": p_pos,
                     "type": full_desc.title(),
                     "cat": cat,
