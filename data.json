@@ -8,6 +8,7 @@
         "injured": [
           {
             "name": "W. Saliba",
+            "photo": "https://media.api-sports.io/football/players/22090.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -21,6 +22,7 @@
           },
           {
             "name": "C. Tzolis",
+            "photo": "https://media.api-sports.io/football/players/161800.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -40,6 +42,7 @@
         "injured": [
           {
             "name": "A. Onana",
+            "photo": "https://media.api-sports.io/football/players/162714.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -53,6 +56,7 @@
           },
           {
             "name": "L. Goretzka",
+            "photo": "https://media.api-sports.io/football/players/511.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -66,6 +70,7 @@
           },
           {
             "name": "M. Cisse",
+            "photo": "https://media.api-sports.io/football/players/478441.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -79,6 +84,7 @@
           },
           {
             "name": "I. Maatsen",
+            "photo": "https://media.api-sports.io/football/players/138816.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -98,6 +104,7 @@
         "injured": [
           {
             "name": "A. Adli",
+            "photo": "https://media.api-sports.io/football/players/129682.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -111,6 +118,7 @@
           },
           {
             "name": "J. Araujo",
+            "photo": "https://media.api-sports.io/football/players/51051.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -124,6 +132,7 @@
           },
           {
             "name": "E. J. Kroupi",
+            "photo": "https://media.api-sports.io/football/players/368030.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -137,6 +146,7 @@
           },
           {
             "name": "V. Milosavljevic",
+            "photo": "https://media.api-sports.io/football/players/412719.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -150,6 +160,7 @@
           },
           {
             "name": "J. Kluivert",
+            "photo": "https://media.api-sports.io/football/players/792.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -163,6 +174,7 @@
           },
           {
             "name": "A. Scott",
+            "photo": "https://media.api-sports.io/football/players/304853.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -182,6 +194,7 @@
         "injured": [
           {
             "name": "A. Milambo",
+            "photo": "https://media.api-sports.io/football/players/319517.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knock",
             "cat": "Trauma/Impact",
@@ -195,6 +208,7 @@
           },
           {
             "name": "J. Dasilva",
+            "photo": "https://media.api-sports.io/football/players/19362.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -208,6 +222,7 @@
           },
           {
             "name": "N. Collins",
+            "photo": "https://media.api-sports.io/football/players/19495.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -221,6 +236,7 @@
           },
           {
             "name": "K. Furo",
+            "photo": "https://media.api-sports.io/football/players/393193.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Surgery",
             "cat": "Structural",
@@ -234,6 +250,7 @@
           },
           {
             "name": "M. Damsgaard",
+            "photo": "https://media.api-sports.io/football/players/15908.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -253,6 +270,7 @@
         "injured": [
           {
             "name": "E. Ferguson",
+            "photo": "https://media.api-sports.io/football/players/129643.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -266,6 +284,7 @@
           },
           {
             "name": "Y. Minteh",
+            "photo": "https://media.api-sports.io/football/players/383685.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -279,6 +298,7 @@
           },
           {
             "name": "K. Mitoma",
+            "photo": "https://media.api-sports.io/football/players/106835.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -292,6 +312,7 @@
           },
           {
             "name": "S. Tzimas",
+            "photo": "https://media.api-sports.io/football/players/343311.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -305,6 +326,7 @@
           },
           {
             "name": "J. Hinshelwood",
+            "photo": "https://media.api-sports.io/football/players/305730.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -318,6 +340,7 @@
           },
           {
             "name": "F. Azeez",
+            "photo": "https://media.api-sports.io/football/players/282637.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Abdominal Strain",
             "cat": "Soft-Tissue",
@@ -331,6 +354,7 @@
           },
           {
             "name": "M. Wieffer",
+            "photo": "https://media.api-sports.io/football/players/92993.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -344,6 +368,7 @@
           },
           {
             "name": "Z. Yohanna",
+            "photo": "https://media.api-sports.io/football/players/524411.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lacking Match Fitness",
             "cat": "Trauma/Impact",
@@ -363,6 +388,7 @@
         "injured": [
           {
             "name": "E. Emegha",
+            "photo": "https://media.api-sports.io/football/players/203762.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -376,6 +402,7 @@
           },
           {
             "name": "J. Gittens",
+            "photo": "https://media.api-sports.io/football/players/286894.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -395,6 +422,7 @@
         "injured": [
           {
             "name": "L. Woolfenden",
+            "photo": "https://media.api-sports.io/football/players/17714.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -408,6 +436,7 @@
           },
           {
             "name": "H. Wright",
+            "photo": "https://media.api-sports.io/football/players/427.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -421,6 +450,7 @@
           },
           {
             "name": "K. Kesler-Hayden",
+            "photo": "https://media.api-sports.io/football/players/298128.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -434,6 +464,7 @@
           },
           {
             "name": "J. Eccles",
+            "photo": "https://media.api-sports.io/football/players/19984.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -447,6 +478,7 @@
           },
           {
             "name": "A. Amenda",
+            "photo": "https://media.api-sports.io/football/players/162414.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -460,6 +492,7 @@
           },
           {
             "name": "T. Awoniyi",
+            "photo": "https://media.api-sports.io/football/players/8598.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -479,6 +512,7 @@
         "injured": [
           {
             "name": "J. Mateta",
+            "photo": "https://media.api-sports.io/football/players/25927.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -492,6 +526,7 @@
           },
           {
             "name": "C. Riad",
+            "photo": "https://media.api-sports.io/football/players/278898.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -505,6 +540,7 @@
           },
           {
             "name": "A. Disasi",
+            "photo": "https://media.api-sports.io/football/players/21998.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -518,6 +554,7 @@
           },
           {
             "name": "D. Henderson",
+            "photo": "https://media.api-sports.io/football/players/19088.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -531,6 +568,7 @@
           },
           {
             "name": "T. Tomiyasu",
+            "photo": "https://media.api-sports.io/football/players/2597.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -550,6 +588,7 @@
         "injured": [
           {
             "name": "V. Mykolenko",
+            "photo": "https://media.api-sports.io/football/players/2165.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -569,6 +608,7 @@
         "injured": [
           {
             "name": "T. Cairney",
+            "photo": "https://media.api-sports.io/football/players/19025.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -582,6 +622,7 @@
           },
           {
             "name": "A. Robinson",
+            "photo": "https://media.api-sports.io/football/players/19549.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -601,6 +642,7 @@
         "injured": [
           {
             "name": "J. Butland",
+            "photo": "https://media.api-sports.io/football/players/2930.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Arm Injury",
             "cat": "Trauma/Impact",
@@ -614,6 +656,7 @@
           },
           {
             "name": "D. Gyabi",
+            "photo": "https://media.api-sports.io/football/players/282124.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -627,6 +670,7 @@
           },
           {
             "name": "C. Hughes",
+            "photo": "https://media.api-sports.io/football/players/331551.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -640,6 +684,7 @@
           },
           {
             "name": "E. Matazo",
+            "photo": "https://media.api-sports.io/football/players/162991.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -653,6 +698,7 @@
           },
           {
             "name": "I. Ansah",
+            "photo": "https://media.api-sports.io/football/players/380873.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -666,6 +712,7 @@
           },
           {
             "name": "M. Targett",
+            "photo": "https://media.api-sports.io/football/players/18941.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -685,6 +732,7 @@
         "injured": [
           {
             "name": "I. Fatawu",
+            "photo": "https://media.api-sports.io/football/players/303467.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -704,6 +752,7 @@
         "injured": [
           {
             "name": "M. Joseph",
+            "photo": "https://media.api-sports.io/football/players/313059.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -717,6 +766,7 @@
           },
           {
             "name": "J. Rodon",
+            "photo": "https://media.api-sports.io/football/players/19321.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -730,6 +780,7 @@
           },
           {
             "name": "D. James",
+            "photo": "https://media.api-sports.io/football/players/19329.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -749,6 +800,7 @@
         "injured": [
           {
             "name": "C. Bradley",
+            "photo": "https://media.api-sports.io/football/players/180317.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -762,6 +814,7 @@
           },
           {
             "name": "H. Ekitike",
+            "photo": "https://media.api-sports.io/football/players/174565.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Achilles Tendon Injury",
             "cat": "Trauma/Impact",
@@ -775,6 +828,7 @@
           },
           {
             "name": "G. Leoni",
+            "photo": "https://media.api-sports.io/football/players/409047.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -788,6 +842,7 @@
           },
           {
             "name": "C. Gakpo",
+            "photo": "https://media.api-sports.io/football/players/247.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -801,6 +856,7 @@
           },
           {
             "name": "A. Isak",
+            "photo": "https://media.api-sports.io/football/players/2864.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -814,6 +870,7 @@
           },
           {
             "name": "D. Szoboszlai",
+            "photo": "https://media.api-sports.io/football/players/1096.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -833,6 +890,7 @@
         "injured": [
           {
             "name": "P. Foden",
+            "photo": "https://media.api-sports.io/football/players/631.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -852,6 +910,7 @@
         "injured": [
           {
             "name": "T. Heaton",
+            "photo": "https://media.api-sports.io/football/players/2931.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Abdominal Strain",
             "cat": "Soft-Tissue",
@@ -865,6 +924,7 @@
           },
           {
             "name": "M. Ugarte",
+            "photo": "https://media.api-sports.io/football/players/51494.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -878,6 +938,7 @@
           },
           {
             "name": "M. de Ligt",
+            "photo": "https://media.api-sports.io/football/players/532.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -891,6 +952,7 @@
           },
           {
             "name": "P. Dorgu",
+            "photo": "https://media.api-sports.io/football/players/382452.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -904,6 +966,7 @@
           },
           {
             "name": "N. Mazraoui",
+            "photo": "https://media.api-sports.io/football/players/545.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -917,6 +980,7 @@
           },
           {
             "name": "B. Sesko",
+            "photo": "https://media.api-sports.io/football/players/115589.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -936,6 +1000,7 @@
         "injured": [
           {
             "name": "V. Livramento",
+            "photo": "https://media.api-sports.io/football/players/158694.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -949,6 +1014,7 @@
           },
           {
             "name": "A. Elanga",
+            "photo": "https://media.api-sports.io/football/players/153430.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -962,6 +1028,7 @@
           },
           {
             "name": "E. Jaouen",
+            "photo": "https://media.api-sports.io/football/players/329640.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -975,6 +1042,7 @@
           },
           {
             "name": "J. Ramsey",
+            "photo": "https://media.api-sports.io/football/players/19192.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -994,6 +1062,7 @@
         "injured": [
           {
             "name": "N. Savona",
+            "photo": "https://media.api-sports.io/football/players/181806.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1007,6 +1076,7 @@
           },
           {
             "name": "Igor Jesus",
+            "photo": "https://media.api-sports.io/football/players/9366.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -1020,6 +1090,7 @@
           },
           {
             "name": "N. Milenkovic",
+            "photo": "https://media.api-sports.io/football/players/2817.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1039,6 +1110,7 @@
         "injured": [
           {
             "name": "H. Diarra",
+            "photo": "https://media.api-sports.io/football/players/327631.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -1052,6 +1124,7 @@
           },
           {
             "name": "R. Mundle",
+            "photo": "https://media.api-sports.io/football/players/284414.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1065,6 +1138,7 @@
           },
           {
             "name": "D. Ballard",
+            "photo": "https://media.api-sports.io/football/players/55904.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1078,6 +1152,7 @@
           },
           {
             "name": "B. Brobbey",
+            "photo": "https://media.api-sports.io/football/players/38750.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1097,6 +1172,7 @@
         "injured": [
           {
             "name": "D. Kulusevski",
+            "photo": "https://media.api-sports.io/football/players/30435.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1110,6 +1186,7 @@
           },
           {
             "name": "W. Odobert",
+            "photo": "https://media.api-sports.io/football/players/336564.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1123,6 +1200,7 @@
           },
           {
             "name": "P. Porro",
+            "photo": "https://media.api-sports.io/football/players/47519.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1136,6 +1214,7 @@
           },
           {
             "name": "X. Simons",
+            "photo": "https://media.api-sports.io/football/players/162016.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1149,6 +1228,7 @@
           },
           {
             "name": "M. Mudryk",
+            "photo": "https://media.api-sports.io/football/players/63577.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -1173,6 +1253,7 @@
         "injured": [
           {
             "name": "F. Garces",
+            "photo": "https://media.api-sports.io/football/players/6638.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Suspended",
             "cat": "Trauma/Impact",
@@ -1186,6 +1267,7 @@
           },
           {
             "name": "M. Rodriguez",
+            "photo": "https://media.api-sports.io/football/players/332645.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -1205,6 +1287,7 @@
         "injured": [
           {
             "name": "U. Egiluz",
+            "photo": "https://media.api-sports.io/football/players/332305.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1218,6 +1301,7 @@
           },
           {
             "name": "A. Djalo",
+            "photo": "https://media.api-sports.io/football/players/190489.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -1231,6 +1315,7 @@
           },
           {
             "name": "O. Sancet",
+            "photo": "https://media.api-sports.io/football/players/128398.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1244,6 +1329,7 @@
           },
           {
             "name": "N. Williams",
+            "photo": "https://media.api-sports.io/football/players/183799.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -1263,6 +1349,7 @@
         "injured": [
           {
             "name": "O. Vargas",
+            "photo": "https://media.api-sports.io/football/players/313383.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -1276,6 +1363,7 @@
           },
           {
             "name": "R. Mendoza",
+            "photo": "https://media.api-sports.io/football/players/341371.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -1295,6 +1383,7 @@
         "injured": [
           {
             "name": "R. Bardghji",
+            "photo": "https://media.api-sports.io/football/players/338958.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1308,6 +1397,7 @@
           },
           {
             "name": "F. de Jong",
+            "photo": "https://media.api-sports.io/football/players/538.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1321,6 +1411,7 @@
           },
           {
             "name": "A. Christensen",
+            "photo": "https://media.api-sports.io/football/players/2282.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1334,6 +1425,7 @@
           },
           {
             "name": "Raphinha",
+            "photo": "https://media.api-sports.io/football/players/1496.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1353,6 +1445,7 @@
         "injured": [
           {
             "name": "A. Antanon",
+            "photo": "https://media.api-sports.io/football/players/481678.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -1366,6 +1459,7 @@
           },
           {
             "name": "J. El Abdellaoui",
+            "photo": "https://media.api-sports.io/football/players/351913.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1379,6 +1473,7 @@
           },
           {
             "name": "M. Roman",
+            "photo": "https://media.api-sports.io/football/players/333502.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1392,6 +1487,7 @@
           },
           {
             "name": "C. Starfelt",
+            "photo": "https://media.api-sports.io/football/players/47988.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -1411,6 +1507,7 @@
         "injured": [
           {
             "name": "M. Casado",
+            "photo": "https://media.api-sports.io/football/players/329728.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Collarbone Injury",
             "cat": "Trauma/Impact",
@@ -1424,6 +1521,7 @@
           },
           {
             "name": "P. Aubameyang",
+            "photo": "https://media.api-sports.io/football/players/1465.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1437,8 +1535,23 @@
           },
           {
             "name": "Z. Eddahchouri",
+            "photo": "https://media.api-sports.io/football/players/37616.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Wrist Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "L. Amatucci",
+            "photo": "https://media.api-sports.io/football/players/346865.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -1456,6 +1569,7 @@
         "injured": [
           {
             "name": "Y. Santiago",
+            "photo": "https://media.api-sports.io/football/players/284415.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1469,6 +1583,7 @@
           },
           {
             "name": "F. Redondo Solari",
+            "photo": "https://media.api-sports.io/football/players/311345.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -1488,6 +1603,7 @@
         "injured": [
           {
             "name": "K. Garcia",
+            "photo": "https://media.api-sports.io/football/players/47396.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -1501,6 +1617,7 @@
           },
           {
             "name": "Jofre",
+            "photo": "https://media.api-sports.io/football/players/182674.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -1520,6 +1637,7 @@
         "injured": [
           {
             "name": "Juanmi",
+            "photo": "https://media.api-sports.io/football/players/47320.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1533,6 +1651,7 @@
           },
           {
             "name": "C. Uche",
+            "photo": "https://media.api-sports.io/football/players/403554.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1552,6 +1671,7 @@
         "injured": [
           {
             "name": "A. Primo",
+            "photo": "https://media.api-sports.io/football/players/338295.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -1565,6 +1685,7 @@
           },
           {
             "name": "K. Etta Eyong",
+            "photo": "https://media.api-sports.io/football/players/378284.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1578,6 +1699,7 @@
           },
           {
             "name": "H. Sotelo",
+            "photo": "https://media.api-sports.io/football/players/313651.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1597,6 +1719,7 @@
         "injured": [
           {
             "name": "M. Diarra",
+            "photo": "https://media.api-sports.io/football/players/328192.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -1610,6 +1733,7 @@
           },
           {
             "name": "D. Murillo",
+            "photo": "https://media.api-sports.io/football/players/185234.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1623,6 +1747,7 @@
           },
           {
             "name": "A. Ochoa",
+            "photo": "https://media.api-sports.io/football/players/444451.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1636,6 +1761,7 @@
           },
           {
             "name": "J. Lobete",
+            "photo": "https://media.api-sports.io/football/players/182602.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1649,6 +1775,7 @@
           },
           {
             "name": "J. Cajuste",
+            "photo": "https://media.api-sports.io/football/players/15797.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -1662,6 +1789,7 @@
           },
           {
             "name": "J. Cruz",
+            "photo": "https://media.api-sports.io/football/players/185202.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -1675,6 +1803,7 @@
           },
           {
             "name": "J. Salinas",
+            "photo": "https://media.api-sports.io/football/players/184407.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Loan Agreement",
             "cat": "Trauma/Impact",
@@ -1694,6 +1823,7 @@
         "injured": [
           {
             "name": "J. Herrando",
+            "photo": "https://media.api-sports.io/football/players/182592.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1707,6 +1837,7 @@
           },
           {
             "name": "A. Oroz",
+            "photo": "https://media.api-sports.io/football/players/67939.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -1720,6 +1851,7 @@
           },
           {
             "name": "K. Barja",
+            "photo": "https://media.api-sports.io/football/players/46667.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1733,6 +1865,7 @@
           },
           {
             "name": "A. Bonel",
+            "photo": "https://media.api-sports.io/football/players/484459.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -1746,6 +1879,7 @@
           },
           {
             "name": "R. Del Castillo",
+            "photo": "https://media.api-sports.io/football/players/2214.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1759,6 +1893,7 @@
           },
           {
             "name": "R. Moro",
+            "photo": "https://media.api-sports.io/football/players/264470.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1778,6 +1913,7 @@
         "injured": [
           {
             "name": "S. Eriksson",
+            "photo": "https://media.api-sports.io/football/players/408875.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -1797,6 +1933,7 @@
         "injured": [
           {
             "name": "A. Batalla",
+            "photo": "https://media.api-sports.io/football/players/11379.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Broken Calfbone",
             "cat": "Soft-Tissue",
@@ -1816,6 +1953,7 @@
         "injured": [
           {
             "name": "A. Ruibal",
+            "photo": "https://media.api-sports.io/football/players/47119.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1829,6 +1967,7 @@
           },
           {
             "name": "J. Firpo",
+            "photo": "https://media.api-sports.io/football/players/1564.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -1842,6 +1981,7 @@
           },
           {
             "name": "I. Losada",
+            "photo": "https://media.api-sports.io/football/players/128985.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -1861,6 +2001,7 @@
         "injured": [
           {
             "name": "R. Asencio",
+            "photo": "https://media.api-sports.io/football/players/341640.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Broken Leg",
             "cat": "Trauma/Impact",
@@ -1874,6 +2015,7 @@
           },
           {
             "name": "Eder Militao",
+            "photo": "https://media.api-sports.io/football/players/372.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -1887,6 +2029,7 @@
           },
           {
             "name": "F. Mendy",
+            "photo": "https://media.api-sports.io/football/players/653.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hip Injury",
             "cat": "Trauma/Impact",
@@ -1900,6 +2043,7 @@
           },
           {
             "name": "Rodrygo",
+            "photo": "https://media.api-sports.io/football/players/10009.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1913,6 +2057,7 @@
           },
           {
             "name": "D. Huijsen",
+            "photo": "https://media.api-sports.io/football/players/361497.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -1932,6 +2077,7 @@
         "injured": [
           {
             "name": "A. Odriozola",
+            "photo": "https://media.api-sports.io/football/players/737.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -1945,6 +2091,7 @@
           },
           {
             "name": "J. Aramburu",
+            "photo": "https://media.api-sports.io/football/players/199044.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1958,6 +2105,7 @@
           },
           {
             "name": "O. Oskarsson",
+            "photo": "https://media.api-sports.io/football/players/61774.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -1977,6 +2125,7 @@
         "injured": [
           {
             "name": "Marcao",
+            "photo": "https://media.api-sports.io/football/players/433.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -1990,6 +2139,7 @@
           },
           {
             "name": "N. Guillen",
+            "photo": "https://media.api-sports.io/football/players/546882.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Coach'S Decision",
             "cat": "Trauma/Impact",
@@ -2003,6 +2153,7 @@
           },
           {
             "name": "I. Munoz",
+            "photo": "https://media.api-sports.io/football/players/546857.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -2016,6 +2167,7 @@
           },
           {
             "name": "L. Stassin",
+            "photo": "https://media.api-sports.io/football/players/322560.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2035,6 +2187,7 @@
         "injured": [
           {
             "name": "S. Canos",
+            "photo": "https://media.api-sports.io/football/players/19352.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2048,6 +2201,7 @@
           },
           {
             "name": "J. Copete",
+            "photo": "https://media.api-sports.io/football/players/181582.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2061,6 +2215,7 @@
           },
           {
             "name": "D. Foulquier",
+            "photo": "https://media.api-sports.io/football/players/47251.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -2074,6 +2229,7 @@
           },
           {
             "name": "D. Lopez",
+            "photo": "https://media.api-sports.io/football/players/162127.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2087,6 +2243,7 @@
           },
           {
             "name": "L. Rioja",
+            "photo": "https://media.api-sports.io/football/players/46933.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Heel Injury",
             "cat": "Trauma/Impact",
@@ -2100,6 +2257,7 @@
           },
           {
             "name": "U. Sadiq",
+            "photo": "https://media.api-sports.io/football/players/31406.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2119,6 +2277,7 @@
         "injured": [
           {
             "name": "T. Buchanan",
+            "photo": "https://media.api-sports.io/football/players/51016.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2143,6 +2302,7 @@
         "injured": [
           {
             "name": "A. Saelemaekers",
+            "photo": "https://media.api-sports.io/football/players/1417.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -2162,6 +2322,7 @@
         "injured": [
           {
             "name": "M. Bah",
+            "photo": "https://media.api-sports.io/football/players/626686.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2181,6 +2342,7 @@
         "injured": [
           {
             "name": "K. Sulemana",
+            "photo": "https://media.api-sports.io/football/players/199837.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2194,6 +2356,7 @@
           },
           {
             "name": "I. Hien",
+            "photo": "https://media.api-sports.io/football/players/137976.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Bruise",
             "cat": "Soft-Tissue",
@@ -2213,6 +2376,7 @@
         "injured": [
           {
             "name": "E. Holm",
+            "photo": "https://media.api-sports.io/football/players/47985.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2226,6 +2390,7 @@
           },
           {
             "name": "S. Mbangula",
+            "photo": "https://media.api-sports.io/football/players/346866.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -2239,6 +2404,7 @@
           },
           {
             "name": "J. Odgaard",
+            "photo": "https://media.api-sports.io/football/players/30542.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2258,6 +2424,7 @@
         "injured": [
           {
             "name": "Riyad Idrissi",
+            "photo": "https://media.api-sports.io/football/players/383026.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2277,6 +2444,7 @@
         "injured": [
           {
             "name": "M. Kean",
+            "photo": "https://media.api-sports.io/football/players/877.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -2296,6 +2464,7 @@
         "injured": [
           {
             "name": "R. Sottil",
+            "photo": "https://media.api-sports.io/football/players/31507.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -2315,6 +2484,7 @@
         "injured": [
           {
             "name": "D. Birligea",
+            "photo": "https://media.api-sports.io/football/players/126892.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2328,6 +2498,7 @@
           },
           {
             "name": "F. Grillitsch",
+            "photo": "https://media.api-sports.io/football/players/719.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2347,6 +2518,7 @@
         "injured": [
           {
             "name": "L. Venturino",
+            "photo": "https://media.api-sports.io/football/players/452033.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2366,6 +2538,7 @@
         "injured": [
           {
             "name": "C. Jones",
+            "photo": "https://media.api-sports.io/football/players/293.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2379,6 +2552,7 @@
           },
           {
             "name": "J. Stones",
+            "photo": "https://media.api-sports.io/football/players/626.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -2398,6 +2572,7 @@
         "injured": [
           {
             "name": "J. Ekhator",
+            "photo": "https://media.api-sports.io/football/players/451504.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2411,6 +2586,7 @@
           },
           {
             "name": "A. Milik",
+            "photo": "https://media.api-sports.io/football/players/333.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -2424,6 +2600,7 @@
           },
           {
             "name": "K. Thuram",
+            "photo": "https://media.api-sports.io/football/players/116.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2437,6 +2614,7 @@
           },
           {
             "name": "M. Locatelli",
+            "photo": "https://media.api-sports.io/football/players/30533.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2450,6 +2628,7 @@
           },
           {
             "name": "J. Boga",
+            "photo": "https://media.api-sports.io/football/players/30531.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2463,6 +2642,7 @@
           },
           {
             "name": "K. Yildiz",
+            "photo": "https://media.api-sports.io/football/players/339883.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -2476,6 +2656,7 @@
           },
           {
             "name": "K. Grabara",
+            "photo": "https://media.api-sports.io/football/players/15573.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2495,6 +2676,7 @@
         "injured": [
           {
             "name": "Patric",
+            "photo": "https://media.api-sports.io/football/players/1841.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Sprained Ankle",
             "cat": "Structural",
@@ -2514,6 +2696,7 @@
         "injured": [
           {
             "name": "M. Berisha",
+            "photo": "https://media.api-sports.io/football/players/335071.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lacking Match Fitness",
             "cat": "Trauma/Impact",
@@ -2527,6 +2710,7 @@
           },
           {
             "name": "N. Stulic",
+            "photo": "https://media.api-sports.io/football/players/264122.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2546,6 +2730,7 @@
         "injured": [
           {
             "name": "I. Toure",
+            "photo": "https://media.api-sports.io/football/players/56293.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Contusion",
             "cat": "Trauma/Impact",
@@ -2559,6 +2744,7 @@
           },
           {
             "name": "M. Pessina",
+            "photo": "https://media.api-sports.io/football/players/30436.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2572,6 +2758,7 @@
           },
           {
             "name": "J. Ziolkowski",
+            "photo": "https://media.api-sports.io/football/players/384543.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -2591,6 +2778,7 @@
         "injured": [
           {
             "name": "A. Buongiorno",
+            "photo": "https://media.api-sports.io/football/players/31226.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2610,6 +2798,7 @@
         "injured": [
           {
             "name": "L. Valenti",
+            "photo": "https://media.api-sports.io/football/players/6221.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Coach'S Decision",
             "cat": "Trauma/Impact",
@@ -2623,6 +2812,7 @@
           },
           {
             "name": "H. Nicolussi Caviglia",
+            "photo": "https://media.api-sports.io/football/players/881.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -2636,6 +2826,7 @@
           },
           {
             "name": "P. Almqvist",
+            "photo": "https://media.api-sports.io/football/players/48193.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -2649,6 +2840,7 @@
           },
           {
             "name": "A. Ndiaye",
+            "photo": "https://media.api-sports.io/football/players/203483.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knock",
             "cat": "Trauma/Impact",
@@ -2668,6 +2860,7 @@
         "injured": [
           {
             "name": "E. Pieragnolo",
+            "photo": "https://media.api-sports.io/football/players/342055.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2687,6 +2880,7 @@
         "injured": [
           {
             "name": "P. Pellegri",
+            "photo": "https://media.api-sports.io/football/players/123.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Jumpers Knee",
             "cat": "Structural",
@@ -2706,6 +2900,7 @@
         "injured": [
           {
             "name": "N. Zaniolo",
+            "photo": "https://media.api-sports.io/football/players/786.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2719,6 +2914,7 @@
           },
           {
             "name": "J. Piotrowski",
+            "photo": "https://media.api-sports.io/football/players/1939.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Heart Problems",
             "cat": "Trauma/Impact",
@@ -2732,6 +2928,7 @@
           },
           {
             "name": "I. Gueye",
+            "photo": "https://media.api-sports.io/football/players/434410.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -2751,6 +2948,7 @@
         "injured": [
           {
             "name": "M. \u0160verko",
+            "photo": "https://media.api-sports.io/football/players/26095.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hip Injury",
             "cat": "Trauma/Impact",
@@ -2775,6 +2973,7 @@
         "injured": [
           {
             "name": "T. Hubers",
+            "photo": "https://media.api-sports.io/football/players/90641.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2788,6 +2987,7 @@
           },
           {
             "name": "T. Dallinga",
+            "photo": "https://media.api-sports.io/football/players/93016.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2801,6 +3001,7 @@
           },
           {
             "name": "R. Ache",
+            "photo": "https://media.api-sports.io/football/players/37439.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -2814,6 +3015,7 @@
           },
           {
             "name": "A. Castro-Montes",
+            "photo": "https://media.api-sports.io/football/players/8641.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2824,6 +3026,20 @@
             "history": [
               "Missing Fixture"
             ]
+          },
+          {
+            "name": "E. Skhiri",
+            "photo": "https://media.api-sports.io/football/players/21587.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
           }
         ]
       },
@@ -2833,6 +3049,7 @@
         "injured": [
           {
             "name": "A. Hajdari",
+            "photo": "https://media.api-sports.io/football/players/278453.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2852,6 +3069,7 @@
         "injured": [
           {
             "name": "M. Culbreath",
+            "photo": "https://media.api-sports.io/football/players/444961.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -2865,6 +3083,7 @@
           },
           {
             "name": "K. Eichhorn",
+            "photo": "https://media.api-sports.io/football/players/503467.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -2878,6 +3097,7 @@
           },
           {
             "name": "G. Doue",
+            "photo": "https://media.api-sports.io/football/players/161747.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -2891,6 +3111,7 @@
           },
           {
             "name": "C. Kofane",
+            "photo": "https://media.api-sports.io/football/players/505295.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2910,6 +3131,7 @@
         "injured": [
           {
             "name": "T. Buchmann",
+            "photo": "https://media.api-sports.io/football/players/330612.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2923,6 +3145,7 @@
           },
           {
             "name": "J. Musiala",
+            "photo": "https://media.api-sports.io/football/players/181812.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2942,6 +3165,7 @@
         "injured": [
           {
             "name": "E. Can",
+            "photo": "https://media.api-sports.io/football/players/864.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2955,6 +3179,7 @@
           },
           {
             "name": "G. Konstantelias",
+            "photo": "https://media.api-sports.io/football/players/162410.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -2968,6 +3193,7 @@
           },
           {
             "name": "J. Lerma",
+            "photo": "https://media.api-sports.io/football/players/465666.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2981,6 +3207,7 @@
           },
           {
             "name": "F. Mane",
+            "photo": "https://media.api-sports.io/football/players/341839.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -2994,6 +3221,7 @@
           },
           {
             "name": "C. Chukwuemeka",
+            "photo": "https://media.api-sports.io/football/players/138935.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3007,6 +3235,7 @@
           },
           {
             "name": "J. Ryerson",
+            "photo": "https://media.api-sports.io/football/players/24845.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ribs Injury",
             "cat": "Trauma/Impact",
@@ -3026,6 +3255,7 @@
         "injured": [
           {
             "name": "J. Castrop",
+            "photo": "https://media.api-sports.io/football/players/280358.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -3039,6 +3269,7 @@
           },
           {
             "name": "E. Leopold",
+            "photo": "https://media.api-sports.io/football/players/178250.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3052,6 +3283,7 @@
           },
           {
             "name": "N. Kuhn",
+            "photo": "https://media.api-sports.io/football/players/38753.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3065,6 +3297,7 @@
           },
           {
             "name": "F. Honorat",
+            "photo": "https://media.api-sports.io/football/players/20784.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3078,6 +3311,7 @@
           },
           {
             "name": "K. Itakura",
+            "photo": "https://media.api-sports.io/football/players/38114.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -3091,6 +3325,7 @@
           },
           {
             "name": "T. Kleindienst",
+            "photo": "https://media.api-sports.io/football/players/26256.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -3110,19 +3345,21 @@
         "injured": [
           {
             "name": "J. Ngankam",
+            "photo": "https://media.api-sports.io/football/players/162771.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "J. Maluze",
+            "photo": "https://media.api-sports.io/football/players/585451.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -3136,6 +3373,7 @@
           },
           {
             "name": "M. Pimpong",
+            "photo": "https://media.api-sports.io/football/players/585850.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -3155,6 +3393,7 @@
         "injured": [
           {
             "name": "T. Breithaupt",
+            "photo": "https://media.api-sports.io/football/players/202755.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Toe Injury",
             "cat": "Trauma/Impact",
@@ -3168,6 +3407,7 @@
           },
           {
             "name": "S. Mounie",
+            "photo": "https://media.api-sports.io/football/players/3395.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -3181,6 +3421,7 @@
           },
           {
             "name": "N. Banks",
+            "photo": "https://media.api-sports.io/football/players/413065.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3200,6 +3441,7 @@
         "injured": [
           {
             "name": "D. Ljubicic",
+            "photo": "https://media.api-sports.io/football/players/1725.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3219,6 +3461,7 @@
         "injured": [
           {
             "name": "P. Nebel",
+            "photo": "https://media.api-sports.io/football/players/202736.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3232,6 +3475,7 @@
           },
           {
             "name": "Silas",
+            "photo": "https://media.api-sports.io/football/players/20617.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Broken Shinbone",
             "cat": "Trauma/Impact",
@@ -3245,6 +3489,7 @@
           },
           {
             "name": "D. Kohr",
+            "photo": "https://media.api-sports.io/football/players/979.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -3258,6 +3503,7 @@
           },
           {
             "name": "S. Widmer",
+            "photo": "https://media.api-sports.io/football/players/48378.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3271,6 +3517,7 @@
           },
           {
             "name": "O. Ruoppi",
+            "photo": "https://media.api-sports.io/football/players/318083.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3284,6 +3531,7 @@
           },
           {
             "name": "R. Zentner",
+            "photo": "https://media.api-sports.io/football/players/25906.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hand Injury",
             "cat": "Trauma/Impact",
@@ -3303,6 +3551,7 @@
         "injured": [
           {
             "name": "P. Daka",
+            "photo": "https://media.api-sports.io/football/players/1098.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3316,6 +3565,7 @@
           },
           {
             "name": "Z. El Ouahdi",
+            "photo": "https://media.api-sports.io/football/players/283252.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -3329,6 +3579,7 @@
           },
           {
             "name": "A. Gronbaek",
+            "photo": "https://media.api-sports.io/football/players/263177.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3342,6 +3593,7 @@
           },
           {
             "name": "M. Vuskovic",
+            "photo": "https://media.api-sports.io/football/players/14335.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Doping",
             "cat": "Trauma/Impact",
@@ -3361,6 +3613,7 @@
         "injured": [
           {
             "name": "C. Baumgartner",
+            "photo": "https://media.api-sports.io/football/players/715.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3374,6 +3627,7 @@
           },
           {
             "name": "A. Ouedraogo",
+            "photo": "https://media.api-sports.io/football/players/380978.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -3387,6 +3641,7 @@
           },
           {
             "name": "M. Guiu",
+            "photo": "https://media.api-sports.io/football/players/392270.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -3406,6 +3661,7 @@
         "injured": [
           {
             "name": "B. Ogbus",
+            "photo": "https://media.api-sports.io/football/players/361393.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -3419,6 +3675,7 @@
           },
           {
             "name": "B. Yilmaz",
+            "photo": "https://media.api-sports.io/football/players/353142.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knock",
             "cat": "Trauma/Impact",
@@ -3438,6 +3695,7 @@
         "injured": [
           {
             "name": "N. Awortwie-Grant",
+            "photo": "https://media.api-sports.io/football/players/373443.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3451,6 +3709,7 @@
           },
           {
             "name": "L. Eickel",
+            "photo": "https://media.api-sports.io/football/players/606733.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -3464,6 +3723,7 @@
           },
           {
             "name": "T. Gayret",
+            "photo": "https://media.api-sports.io/football/players/108640.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3477,6 +3737,7 @@
           },
           {
             "name": "S. Klaas",
+            "photo": "https://media.api-sports.io/football/players/26333.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3490,6 +3751,7 @@
           },
           {
             "name": "M. Hoffmeier",
+            "photo": "https://media.api-sports.io/football/players/119173.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3509,6 +3771,7 @@
         "injured": [
           {
             "name": "L. Seifert",
+            "photo": "https://media.api-sports.io/football/players/583807.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -3522,6 +3785,7 @@
           },
           {
             "name": "F. Onyeka",
+            "photo": "https://media.api-sports.io/football/players/392254.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -3541,6 +3805,7 @@
         "injured": [
           {
             "name": "A. Ilic",
+            "photo": "https://media.api-sports.io/football/players/45892.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -3554,6 +3819,7 @@
           },
           {
             "name": "A. Markgraf",
+            "photo": "https://media.api-sports.io/football/players/413294.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3567,6 +3833,7 @@
           },
           {
             "name": "S. Nsoki",
+            "photo": "https://media.api-sports.io/football/players/270.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3580,6 +3847,7 @@
           },
           {
             "name": "J. Juranovic",
+            "photo": "https://media.api-sports.io/football/players/14330.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Achilles Tendon Injury",
             "cat": "Trauma/Impact",
@@ -3599,6 +3867,7 @@
         "injured": [
           {
             "name": "J. Diehl",
+            "photo": "https://media.api-sports.io/football/players/287927.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3612,6 +3881,7 @@
           },
           {
             "name": "N. Nartey",
+            "photo": "https://media.api-sports.io/football/players/24806.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3625,6 +3895,7 @@
           },
           {
             "name": "D. Zagadou",
+            "photo": "https://media.api-sports.io/football/players/13.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3638,6 +3909,7 @@
           },
           {
             "name": "T. Tomas",
+            "photo": "https://media.api-sports.io/football/players/265363.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3651,6 +3923,7 @@
           },
           {
             "name": "A. Al Dakhil",
+            "photo": "https://media.api-sports.io/football/players/323449.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3670,6 +3943,7 @@
         "injured": [
           {
             "name": "F. Agu",
+            "photo": "https://media.api-sports.io/football/players/26319.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -3683,6 +3957,7 @@
           },
           {
             "name": "K. Topp",
+            "photo": "https://media.api-sports.io/football/players/334334.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3696,6 +3971,7 @@
           },
           {
             "name": "J. Njinmah",
+            "photo": "https://media.api-sports.io/football/players/177807.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3709,6 +3985,7 @@
           },
           {
             "name": "J. Stage",
+            "photo": "https://media.api-sports.io/football/players/15592.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3722,6 +3999,7 @@
           },
           {
             "name": "S. Lynen",
+            "photo": "https://media.api-sports.io/football/players/38798.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hip Injury",
             "cat": "Trauma/Impact",
@@ -3735,6 +4013,7 @@
           },
           {
             "name": "S. Alvero",
+            "photo": "https://media.api-sports.io/football/players/193720.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -3748,6 +4027,7 @@
           },
           {
             "name": "S. Musah",
+            "photo": "https://media.api-sports.io/football/players/432519.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -3761,6 +4041,7 @@
           },
           {
             "name": "M. N'Diaye",
+            "photo": "https://media.api-sports.io/football/players/175415.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -3785,6 +4066,7 @@
         "injured": [
           {
             "name": "W. Reilly",
+            "photo": "https://media.api-sports.io/football/players/119008.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -3798,6 +4080,7 @@
           },
           {
             "name": "D. Chica",
+            "photo": "https://media.api-sports.io/football/players/411783.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3817,6 +4100,7 @@
         "injured": [
           {
             "name": "J. Rosales",
+            "photo": "https://media.api-sports.io/football/players/57748.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
@@ -3830,6 +4114,7 @@
           },
           {
             "name": "Z. Kolmanic",
+            "photo": "https://media.api-sports.io/football/players/105632.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3849,6 +4134,7 @@
         "injured": [
           {
             "name": "B. Hidalgo",
+            "photo": "https://media.api-sports.io/football/players/212252.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -3862,6 +4148,7 @@
           },
           {
             "name": "B. Ceballos",
+            "photo": "https://media.api-sports.io/football/players/59545.png",
             "pos": "First Team Squad",
             "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -3875,6 +4162,7 @@
           },
           {
             "name": "T. Gillier",
+            "photo": "https://media.api-sports.io/football/players/311291.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Upper-Body Injury",
             "cat": "Trauma/Impact",
@@ -3894,6 +4182,7 @@
         "injured": [
           {
             "name": "T. Ream",
+            "photo": "https://media.api-sports.io/football/players/19023.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -3907,6 +4196,7 @@
           },
           {
             "name": "N. Berchimas",
+            "photo": "https://media.api-sports.io/football/players/401644.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -3920,6 +4210,7 @@
           },
           {
             "name": "A. John",
+            "photo": "https://media.api-sports.io/football/players/414113.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Upper-Body Injury",
             "cat": "Trauma/Impact",
@@ -3933,6 +4224,7 @@
           },
           {
             "name": "A. Goodwin",
+            "photo": "https://media.api-sports.io/football/players/304119.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -3952,6 +4244,7 @@
         "injured": [
           {
             "name": "A. Franco",
+            "photo": "https://media.api-sports.io/football/players/130256.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -3965,6 +4258,7 @@
           },
           {
             "name": "S. Rogers",
+            "photo": "https://media.api-sports.io/football/players/102510.png",
             "pos": "First Team Squad",
             "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -3978,6 +4272,7 @@
           },
           {
             "name": "R. Lod",
+            "photo": "https://media.api-sports.io/football/players/46891.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -3991,6 +4286,7 @@
           },
           {
             "name": "N. Allen",
+            "photo": "https://media.api-sports.io/football/players/282407.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4004,6 +4300,7 @@
           },
           {
             "name": "D. D'Avilla",
+            "photo": "https://media.api-sports.io/football/players/355405.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -4017,6 +4314,7 @@
           },
           {
             "name": "C. Brady",
+            "photo": "https://media.api-sports.io/football/players/266606.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4030,6 +4328,7 @@
           },
           {
             "name": "A. Mekvabishvili",
+            "photo": "https://media.api-sports.io/football/players/179935.png",
             "pos": "First Team Squad",
             "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -4043,6 +4342,7 @@
           },
           {
             "name": "R. Turdean",
+            "photo": "https://media.api-sports.io/football/players/507608.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Inactive",
             "cat": "Trauma/Impact",
@@ -4062,6 +4362,7 @@
         "injured": [
           {
             "name": "A. Fadal",
+            "photo": "https://media.api-sports.io/football/players/406266.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -4075,6 +4376,7 @@
           },
           {
             "name": "Z. Steffen",
+            "photo": "https://media.api-sports.io/football/players/50828.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -4088,6 +4390,7 @@
           },
           {
             "name": "T. Ku-DiPietro",
+            "photo": "https://media.api-sports.io/football/players/71110.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -4101,6 +4404,7 @@
           },
           {
             "name": "M. Diop",
+            "photo": "https://media.api-sports.io/football/players/542059.png",
             "pos": "First Team Squad",
             "type": "Questionable: Knee Injury",
             "cat": "Structural",
@@ -4114,6 +4418,7 @@
           },
           {
             "name": "Y. Maziz",
+            "photo": "https://media.api-sports.io/football/players/23975.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -4133,6 +4438,7 @@
         "injured": [
           {
             "name": "W. Abou Ali",
+            "photo": "https://media.api-sports.io/football/players/15731.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4152,6 +4458,7 @@
         "injured": [
           {
             "name": "G. Segal",
+            "photo": "https://media.api-sports.io/football/players/108643.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -4165,6 +4472,7 @@
           },
           {
             "name": "L. Munteanu",
+            "photo": "https://media.api-sports.io/football/players/43096.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -4184,6 +4492,7 @@
         "injured": [
           {
             "name": "M. Robinson",
+            "photo": "https://media.api-sports.io/football/players/50879.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -4197,6 +4506,7 @@
           },
           {
             "name": "O. Nwobodo",
+            "photo": "https://media.api-sports.io/football/players/28398.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -4210,6 +4520,7 @@
           },
           {
             "name": "Evander",
+            "photo": "https://media.api-sports.io/football/players/15798.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -4229,6 +4540,7 @@
         "injured": [
           {
             "name": "Geovane Jesus",
+            "photo": "https://media.api-sports.io/football/players/305743.png",
             "pos": "First Team Squad",
             "type": "Questionable: Knee Injury",
             "cat": "Structural",
@@ -4248,6 +4560,7 @@
         "injured": [
           {
             "name": "Felipe Andrade",
+            "photo": "https://media.api-sports.io/football/players/306581.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -4261,6 +4574,7 @@
           },
           {
             "name": "J. Maurer",
+            "photo": "https://media.api-sports.io/football/players/51121.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Concussion",
             "cat": "Trauma/Impact",
@@ -4274,6 +4588,7 @@
           },
           {
             "name": "A. Resch",
+            "photo": "https://media.api-sports.io/football/players/637811.png",
             "pos": "First Team Squad",
             "type": "Questionable: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -4287,6 +4602,7 @@
           },
           {
             "name": "H. Herrera",
+            "photo": "https://media.api-sports.io/football/players/382.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -4300,6 +4616,7 @@
           },
           {
             "name": "L. Ennali",
+            "photo": "https://media.api-sports.io/football/players/203075.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -4319,6 +4636,7 @@
         "injured": [
           {
             "name": "T. Allende",
+            "photo": "https://media.api-sports.io/football/players/304383.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4332,6 +4650,7 @@
           },
           {
             "name": "Y. Bright",
+            "photo": "https://media.api-sports.io/football/players/455386.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -4345,6 +4664,7 @@
           },
           {
             "name": "M. Silvetti",
+            "photo": "https://media.api-sports.io/football/players/475582.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -4358,6 +4678,7 @@
           },
           {
             "name": "S. Morales",
+            "photo": "https://media.api-sports.io/football/players/422792.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -4371,6 +4692,7 @@
           },
           {
             "name": "F. Mura",
+            "photo": "https://media.api-sports.io/football/players/6401.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -4390,6 +4712,7 @@
         "injured": [
           {
             "name": "J. Ebobisse",
+            "photo": "https://media.api-sports.io/football/players/51242.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -4403,6 +4726,7 @@
           },
           {
             "name": "T. Tillman",
+            "photo": "https://media.api-sports.io/football/players/25617.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -4416,6 +4740,7 @@
           },
           {
             "name": "C. Carter",
+            "photo": "https://media.api-sports.io/football/players/360621.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Arm Injury",
             "cat": "Trauma/Impact",
@@ -4435,6 +4760,7 @@
         "injured": [
           {
             "name": "R. Puig",
+            "photo": "https://media.api-sports.io/football/players/148.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4448,6 +4774,7 @@
           },
           {
             "name": "H. Lozano",
+            "photo": "https://media.api-sports.io/football/players/248.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -4467,6 +4794,7 @@
         "injured": [
           {
             "name": "P. Stroud",
+            "photo": "https://media.api-sports.io/football/players/231064.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -4480,6 +4808,7 @@
           },
           {
             "name": "J. Diaz",
+            "photo": "https://media.api-sports.io/football/players/79258.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
@@ -4493,6 +4822,7 @@
           },
           {
             "name": "J. Pereyra",
+            "photo": "https://media.api-sports.io/football/players/6517.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -4506,6 +4836,7 @@
           },
           {
             "name": "A. Smir",
+            "photo": "https://media.api-sports.io/football/players/71765.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4525,6 +4856,7 @@
         "injured": [
           {
             "name": "X. Valdez",
+            "photo": "https://media.api-sports.io/football/players/357334.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4538,6 +4870,7 @@
           },
           {
             "name": "P. Yazbek",
+            "photo": "https://media.api-sports.io/football/players/269539.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4551,6 +4884,7 @@
           },
           {
             "name": "W. Madrigal",
+            "photo": "https://media.api-sports.io/football/players/270498.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -4564,6 +4898,7 @@
           },
           {
             "name": "A. Qasem",
+            "photo": "https://media.api-sports.io/football/players/229112.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4577,6 +4912,7 @@
           },
           {
             "name": "B. Schwake",
+            "photo": "https://media.api-sports.io/football/players/266733.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4596,6 +4932,7 @@
         "injured": [
           {
             "name": "M. Fofana",
+            "photo": "https://media.api-sports.io/football/players/3341.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -4609,6 +4946,7 @@
           },
           {
             "name": "L. Campana",
+            "photo": "https://media.api-sports.io/football/players/2584.png",
             "pos": "First Team Squad",
             "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -4622,6 +4960,7 @@
           },
           {
             "name": "J. Harrison",
+            "photo": "https://media.api-sports.io/football/players/19128.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -4635,6 +4974,7 @@
           },
           {
             "name": "A. Yusuf",
+            "photo": "https://media.api-sports.io/football/players/47998.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -4654,6 +4994,7 @@
         "injured": [
           {
             "name": "D. Baiera",
+            "photo": "https://media.api-sports.io/football/players/422794.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4667,6 +5008,7 @@
           },
           {
             "name": "Talles Magno",
+            "photo": "https://media.api-sports.io/football/players/70299.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -4680,6 +5022,7 @@
           },
           {
             "name": "M. Moralez",
+            "photo": "https://media.api-sports.io/football/players/50859.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4693,6 +5036,7 @@
           },
           {
             "name": "K. Parks",
+            "photo": "https://media.api-sports.io/football/players/50854.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -4706,6 +5050,7 @@
           },
           {
             "name": "K. Trewin",
+            "photo": "https://media.api-sports.io/football/players/153622.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -4719,6 +5064,7 @@
           },
           {
             "name": "A. Farnos",
+            "photo": "https://media.api-sports.io/football/players/641983.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -4732,6 +5078,7 @@
           },
           {
             "name": "M. Ilenic",
+            "photo": "https://media.api-sports.io/football/players/315187.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
@@ -4751,6 +5098,7 @@
         "injured": [
           {
             "name": "A. Marcucci",
+            "photo": "https://media.api-sports.io/football/players/216421.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -4764,6 +5112,7 @@
           },
           {
             "name": "R. Donkor",
+            "photo": "https://media.api-sports.io/football/players/418310.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4777,6 +5126,7 @@
           },
           {
             "name": "J. Che",
+            "photo": "https://media.api-sports.io/football/players/266599.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -4790,6 +5140,7 @@
           },
           {
             "name": "M. Dos Santos",
+            "photo": "https://media.api-sports.io/football/players/472849.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4803,6 +5154,7 @@
           },
           {
             "name": "R. Mosquera",
+            "photo": "https://media.api-sports.io/football/players/313773.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4816,6 +5168,7 @@
           },
           {
             "name": "A. Mehmeti",
+            "photo": "https://media.api-sports.io/football/players/461645.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4829,6 +5182,7 @@
           },
           {
             "name": "O. Valencia",
+            "photo": "https://media.api-sports.io/football/players/371081.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4842,6 +5196,7 @@
           },
           {
             "name": "J. Marshall-Rutty",
+            "photo": "https://media.api-sports.io/football/players/201707.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -4855,6 +5210,7 @@
           },
           {
             "name": "J. Hall",
+            "photo": "https://media.api-sports.io/football/players/418618.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4868,6 +5224,7 @@
           },
           {
             "name": "M. Jimenez",
+            "photo": "https://media.api-sports.io/football/players/535939.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4881,6 +5238,7 @@
           },
           {
             "name": "D. Ruiz",
+            "photo": "https://media.api-sports.io/football/players/325063.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -4900,6 +5258,7 @@
         "injured": [
           {
             "name": "T. Spicer",
+            "photo": "https://media.api-sports.io/football/players/459717.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -4913,6 +5272,7 @@
           },
           {
             "name": "B. Ojeda",
+            "photo": "https://media.api-sports.io/football/players/70767.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -4932,6 +5292,7 @@
         "injured": [
           {
             "name": "A. Anello",
+            "photo": "https://media.api-sports.io/football/players/301465.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -4945,6 +5306,7 @@
           },
           {
             "name": "J. Sery Larsen",
+            "photo": "https://media.api-sports.io/football/players/64339.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
@@ -4964,6 +5326,7 @@
         "injured": [
           {
             "name": "Z. McGraw",
+            "photo": "https://media.api-sports.io/football/players/201729.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Back Injury",
             "cat": "Trauma/Impact",
@@ -4977,6 +5340,7 @@
           },
           {
             "name": "J. Mosquera",
+            "photo": "https://media.api-sports.io/football/players/197913.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -4990,6 +5354,7 @@
           },
           {
             "name": "A. Bonetig",
+            "photo": "https://media.api-sports.io/football/players/366779.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
@@ -5003,6 +5368,7 @@
           },
           {
             "name": "B. Bye",
+            "photo": "https://media.api-sports.io/football/players/51001.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
@@ -5016,6 +5382,7 @@
           },
           {
             "name": "F. Surman",
+            "photo": "https://media.api-sports.io/football/players/210165.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5029,6 +5396,7 @@
           },
           {
             "name": "H. Sulte",
+            "photo": "https://media.api-sports.io/football/players/71079.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -5048,6 +5416,7 @@
         "injured": [
           {
             "name": "E. Eneli",
+            "photo": "https://media.api-sports.io/football/players/413169.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5061,6 +5430,7 @@
           },
           {
             "name": "D. Luna",
+            "photo": "https://media.api-sports.io/football/players/312896.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5074,6 +5444,7 @@
           },
           {
             "name": "J. J. Arias",
+            "photo": "https://media.api-sports.io/football/players/357339.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -5087,6 +5458,7 @@
           },
           {
             "name": "L. Engel",
+            "photo": "https://media.api-sports.io/football/players/16015.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -5100,6 +5472,7 @@
           },
           {
             "name": "J. Glad",
+            "photo": "https://media.api-sports.io/football/players/51195.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -5113,6 +5486,7 @@
           },
           {
             "name": "G. Dillon",
+            "photo": "https://media.api-sports.io/football/players/313661.png",
             "pos": "First Team Squad",
             "type": "Questionable: Foot Injury",
             "cat": "Trauma/Impact",
@@ -5132,6 +5506,7 @@
         "injured": [
           {
             "name": "O. Soe",
+            "photo": "https://media.api-sports.io/football/players/426665.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -5151,6 +5526,7 @@
         "injured": [
           {
             "name": "D. Jones",
+            "photo": "https://media.api-sports.io/football/players/51013.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Achilles Tendon Injury",
             "cat": "Trauma/Impact",
@@ -5164,6 +5540,7 @@
           },
           {
             "name": "N. Adimabua",
+            "photo": "https://media.api-sports.io/football/players/542005.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hernia",
             "cat": "Trauma/Impact",
@@ -5177,6 +5554,7 @@
           },
           {
             "name": "J. A. Gonzalez Mendoza",
+            "photo": "https://media.api-sports.io/football/players/35547.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -5190,6 +5568,7 @@
           },
           {
             "name": "R. Roberts",
+            "photo": "https://media.api-sports.io/football/players/506316.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
@@ -5203,6 +5582,7 @@
           },
           {
             "name": "D. Johnson",
+            "photo": "https://media.api-sports.io/football/players/129065.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -5216,6 +5596,7 @@
           },
           {
             "name": "J. Skahan",
+            "photo": "https://media.api-sports.io/football/players/201723.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -5235,6 +5616,7 @@
         "injured": [
           {
             "name": "P. de La Vega",
+            "photo": "https://media.api-sports.io/football/players/6200.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
@@ -5248,6 +5630,7 @@
           },
           {
             "name": "J. Morris",
+            "photo": "https://media.api-sports.io/football/players/51118.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -5261,6 +5644,7 @@
           },
           {
             "name": "P. Rothrock",
+            "photo": "https://media.api-sports.io/football/players/103203.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Tendon Injury",
             "cat": "Trauma/Impact",
@@ -5274,6 +5658,7 @@
           },
           {
             "name": "H. Dotson",
+            "photo": "https://media.api-sports.io/football/players/51150.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Yellow Cards",
             "cat": "Trauma/Impact",
@@ -5287,6 +5672,7 @@
           },
           {
             "name": "N. Petkovic",
+            "photo": "https://media.api-sports.io/football/players/314420.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5300,6 +5686,7 @@
           },
           {
             "name": "A. Roldan",
+            "photo": "https://media.api-sports.io/football/players/51113.png",
             "pos": "First Team Squad",
             "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
@@ -5313,6 +5700,7 @@
           },
           {
             "name": "J. Ferreira",
+            "photo": "https://media.api-sports.io/football/players/51142.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -5326,6 +5714,7 @@
           },
           {
             "name": "D. Joveljic",
+            "photo": "https://media.api-sports.io/football/players/364.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -5339,6 +5728,7 @@
           },
           {
             "name": "S. Brunell",
+            "photo": "https://media.api-sports.io/football/players/362164.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -5358,6 +5748,7 @@
         "injured": [
           {
             "name": "O. Wolff",
+            "photo": "https://media.api-sports.io/football/players/267866.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -5371,6 +5762,7 @@
           },
           {
             "name": "Diego Borges",
+            "photo": "https://media.api-sports.io/football/players/455254.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
@@ -5384,6 +5776,7 @@
           },
           {
             "name": "L. Johnsen",
+            "photo": "https://media.api-sports.io/football/players/39141.png",
             "pos": "First Team Squad",
             "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -5397,6 +5790,7 @@
           },
           {
             "name": "M. Mosquera",
+            "photo": "https://media.api-sports.io/football/players/279201.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -5410,6 +5804,7 @@
           },
           {
             "name": "O. Blorian",
+            "photo": "https://media.api-sports.io/football/players/136139.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Chest Injury",
             "cat": "Trauma/Impact",
@@ -5423,6 +5818,7 @@
           },
           {
             "name": "J. Davis",
+            "photo": "https://media.api-sports.io/football/players/102466.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -5436,6 +5832,7 @@
           },
           {
             "name": "Capita",
+            "photo": "https://media.api-sports.io/football/players/180748.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
@@ -5455,6 +5852,7 @@
         "injured": [
           {
             "name": "Celio Pompeu",
+            "photo": "https://media.api-sports.io/football/players/362039.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5468,6 +5866,7 @@
           },
           {
             "name": "K. Hiebert",
+            "photo": "https://media.api-sports.io/football/players/362107.png",
             "pos": "First Team Squad",
             "type": "Questionable: Hip Injury",
             "cat": "Trauma/Impact",
@@ -5487,6 +5886,7 @@
         "injured": [
           {
             "name": "W. Zimmerman",
+            "photo": "https://media.api-sports.io/football/players/51032.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Ankle Injury",
             "cat": "Structural",
@@ -5500,6 +5900,7 @@
           },
           {
             "name": "N. Palacio",
+            "photo": "https://media.api-sports.io/football/players/197557.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
@@ -5519,6 +5920,7 @@
         "injured": [
           {
             "name": "S. Adekugbe",
+            "photo": "https://media.api-sports.io/football/players/39107.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -5532,6 +5934,7 @@
           },
           {
             "name": "B. Halbouni",
+            "photo": "https://media.api-sports.io/football/players/201346.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
@@ -5545,6 +5948,7 @@
           },
           {
             "name": "K. G. Cabrera Nakamura",
+            "photo": "https://media.api-sports.io/football/players/288295.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
@@ -5558,6 +5962,7 @@
           },
           {
             "name": "T. Blackmon",
+            "photo": "https://media.api-sports.io/football/players/51027.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
@@ -5571,6 +5976,7 @@
           },
           {
             "name": "A. Cubas",
+            "photo": "https://media.api-sports.io/football/players/6236.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Rest",
             "cat": "Trauma/Impact",
@@ -5584,6 +5990,7 @@
           },
           {
             "name": "R. Priso",
+            "photo": "https://media.api-sports.io/football/players/203436.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -5597,6 +6004,7 @@
           },
           {
             "name": "T. Muller",
+            "photo": "https://media.api-sports.io/football/players/522.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
@@ -5610,6 +6018,7 @@
           },
           {
             "name": "M. Gherasimencov",
+            "photo": "https://media.api-sports.io/football/players/374157.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
@@ -5623,6 +6032,7 @@
           },
           {
             "name": "J. Badwal",
+            "photo": "https://media.api-sports.io/football/players/407583.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Injury",
             "cat": "Trauma/Impact",
@@ -5636,6 +6046,7 @@
           },
           {
             "name": "E. Ocampo",
+            "photo": "https://media.api-sports.io/football/players/369284.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: International Duty",
             "cat": "Trauma/Impact",
