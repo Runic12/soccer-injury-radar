@@ -13,33 +13,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Core SEO Meta Tags -->
   <title>Injured Soccer Players | Real-Time Football Injury & Reliability Radar</title>
   <meta name="description" content="Live database tracking injured soccer players, return timelines, injury mechanisms, and squad reliability across top world football leagues.">
-  <meta name="keywords" content="injured soccer players, soccer injuries, premier league injury updates, football injury tracker, soccer injury report, expected return dates">
   <link rel="canonical" href="https://injuredsoccerplayers.com/">
-
-  <!-- Open Graph / Social Sharing Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://injuredsoccerplayers.com/">
-  <meta property="og:title" content="Injured Soccer Players | Real-Time Football Injury & Reliability Radar">
-  <meta property="og:description" content="Track live soccer injuries, recovery timelines, and squad durability metrics across global D1 leagues.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Injured Soccer Players Tracker">
-  <meta name="twitter:description" content="Real-time multi-league injured soccer players surveillance and reliability metrics.">
-
-  <!-- Schema.org WebApplication Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Injured Soccer Players Radar",
-    "url": "https://injuredsoccerplayers.com",
-    "description": "Live multi-league tracking for injured soccer players, recovery timelines, and root-cause durability analysis.",
-    "applicationCategory": "SportsApplication",
-    "operatingSystem": "All"
-  }
-  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js for Mechanism Distribution Graphs -->
@@ -61,8 +37,8 @@
         <p class="text-xs text-slate-400 mt-1">Multi-league surveillance, player reliability reports, and fault categorization.</p>
       </div>
       <div class="text-right text-xs text-slate-400 border border-slate-800 p-3 rounded bg-slate-950">
-        <div>API Provider: <span class="text-cyan-400 font-bold">API-FOOTBALL</span></div>
-        <div>Coverage: <span class="text-slate-200">Global D1 Top Flights</span></div>
+        <div>API Status: <span id="apiStatusBadge" class="text-amber-400 font-bold">CONNECTING...</span></div>
+        <div id="apiErrorLog" class="text-rose-500 text-[10px] max-w-xs mt-1 hidden"></div>
       </div>
     </header>
 
@@ -88,10 +64,8 @@
     <!-- Main Team Dashboard -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
-      <!-- Left 2 Cols: Injury List & Correlation Analysis -->
+      <!-- Left 2 Cols: Injury List -->
       <div class="lg:col-span-2 space-y-6">
-        
-        <!-- Sidelined Roster -->
         <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl">
           <div class="flex justify-between items-center border-b border-slate-800 pb-3 mb-4">
             <h2 class="text-sm font-bold tracking-wider uppercase text-white flex items-center gap-2">
@@ -106,11 +80,11 @@
             <table class="w-full text-left text-xs">
               <thead class="text-[10px] uppercase text-slate-500 border-b border-slate-800">
                 <tr>
-                  <th class="pb-2">Athlete</th>
-                  <th class="pb-2">Pos</th>
-                  <th class="pb-2">Injury / Mechanism</th>
-                  <th class="pb-2">Expected Return</th>
-                  <th class="pb-2 text-right">Dossier</th>
+                  <th class="pb-2 pl-2">Athlete</th>
+                  <th class="pb-2 pl-2">Pos</th>
+                  <th class="pb-2 pl-2">Injury / Mechanism</th>
+                  <th class="pb-2 pl-2">Expected Return</th>
+                  <th class="pb-2 pr-2 text-right">Dossier</th>
                 </tr>
               </thead>
               <tbody id="playerTableBody" class="divide-y divide-slate-800/80 text-slate-300"></tbody>
@@ -118,16 +92,14 @@
           </div>
         </div>
 
-        <!-- Failure Analysis Correlation Card -->
         <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl space-y-3">
           <h2 class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Root Cause Correlation Report</h2>
           <div id="correlationSummary" class="text-sm text-slate-200 leading-relaxed font-sans"></div>
           <div id="correlationMetrics" class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-800 text-xs"></div>
         </div>
-
       </div>
 
-      <!-- Right 1 Col: Failure Mechanism Chart -->
+      <!-- Right 1 Col: Chart -->
       <div class="border border-slate-800 bg-slate-900/70 p-5 rounded-xl flex flex-col justify-between">
         <div>
           <h2 class="text-xs uppercase tracking-wider text-slate-300 font-bold border-b border-slate-800 pb-3 mb-4">
@@ -137,18 +109,13 @@
             <canvas id="mechanismChart"></canvas>
           </div>
         </div>
-        <div class="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
-          <span class="text-white font-bold">FA Metric:</span> High concentrations of muscular strains point to fatigue accumulation rather than accidental pitch trauma.
-        </div>
       </div>
 
     </div>
 
     <!-- Global Footer -->
     <footer class="border-t border-slate-800/80 pt-6 pb-4 flex flex-wrap justify-between items-center text-xs text-slate-500 gap-4">
-      <div>
-        <span>&copy; 2026 Injured Soccer Players Radar. All rights reserved.</span>
-      </div>
+      <div>&copy; 2026 Injured Soccer Players Radar. All rights reserved.</div>
       <div class="flex items-center space-x-4">
         <a href="privacy.html" class="hover:text-cyan-400 transition">Privacy Policy</a>
         <span>•</span>
@@ -165,11 +132,11 @@
         <div class="flex items-center space-x-4">
           <div id="modalPlayerAvatarContainer"></div>
           <div>
-            <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player Dossier</h3>
+            <h3 id="modalPlayerName" class="text-lg font-bold text-white">Player</h3>
             <p id="modalPlayerPos" class="text-xs text-slate-400"></p>
           </div>
         </div>
-        <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg" aria-label="Close modal">✕</button>
+        <button id="closeModalBtn" class="text-slate-400 hover:text-white text-lg">✕</button>
       </div>
 
       <div class="grid grid-cols-2 gap-3 text-xs">
@@ -191,141 +158,220 @@
   </div>
 
   <script>
-    // Built-in fallback database so it runs locally right away
-    let database = {
-      epl: {
-        name: "Premier League",
-        teams: [
-          {
-            id: "che",
-            name: "Chelsea FC",
-            injured: [
-              { name: "Reece James", pos: "RB", type: "Hamstring Strain", cat: "Soft-Tissue", return: "2-3 weeks", daysLost: 112, durability: "High Risk (Recurring)", history: ["Hamstring Strain", "Knee Meniscus"] },
-              { name: "Wesley Fofana", pos: "CB", type: "ACL Reconstruction", cat: "Structural", return: "End of season", daysLost: 240, durability: "Critical Joint Vulnerability", history: ["Cruciate Ligament", "Fibular Fracture"] }
-            ]
+    // Bulletproof script execution
+    try {
+      // 1. Core Fallback Database (Guarantees UI is never blank)
+      let database = {
+        epl: {
+          name: "Premier League",
+          teams: [
+            {
+              id: "arsenal",
+              name: "Arsenal FC (Connecting...)",
+              injured: [
+                { name: "System Syncing", pos: "N/A", type: "Fetching live data", cat: "Trauma/Impact", return: "Pending", daysLost: "0", durability: "N/A", history: [] }
+              ]
+            }
+          ]
+        }
+      };
+
+      let chartInstance = null;
+
+      // 2. Safe DOM Element Selectors
+      const leagueSelect = document.getElementById('leagueSelect');
+      const teamSelect = document.getElementById('teamSelect');
+      const playerTableBody = document.getElementById('playerTableBody');
+      const apiStatusBadge = document.getElementById('apiStatusBadge');
+      const apiErrorLog = document.getElementById('apiErrorLog');
+      const modal = document.getElementById('playerModal');
+
+      // 3. Ultra-Safe Avatar Generator
+      function createAvatar(name, photoUrl, size = 'w-8 h-8', textSize = 'text-[11px]') {
+        try {
+          const cleanName = String(name || "Player").trim();
+          const parts = cleanName.split(/\s+/).filter(Boolean);
+          let initials = "⚽";
+          
+          if (parts.length > 1) {
+            initials = (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+          } else if (parts.length === 1) {
+            initials = parts[0].slice(0, 2).toUpperCase();
           }
-        ]
+
+          if (photoUrl && typeof photoUrl === 'string' && photoUrl.startsWith('http')) {
+            return `<img src="${photoUrl}" alt="${cleanName}" class="${size} rounded-full object-cover bg-slate-800 border border-slate-700 shrink-0 shadow-inner" onerror="this.outerHTML='<div class=\\'${size} rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner ${textSize}\\'>${initials}</div>'">`;
+          }
+          return `<div class="${size} rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner ${textSize}">${initials}</div>`;
+        } catch (err) {
+          return `<div class="${size} rounded-full bg-slate-800 flex items-center justify-center text-xs">⚽</div>`;
+        }
       }
-    };
 
-    let chartInstance = null;
+      // 4. Render Table UI
+      function renderTeam(team) {
+        if (!team || !playerTableBody) return;
+        const injuredList = Array.isArray(team.injured) ? team.injured : [];
+        
+        document.getElementById('outCountBadge').textContent = `${injuredList.length} Sidelined`;
+        playerTableBody.innerHTML = '';
+        const categoryCounts = { "Soft-Tissue": 0, "Structural": 0, "Trauma/Impact": 0 };
 
-    const leagueSelect = document.getElementById('leagueSelect');
-    const teamSelect = document.getElementById('teamSelect');
-    const playerTableBody = document.getElementById('playerTableBody');
-    const outCountBadge = document.getElementById('outCountBadge');
-    const correlationSummary = document.getElementById('correlationSummary');
-    const correlationMetrics = document.getElementById('correlationMetrics');
-    const modal = document.getElementById('playerModal');
+        if (injuredList.length === 0) {
+          playerTableBody.innerHTML = `<tr><td colspan="5" class="py-4 text-center text-slate-500 italic">No component failures reported. 100% operational squad.</td></tr>`;
+        } else {
+          injuredList.forEach(player => {
+            const cat = player.cat || "Trauma/Impact";
+            categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
 
-    // Circular Face Avatar Generator
-    function getPlayerAvatarMarkup(name, photoUrl, size = 'w-8 h-8', textSize = 'text-[11px]') {
-      const cleanName = name || "Player";
-      const initials = cleanName.split(' ').map(n => n[0]).filter(Boolean).slice(0, 2).join('').toUpperCase();
+            const badgeColor = 
+              cat === 'Soft-Tissue' ? 'bg-amber-950 text-amber-300 border-amber-800' :
+              cat === 'Structural' ? 'bg-rose-950 text-rose-300 border-rose-800' :
+              'bg-blue-950 text-blue-300 border-blue-800';
 
-      if (photoUrl) {
-        return `
-          <img 
-            src="${photoUrl}" 
-            alt="${cleanName}" 
-            class="${size} rounded-full object-cover bg-slate-800 border border-slate-700 shrink-0 shadow-inner"
-            onerror="this.outerHTML='<div class=\\'${size} rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner ${textSize}\\'>${initials}</div>';"
-          />
+            const tr = document.createElement('tr');
+            tr.className = "hover:bg-slate-800/40 cursor-pointer transition border-b border-slate-800/60";
+            
+            // Re-structured table cell to avoid rendering crashes
+            tr.innerHTML = `
+              <td class="py-2.5 px-2">
+                <div class="flex items-center space-x-3 font-bold text-white">
+                  ${createAvatar(player.name, player.photo)}
+                  <span>${String(player.name || "Unknown")}</span>
+                </div>
+              </td>
+              <td class="py-2.5 px-2 text-slate-400">${String(player.pos || "Squad")}</td>
+              <td class="py-2.5 px-2"><span class="px-2 py-0.5 rounded text-[10px] border ${badgeColor}">${String(player.type || "Injured")}</span></td>
+              <td class="py-2.5 px-2 text-slate-300">${String(player.return || "Pending")}</td>
+              <td class="py-2.5 px-2 text-right"><button class="text-cyan-400 hover:underline">View Dossier</button></td>
+            `;
+            tr.addEventListener('click', () => openModal(player));
+            playerTableBody.appendChild(tr);
+          });
+        }
+
+        renderAnalysis(team, categoryCounts);
+        renderChart(categoryCounts);
+      }
+
+      function renderAnalysis(team, counts) {
+        const total = Array.isArray(team.injured) ? team.injured.length : 0;
+        const softPct = total > 0 ? Math.round(((counts["Soft-Tissue"] || 0) / total) * 100) : 0;
+        const structPct = total > 0 ? Math.round(((counts["Structural"] || 0) / total) * 100) : 0;
+
+        document.getElementById('correlationSummary').innerHTML = `<strong class="text-cyan-400">Analysis Active:</strong> Monitoring structural vs fatigue thresholds.`;
+        document.getElementById('correlationMetrics').innerHTML = `
+          <div class="bg-slate-950 p-2.5 rounded border border-slate-800"><div class="text-[10px] text-slate-500 uppercase">Soft-Tissue</div><div class="text-sm font-bold text-amber-400 mt-0.5">${softPct}%</div></div>
+          <div class="bg-slate-950 p-2.5 rounded border border-slate-800"><div class="text-[10px] text-slate-500 uppercase">Structural</div><div class="text-sm font-bold text-rose-400 mt-0.5">${structPct}%</div></div>
+          <div class="bg-slate-950 p-2.5 rounded border border-slate-800"><div class="text-[10px] text-slate-500 uppercase">Total Outages</div><div class="text-sm font-bold text-white mt-0.5">${total}</div></div>
         `;
       }
-      return `
-        <div class="${size} rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400 shrink-0 shadow-inner${textSize}">
-          ${initials}
-        </div>
-      `;
-    }
 
-    // Function to draw the dropdowns
-    function populateTeams() {
-      const leagueKey = leagueSelect.value;
-      const league = database[leagueKey];
-      teamSelect.innerHTML = '';
+      function renderChart(counts) {
+        if (typeof Chart === 'undefined') return; // Prevent crash if Chart.js fails to load
+        const canvas = document.getElementById('mechanismChart');
+        if (!canvas) return;
 
-      if (!league || !league.teams || !league.teams.length) {
-        teamSelect.innerHTML = '<option value="">No squad data synced</option>';
-        renderTeam({ name: "None", injured: [] });
-        return;
+        if (chartInstance) chartInstance.destroy();
+        chartInstance = new Chart(canvas.getContext('2d'), {
+          type: 'doughnut',
+          data: {
+            labels: ['Soft-Tissue (Fatigue)', 'Structural (Joints)', 'Trauma (Contact)'],
+            datasets: [{
+              data: [counts['Soft-Tissue'] || 0, counts['Structural'] || 0, counts['Trauma/Impact'] || 0],
+              backgroundColor: ['#f59e0b', '#f43f5e', '#38bdf8'],
+              borderColor: '#020617',
+              borderWidth: 2
+            }]
+          },
+          options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { color: '#94a3b8' } } } }
+        });
       }
 
-      league.teams.forEach(t => {
-        const count = t.injured ? t.injured.length : 0;
-        const opt = document.createElement('option');
-        opt.value = t.id;
-        opt.textContent = `${t.name} (${count} Injured)`;
-        teamSelect.appendChild(opt);
+      // 5. Setup Dropdowns
+      function populateTeams() {
+        if (!leagueSelect || !teamSelect) return;
+        const league = database[leagueSelect.value || 'epl'];
+        teamSelect.innerHTML = '';
+
+        if (!league || !Array.isArray(league.teams)) {
+          teamSelect.innerHTML = '<option value="">No squads synced</option>';
+          renderTeam({ injured: [] });
+          return;
+        }
+
+        league.teams.forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t.id;
+          opt.textContent = `${t.name} (${Array.isArray(t.injured) ? t.injured.length : 0} Injured)`;
+          teamSelect.appendChild(opt);
+        });
+
+        renderTeam(league.teams[0]);
+      }
+
+      // Modal Logic
+      function openModal(player) {
+        document.getElementById('modalPlayerAvatarContainer').innerHTML = createAvatar(player.name, player.photo, 'w-12 h-12', 'text-sm');
+        document.getElementById('modalPlayerName').textContent = player.name || "Player";
+        document.getElementById('modalPlayerPos').textContent = `${player.pos || "Squad"} // Mechanism: ${player.type || "N/A"}`;
+        document.getElementById('modalDaysLost').textContent = `${player.daysLost || "N/A"} Days`;
+        document.getElementById('modalDurability').textContent = player.durability || "Active Casualty";
+
+        const list = document.getElementById('modalHistoryList');
+        list.innerHTML = '';
+        (player.history || ["Missing Fixture"]).forEach(item => {
+          const li = document.createElement('li');
+          li.className = "p-2 bg-slate-950 rounded border border-slate-800 flex justify-between";
+          li.innerHTML = `<span>${item}</span><span class="text-rose-400 font-bold">RECORDED</span>`;
+          list.appendChild(li);
+        });
+        modal.classList.remove('hidden');
+      }
+
+      document.getElementById('closeModalBtn').addEventListener('click', () => modal.classList.add('hidden'));
+      modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+
+      leagueSelect.addEventListener('change', populateTeams);
+      teamSelect.addEventListener('change', () => {
+        const league = database[leagueSelect.value];
+        if (league && Array.isArray(league.teams)) renderTeam(league.teams.find(t => t.id === teamSelect.value));
       });
 
-      renderTeam(league.teams[0]);
+      // Show fallback data instantly
+      populateTeams();
+
+      // 6. Failsafe Live Data Fetch (bypasses cache)
+      const timestamp = new Date().getTime();
+      fetch('data.json?v=' + timestamp)
+        .then(res => {
+          if (!res.ok) throw new Error("HTTP Status " + res.status);
+          return res.json();
+        })
+        .then(remoteData => {
+          // Verify it's not empty and actually contains the 'epl' key
+          if (remoteData && remoteData.epl) {
+            database = remoteData;
+            populateTeams();
+            apiStatusBadge.textContent = "LIVE (SYNCED)";
+            apiStatusBadge.className = "text-emerald-400 font-bold";
+            apiErrorLog.classList.add('hidden');
+          } else {
+            throw new Error("data.json format is incorrect.");
+          }
+        })
+        .catch(err => {
+          console.warn("Failed to load live data, using fallback:", err);
+          apiStatusBadge.textContent = "FALLBACK MODE";
+          apiStatusBadge.className = "text-rose-400 font-bold";
+          apiErrorLog.textContent = err.message;
+          apiErrorLog.classList.remove('hidden');
+        });
+
+    } catch (criticalError) {
+      console.error("Critical UI failure:", criticalError);
+      document.body.innerHTML = `<div class="p-10 text-white bg-red-900 min-h-screen"><h1 class="text-3xl font-bold">System Crash</h1><p class="mt-4 font-mono">${criticalError.message}</p></div>`;
     }
-
-    // Function to draw the player table
-    function renderTeam(team) {
-      if (!team) return;
-      const injuredList = team.injured || [];
-      outCountBadge.textContent = `${injuredList.length} Sidelined`;
-      playerTableBody.innerHTML = '';
-
-      const categoryCounts = { "Soft-Tissue": 0, "Structural": 0, "Trauma/Impact": 0 };
-      
-      if (injuredList.length === 0) {
-        playerTableBody.innerHTML = `<tr><td colspan="5" class="py-4 text-center text-slate-500 italic">No component failures reported. 100% operational squad.</td></tr>`;
-      }
-
-      injuredList.forEach(player => {
-        const cat = player.cat || "Trauma/Impact";
-        categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-
-        const badgeColor = 
-            cat === 'Soft-Tissue' ? 'bg-amber-950 text-amber-300 border-amber-800' :
-            cat === 'Structural' ? 'bg-rose-950 text-rose-300 border-rose-800' :
-            'bg-blue-950 text-blue-300 border-blue-800';
-
-        const tr = document.createElement('tr');
-        tr.className = "hover:bg-slate-800/40 cursor-pointer transition border-b border-slate-800/60";
-        tr.innerHTML = `
-          <td class="py-2.5 flex items-center space-x-3 font-bold text-white">
-            ${getPlayerAvatarMarkup(player.name, player.photo)}
-            <span>${player.name}</span>
-          </td>
-          <td class="py-2.5 text-slate-400">${player.pos || "Squad"}</td>
-          <td class="py-2.5"><span class="px-2 py-0.5 rounded text-[10px] border ${badgeColor}">${player.type || "Injured"}</span></td>
-          <td class="py-2.5 text-slate-300">${player.return || "Pending"}</td>
-          <td class="py-2.5 text-right"><button class="text-cyan-400 hover:underline">View Dossier</button></td>
-        `;
-        tr.addEventListener('click', () => openModal(player));
-        playerTableBody.appendChild(tr);
-      });
-
-      renderCorrelation(team, categoryCounts);
-      renderChart(categoryCounts);
-    }
-
-    // Function to draw analysis metrics
-    function renderCorrelation(team, counts) {
-      const total = (team.injured || []).length;
-      if (total === 0) {
-        correlationSummary.innerHTML = `<span class="text-emerald-400 font-bold">Optimal Durability:</span> Zero recorded squad casualties.`;
-        correlationMetrics.innerHTML = '';
-        return;
-      }
-
-      const softPct = Math.round(((counts["Soft-Tissue"] || 0) / total) * 100);
-      const structPct = Math.round(((counts["Structural"] || 0) / total) * 100);
-
-      let diagnosis = "";
-      if (softPct >= 50) {
-        diagnosis = `<strong class="text-amber-400">High Muscular Overload Correlation (${softPct}%):</strong> Failures are clustered around soft-tissue groups. Strong correlation with schedule congestion and sprint fatigue.`;
-      } else if (structPct >= 50) {
-        diagnosis = `<strong class="text-rose-400">Structural Joint Vulnerability (${structPct}%):</strong> Failures involve critical connective ligaments and cartilage. Indicates severe mechanical trauma or chronic joint fatigue.`;
-      } else {
-        diagnosis = `<strong class="text-cyan-400">Balanced Casualty Distribution:</strong> Failures are evenly distributed across contact trauma and workload strain.`;
-      }
-
-      correlationSummary.innerHTML = diagnosis;
-      correlationMetrics.innerHTML = `
-        <div class="bg-slate
+  </script>
+</body>
+</html>
