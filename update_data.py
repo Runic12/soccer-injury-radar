@@ -71,15 +71,12 @@ for key, meta in LEAGUES.items():
         teams_map = {}
         active_injuries = 0
         
-        # 2. Filter active injuries against TODAY'S date, widening the net to 45 days
+        # 2. Filter active injuries against TODAY'S date (45 days)
         for p_name, record in player_latest_records.items():
             t_id = record["t_id"]
             p_date_str = record["date"]
             
             p_dt = datetime.strptime(p_date_str, "%Y-%m-%d")
-            
-            # Check how many days ago this fixture was from TODAY
-            # (Negative numbers mean the API tagged them for a future fixture)
             days_since_missed = (current_date - p_dt).days
             
             if days_since_missed <= 45:
@@ -92,6 +89,12 @@ for key, meta in LEAGUES.items():
                 
                 full_desc = f"{injury_type}: {injury_reason}"
                 lower_r = full_desc.lower()
+                
+                # ---------------------------------------------------------
+                # NEW FILTER: Skip players no longer at the club
+                # ---------------------------------------------------------
+                if "transfer" in lower_r or "loan" in lower_r:
+                    continue
                 
                 # Dynamic clinical categorization and recovery window estimator
                 if any(w in lower_r for w in ["acl", "cruciate"]):
