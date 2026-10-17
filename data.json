@@ -4079,21 +4079,7 @@
             "name": "M. Culbreath",
             "photo": "https://media.api-sports.io/football/players/444961.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "M. Terrier",
-            "photo": "https://media.api-sports.io/football/players/663.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
+            "type": "Questionable: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -4101,6 +4087,20 @@
             "durability": "Active Casualty",
             "history": [
               "Questionable"
+            ]
+          },
+          {
+            "name": "M. Terrier",
+            "photo": "https://media.api-sports.io/football/players/663.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
             ]
           },
           {
@@ -4797,21 +4797,7 @@
             "name": "B. Yilmaz",
             "photo": "https://media.api-sports.io/football/players/353142.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knock",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Day-to-Day",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "J. Beste",
-            "photo": "https://media.api-sports.io/football/players/25313.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
+            "type": "Questionable: Lacking Match Fitness",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
