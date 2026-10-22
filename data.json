@@ -395,20 +395,6 @@
             ]
           },
           {
-            "name": "J. Hinshelwood",
-            "photo": "https://media.api-sports.io/football/players/305730.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "K. Mitoma",
             "photo": "https://media.api-sports.io/football/players/106835.png",
             "pos": "First Team Squad",
@@ -1079,6 +1065,20 @@
         "name": "Liverpool",
         "injured": [
           {
+            "name": "B. Barcola",
+            "photo": "https://media.api-sports.io/football/players/161904.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "C. Bradley",
             "photo": "https://media.api-sports.io/football/players/180317.png",
             "pos": "First Team Squad",
@@ -1163,31 +1163,17 @@
             ]
           },
           {
-            "name": "R. Gravenberch",
-            "photo": "https://media.api-sports.io/football/players/542.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "V. Munoz",
             "photo": "https://media.api-sports.io/football/players/338751.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -1689,20 +1675,6 @@
         "name": "Tottenham",
         "injured": [
           {
-            "name": "A. Robertson",
-            "photo": "https://media.api-sports.io/football/players/289.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "D. Udogie",
             "photo": "https://media.api-sports.io/football/players/204039.png",
             "pos": "First Team Squad",
@@ -1770,20 +1742,6 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
-            ]
-          },
-          {
-            "name": "T. Adarabioyo",
-            "photo": "https://media.api-sports.io/football/players/19145.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
             ]
           },
           {
@@ -3589,20 +3547,6 @@
         "name": "Frosinone",
         "injured": [
           {
-            "name": "D. Birligea",
-            "photo": "https://media.api-sports.io/football/players/126892.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "F. Grillitsch",
             "photo": "https://media.api-sports.io/football/players/719.png",
             "pos": "First Team Squad",
@@ -4046,14 +3990,14 @@
             "name": "L. Valenti",
             "photo": "https://media.api-sports.io/football/players/6221.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Coach'S Decision",
+            "type": "Questionable: Coach'S Decision",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
