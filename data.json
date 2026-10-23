@@ -1020,14 +1020,14 @@
             "name": "D. James",
             "photo": "https://media.api-sports.io/football/players/19329.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Back Injury",
+            "type": "Questionable: Back Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -1613,6 +1613,20 @@
             ]
           },
           {
+            "name": "K. Danso",
+            "photo": "https://media.api-sports.io/football/players/25287.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "M. Ellborg",
             "photo": "https://media.api-sports.io/football/players/278454.png",
             "pos": "First Team Squad",
@@ -1959,7 +1973,21 @@
             "name": "A. Christensen",
             "photo": "https://media.api-sports.io/football/players/2282.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "D. Olmo",
+            "photo": "https://media.api-sports.io/football/players/1323.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
@@ -1987,14 +2015,14 @@
             "name": "J. Kounde",
             "photo": "https://media.api-sports.io/football/players/1257.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -2081,20 +2109,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "P. Duran",
-            "photo": "https://media.api-sports.io/football/players/320517.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Calf Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2401,56 +2415,56 @@
             "name": "Dela",
             "photo": "https://media.api-sports.io/football/players/734.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "E. Bardeli",
             "photo": "https://media.api-sports.io/football/players/161893.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "H. Sotelo",
             "photo": "https://media.api-sports.io/football/players/313651.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
+            "type": "Questionable: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "K. Etta Eyong",
             "photo": "https://media.api-sports.io/football/players/378284.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -2477,28 +2491,28 @@
             "name": "D. Murillo",
             "photo": "https://media.api-sports.io/football/players/185234.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "J. Cruz",
             "photo": "https://media.api-sports.io/football/players/185202.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -2519,14 +2533,14 @@
             "name": "J. Munoz",
             "photo": "https://media.api-sports.io/football/players/60.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Calf Injury",
+            "type": "Missing Fixture: Calf Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -2626,20 +2640,6 @@
         "name": "Racing Santander",
         "injured": [
           {
-            "name": "Pedro Felipe",
-            "photo": "https://media.api-sports.io/football/players/415064.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "S. Eriksson",
             "photo": "https://media.api-sports.io/football/players/408875.png",
             "pos": "First Team Squad",
@@ -2736,20 +2736,6 @@
         "name": "Real Betis",
         "injured": [
           {
-            "name": "A. Ruibal",
-            "photo": "https://media.api-sports.io/football/players/47119.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "C. Hernandez",
             "photo": "https://media.api-sports.io/football/players/47582.png",
             "pos": "First Team Squad",
@@ -2757,6 +2743,20 @@
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "F. Bernal",
+            "photo": "https://media.api-sports.io/football/players/316519.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -2801,14 +2801,14 @@
             "name": "F. Mendy",
             "photo": "https://media.api-sports.io/football/players/653.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hip Injury",
+            "type": "Questionable: Hip Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -3493,6 +3493,20 @@
             ]
           },
           {
+            "name": "M. Papaccioli",
+            "photo": "https://media.api-sports.io/football/players/592736.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "T. Chalobah",
             "photo": "https://media.api-sports.io/football/players/19720.png",
             "pos": "First Team Squad",
@@ -3829,8 +3843,8 @@
             ]
           },
           {
-            "name": "M. Berisha",
-            "photo": "https://media.api-sports.io/football/players/335071.png",
+            "name": "L. Coulibaly",
+            "photo": "https://media.api-sports.io/football/players/1748.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
@@ -3843,17 +3857,17 @@
             ]
           },
           {
-            "name": "N. Stulic",
-            "photo": "https://media.api-sports.io/football/players/264122.png",
+            "name": "M. Berisha",
+            "photo": "https://media.api-sports.io/football/players/335071.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -4075,6 +4089,20 @@
         "name": "Udinese",
         "injured": [
           {
+            "name": "D. Alaba",
+            "photo": "https://media.api-sports.io/football/players/505.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Calf Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "I. Gueye",
             "photo": "https://media.api-sports.io/football/players/434410.png",
             "pos": "First Team Squad",
@@ -4089,31 +4117,17 @@
             ]
           },
           {
-            "name": "J. Piotrowski",
-            "photo": "https://media.api-sports.io/football/players/1939.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Heart Problems",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "N. Zaniolo",
             "photo": "https://media.api-sports.io/football/players/786.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
+            "type": "Questionable: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -4449,14 +4463,14 @@
             "name": "J. Kimmich",
             "photo": "https://media.api-sports.io/football/players/502.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Personal Reasons",
+            "type": "Questionable: Personal Reasons",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -4474,13 +4488,27 @@
             ]
           },
           {
-            "name": "M. Neuer",
-            "photo": "https://media.api-sports.io/football/players/497.png",
+            "name": "Kim Min-Jae",
+            "photo": "https://media.api-sports.io/football/players/2897.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
+            "type": "Questionable: Knee Injury",
+            "cat": "Structural",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "L. Diaz",
+            "photo": "https://media.api-sports.io/football/players/2489.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -4868,45 +4896,73 @@
         "name": "FC Schalke 04",
         "injured": [
           {
-            "name": "A. Aouchiche",
-            "photo": "https://media.api-sports.io/football/players/137129.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Knock",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Day-to-Day",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "D. Ljubicic",
             "photo": "https://media.api-sports.io/football/players/1725.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "K. Karaman",
+            "photo": "https://media.api-sports.io/football/players/25466.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
             ]
           },
           {
             "name": "M. Sylla",
             "photo": "https://media.api-sports.io/football/players/115.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Leg Injury",
+            "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "M. Wober",
+            "photo": "https://media.api-sports.io/football/players/2048.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "R. Schallenberg",
+            "photo": "https://media.api-sports.io/football/players/88140.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Leg Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
             ]
           }
         ]
@@ -4995,14 +5051,14 @@
             "name": "B. Jatta",
             "photo": "https://media.api-sports.io/football/players/24880.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Groin Injury",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5037,14 +5093,14 @@
             "name": "P. Daka",
             "photo": "https://media.api-sports.io/football/players/1098.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Thigh Injury",
+            "type": "Missing Fixture: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -5102,20 +5158,6 @@
         "name": "SC Freiburg",
         "injured": [
           {
-            "name": "B. Ogbus",
-            "photo": "https://media.api-sports.io/football/players/361393.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "B. Yilmaz",
             "photo": "https://media.api-sports.io/football/players/353142.png",
             "pos": "First Team Squad",
@@ -5127,6 +5169,20 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "Y. Engelhardt",
+            "photo": "https://media.api-sports.io/football/players/178709.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
@@ -5153,14 +5209,14 @@
             "name": "M. Hoffmeier",
             "photo": "https://media.api-sports.io/football/players/119173.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5195,14 +5251,14 @@
             "name": "S. Klaas",
             "photo": "https://media.api-sports.io/football/players/26333.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5409,14 +5465,14 @@
             "name": "D. Zagadou",
             "photo": "https://media.api-sports.io/football/players/13.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5437,14 +5493,14 @@
             "name": "J. Vagnoman",
             "photo": "https://media.api-sports.io/football/players/24868.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
             "status": "Sidelined",
-            "return": "Pending Assessment",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5455,6 +5511,20 @@
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "N. Nartey",
+            "photo": "https://media.api-sports.io/football/players/24806.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -5479,14 +5549,14 @@
             "name": "T. Tomas",
             "photo": "https://media.api-sports.io/football/players/265363.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -7002,20 +7072,6 @@
         "id": "san_diego",
         "name": "San Diego",
         "injured": [
-          {
-            "name": "K. Sargeant",
-            "photo": "https://media.api-sports.io/football/players/540871.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
           {
             "name": "O. Soe",
             "photo": "https://media.api-sports.io/football/players/426665.png",
