@@ -693,6 +693,20 @@
             ]
           },
           {
+            "name": "J. Larsen",
+            "photo": "https://media.api-sports.io/football/players/2032.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "J. Lerma",
             "photo": "https://media.api-sports.io/football/players/2490.png",
             "pos": "First Team Squad",
@@ -4252,6 +4266,20 @@
         "name": "1899 Hoffenheim",
         "injured": [
           {
+            "name": "A. Daghim",
+            "photo": "https://media.api-sports.io/football/players/362564.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "A. Hajdari",
             "photo": "https://media.api-sports.io/football/players/278453.png",
             "pos": "First Team Squad",
@@ -6352,42 +6380,42 @@
             "name": "C. Carter",
             "photo": "https://media.api-sports.io/football/players/360621.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Arm Injury",
+            "type": "Questionable: Arm Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "J. Ebobisse",
             "photo": "https://media.api-sports.io/football/players/51242.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "T. Tillman",
             "photo": "https://media.api-sports.io/football/players/25617.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Pelvis Injury",
+            "type": "Questionable: Pelvis Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -6400,28 +6428,28 @@
             "name": "H. Lozano",
             "photo": "https://media.api-sports.io/football/players/248.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hamstring Injury",
+            "type": "Questionable: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "I. Parente",
             "photo": "https://media.api-sports.io/football/players/308690.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
