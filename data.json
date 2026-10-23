@@ -2291,14 +2291,14 @@
             "name": "Jofre",
             "photo": "https://media.api-sports.io/football/players/182674.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Groin Injury",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -5833,6 +5833,20 @@
             ]
           },
           {
+            "name": "B. Bronico",
+            "photo": "https://media.api-sports.io/football/players/50905.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Groin Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "N. Berchimas",
             "photo": "https://media.api-sports.io/football/players/401644.png",
             "pos": "First Team Squad",
@@ -6098,14 +6112,14 @@
             "name": "S. Johnson",
             "photo": "https://media.api-sports.io/football/players/50848.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Leg Injury",
+            "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
