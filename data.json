@@ -6825,20 +6825,6 @@
         "name": "Orlando City SC",
         "injured": [
           {
-            "name": "B. Rhein",
-            "photo": "https://media.api-sports.io/football/players/472515.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
-            ]
-          },
-          {
             "name": "G. Dorsey",
             "photo": "https://media.api-sports.io/football/players/50824.png",
             "pos": "First Team Squad",
@@ -6898,14 +6884,14 @@
             "name": "Vinicius Nogueira",
             "photo": "https://media.api-sports.io/football/players/404175.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Shoulder Injury",
+            "type": "Missing Fixture: Shoulder Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
