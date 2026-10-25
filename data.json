@@ -6236,56 +6236,42 @@
             "name": "A. A. Julio Santos",
             "photo": "https://media.api-sports.io/football/players/16476.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Lower-Body Injury",
+            "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "Geovane Jesus",
             "photo": "https://media.api-sports.io/football/players/305743.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
-            ]
-          },
-          {
-            "name": "Kaick",
-            "photo": "https://media.api-sports.io/football/players/457506.png",
-            "pos": "First Team Squad",
-            "type": "Questionable: Personal Reasons",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "L. Farrington",
             "photo": "https://media.api-sports.io/football/players/455011.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Lower-Body Injury",
+            "type": "Missing Fixture: Lower-Body Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -7056,28 +7042,28 @@
             "name": "G. Dillon",
             "photo": "https://media.api-sports.io/football/players/313661.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Foot Injury",
+            "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "J. Glad",
             "photo": "https://media.api-sports.io/football/players/51195.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Groin Injury",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -7098,14 +7084,14 @@
             "name": "L. Engel",
             "photo": "https://media.api-sports.io/football/players/16015.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Hamstring Injury",
+            "type": "Missing Fixture: Hamstring Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -7644,14 +7630,14 @@
             "name": "B. Halbouni",
             "photo": "https://media.api-sports.io/football/players/201346.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Knee Injury",
+            "type": "Missing Fixture: Knee Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -7672,14 +7658,14 @@
             "name": "K. G. Cabrera Nakamura",
             "photo": "https://media.api-sports.io/football/players/288295.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Foot Injury",
+            "type": "Missing Fixture: Foot Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
