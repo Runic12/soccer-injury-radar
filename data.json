@@ -2469,10 +2469,10 @@
             "name": "A. Bonel",
             "photo": "https://media.api-sports.io/football/players/484459.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Groin Injury",
-            "cat": "Soft-Tissue",
+            "type": "Missing Fixture: Inactive",
+            "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "3-4 Weeks",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3501,20 +3501,6 @@
             "history": [
               "Missing Fixture"
             ]
-          },
-          {
-            "name": "M. Spinacce",
-            "photo": "https://media.api-sports.io/football/players/436238.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Inactive",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
           }
         ]
       },
@@ -3737,52 +3723,10 @@
         "name": "Monza",
         "injured": [
           {
-            "name": "E. Zeballos",
-            "photo": "https://media.api-sports.io/football/players/237090.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "I. Toure",
-            "photo": "https://media.api-sports.io/football/players/56293.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Knee Injury",
-            "cat": "Structural",
-            "status": "Sidelined",
-            "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "J. Ziolkowski",
             "photo": "https://media.api-sports.io/football/players/384543.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "L. Lucchesi",
-            "photo": "https://media.api-sports.io/football/players/342018.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -6243,20 +6187,6 @@
             "history": [
               "Missing Fixture"
             ]
-          },
-          {
-            "name": "Y. Bright",
-            "photo": "https://media.api-sports.io/football/players/455386.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Foot Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
           }
         ]
       },
@@ -6268,42 +6198,42 @@
             "name": "C. Carter",
             "photo": "https://media.api-sports.io/football/players/360621.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Arm Injury",
+            "type": "Missing Fixture: Arm Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "J. Ebobisse",
             "photo": "https://media.api-sports.io/football/players/51242.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Leg Injury",
+            "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
             "name": "T. Tillman",
             "photo": "https://media.api-sports.io/football/players/25617.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Pelvis Injury",
+            "type": "Missing Fixture: Pelvis Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -7153,34 +7083,6 @@
             ]
           },
           {
-            "name": "C. Durkin",
-            "photo": "https://media.api-sports.io/football/players/50756.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Concussion",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "C. Wallem",
-            "photo": "https://media.api-sports.io/football/players/151311.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Head Injury",
-            "cat": "Trauma/Impact",
-            "status": "Sidelined",
-            "return": "Pending Assessment",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "Celio Pompeu",
             "photo": "https://media.api-sports.io/football/players/362039.png",
             "pos": "First Team Squad",
@@ -7198,7 +7100,21 @@
             "name": "K. Hiebert",
             "photo": "https://media.api-sports.io/football/players/362107.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Hip Injury",
+            "type": "Questionable: Hip Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
+            "name": "R. Burki",
+            "photo": "https://media.api-sports.io/football/players/1.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Head Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -7209,10 +7125,10 @@
             ]
           },
           {
-            "name": "R. Burki",
-            "photo": "https://media.api-sports.io/football/players/1.png",
+            "name": "T. Ostrak",
+            "photo": "https://media.api-sports.io/football/players/120310.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Head Injury",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
