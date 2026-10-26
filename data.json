@@ -468,7 +468,7 @@
             "name": "Y. Minteh",
             "photo": "https://media.api-sports.io/football/players/383685.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Missing Fixture: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -3675,6 +3675,20 @@
             ]
           },
           {
+            "name": "K. Gaspar",
+            "photo": "https://media.api-sports.io/football/players/291589.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "L. Coulibaly",
             "photo": "https://media.api-sports.io/football/players/1748.png",
             "pos": "First Team Squad",
@@ -3692,14 +3706,14 @@
             "name": "M. Berisha",
             "photo": "https://media.api-sports.io/football/players/335071.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
+            "type": "Questionable: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -3714,6 +3728,20 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "Tiago Gabriel",
+            "photo": "https://media.api-sports.io/football/players/455316.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           }
         ]
@@ -3896,14 +3924,14 @@
             "name": "A. Zanoli",
             "photo": "https://media.api-sports.io/football/players/162907.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -7221,6 +7249,20 @@
             ]
           },
           {
+            "name": "E. Sabbi",
+            "photo": "https://media.api-sports.io/football/players/15783.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Leg Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "K. G. Cabrera Nakamura",
             "photo": "https://media.api-sports.io/football/players/288295.png",
             "pos": "First Team Squad",
@@ -7235,31 +7277,45 @@
             ]
           },
           {
-            "name": "S. Adekugbe",
-            "photo": "https://media.api-sports.io/football/players/39107.png",
+            "name": "R. Modesto",
+            "photo": "https://media.api-sports.io/football/players/142442.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
+            ]
+          },
+          {
+            "name": "S. Adekugbe",
+            "photo": "https://media.api-sports.io/football/players/39107.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
             "name": "T. Muller",
             "photo": "https://media.api-sports.io/football/players/522.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
