@@ -2867,14 +2867,14 @@
             "name": "I. Akhomach",
             "photo": "https://media.api-sports.io/football/players/290740.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -3162,28 +3162,28 @@
             "name": "J. Enem",
             "photo": "https://media.api-sports.io/football/players/349185.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Achilles Tendon Injury",
+            "type": "Questionable: Achilles Tendon Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "L. De Silvestri",
             "photo": "https://media.api-sports.io/football/players/30498.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -3272,42 +3272,42 @@
             "name": "M. Kean",
             "photo": "https://media.api-sports.io/football/players/877.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "M. Liberali",
             "photo": "https://media.api-sports.io/football/players/410396.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Leg Injury",
+            "type": "Questionable: Leg Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "T. Chalobah",
             "photo": "https://media.api-sports.io/football/players/19720.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -5333,14 +5333,14 @@
             "name": "A. Ilic",
             "photo": "https://media.api-sports.io/football/players/45892.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Illness",
+            "type": "Questionable: Illness",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -5358,10 +5358,10 @@
             ]
           },
           {
-            "name": "J. Juranovic",
-            "photo": "https://media.api-sports.io/football/players/14330.png",
+            "name": "F. Uduokhai",
+            "photo": "https://media.api-sports.io/football/players/25406.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Achilles Tendon Injury",
+            "type": "Missing Fixture: Red Card",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -5369,6 +5369,20 @@
             "durability": "Active Casualty",
             "history": [
               "Missing Fixture"
+            ]
+          },
+          {
+            "name": "J. Juranovic",
+            "photo": "https://media.api-sports.io/football/players/14330.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Achilles Tendon Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
             ]
           },
           {
