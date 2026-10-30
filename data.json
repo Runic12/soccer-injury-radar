@@ -2106,6 +2106,34 @@
         "name": "Espanyol",
         "injured": [
           {
+            "name": "A. Gorosabel",
+            "photo": "https://media.api-sports.io/football/players/47299.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Coach'S Decision",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "C. Riedel",
+            "photo": "https://media.api-sports.io/football/players/282054.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Coach'S Decision",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "Jofre",
             "photo": "https://media.api-sports.io/football/players/182674.png",
             "pos": "First Team Squad",
@@ -2127,6 +2155,20 @@
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "U. Gonzalez",
+            "photo": "https://media.api-sports.io/football/players/183699.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Coach'S Decision",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -6841,6 +6883,20 @@
             ]
           },
           {
+            "name": "A. Martinez",
+            "photo": "https://media.api-sports.io/football/players/79678.png",
+            "pos": "First Team Squad",
+            "type": "Questionable: Thigh Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Questionable"
+            ]
+          },
+          {
             "name": "D. Baiera",
             "photo": "https://media.api-sports.io/football/players/422794.png",
             "pos": "First Team Squad",
@@ -6889,6 +6945,20 @@
         "name": "New York Red Bulls",
         "injured": [
           {
+            "name": "D. Nealis",
+            "photo": "https://media.api-sports.io/football/players/201716.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Yellow Cards",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "J. Bazan",
             "photo": "https://media.api-sports.io/football/players/407909.png",
             "pos": "First Team Squad",
@@ -6910,6 +6980,20 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "R. Donkor",
+            "photo": "https://media.api-sports.io/football/players/418310.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Yellow Cards",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
