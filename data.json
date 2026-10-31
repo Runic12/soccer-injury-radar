@@ -1920,6 +1920,20 @@
             ]
           },
           {
+            "name": "H. F. Cuenca Martinez",
+            "photo": "https://media.api-sports.io/football/players/382947.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "J. El Abdellaoui",
             "photo": "https://media.api-sports.io/football/players/351913.png",
             "pos": "First Team Squad",
@@ -3534,14 +3548,14 @@
             "name": "J. Stones",
             "photo": "https://media.api-sports.io/football/players/626.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -3838,14 +3852,14 @@
             "name": "M. Folorunsho",
             "photo": "https://media.api-sports.io/football/players/56851.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Coach'S Decision",
+            "type": "Missing Fixture: Coach'S Decision",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
@@ -3866,14 +3880,14 @@
             "name": "Y. Maye",
             "photo": "https://media.api-sports.io/football/players/436239.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Muscle Injury",
+            "type": "Missing Fixture: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           }
         ]
@@ -6722,14 +6736,14 @@
             "name": "M. Reus",
             "photo": "https://media.api-sports.io/football/players/25.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Illness",
+            "type": "Missing Fixture: Illness",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
