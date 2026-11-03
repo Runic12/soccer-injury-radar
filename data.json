@@ -1177,6 +1177,20 @@
             ]
           },
           {
+            "name": "R. Gravenberch",
+            "photo": "https://media.api-sports.io/football/players/542.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Heel Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "W. Endo",
             "photo": "https://media.api-sports.io/football/players/8500.png",
             "pos": "First Team Squad",
@@ -1739,6 +1753,20 @@
         "id": "atletico_madrid",
         "name": "Atletico Madrid",
         "injured": [
+          {
+            "name": "C. Romero",
+            "photo": "https://media.api-sports.io/football/players/30776.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
           {
             "name": "J. Cardoso",
             "photo": "https://media.api-sports.io/football/players/133185.png",
@@ -2751,28 +2779,28 @@
             "name": "A. Zakharyan",
             "photo": "https://media.api-sports.io/football/players/268960.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "L. Beitia",
             "photo": "https://media.api-sports.io/football/players/349063.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
+            "type": "Questionable: Ankle Injury",
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -3496,14 +3524,14 @@
             "name": "T. Chalobah",
             "photo": "https://media.api-sports.io/football/players/19720.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Injury",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
