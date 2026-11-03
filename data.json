@@ -3015,20 +3015,6 @@
         "name": "AC Milan",
         "injured": [
           {
-            "name": "A. Rabiot",
-            "photo": "https://media.api-sports.io/football/players/272.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Calf Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
             "name": "A. Saelemaekers",
             "photo": "https://media.api-sports.io/football/players/1417.png",
             "pos": "First Team Squad",
@@ -3036,20 +3022,6 @@
             "cat": "Structural",
             "status": "Sidelined",
             "return": "2-4 Months",
-            "daysLost": "N/A",
-            "durability": "Active Casualty",
-            "history": [
-              "Missing Fixture"
-            ]
-          },
-          {
-            "name": "D. Moreira",
-            "photo": "https://media.api-sports.io/football/players/335056.png",
-            "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
-            "cat": "Soft-Tissue",
-            "status": "Sidelined",
-            "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3085,13 +3057,13 @@
             ]
           },
           {
-            "name": "M. Gila",
-            "photo": "https://media.api-sports.io/football/players/162952.png",
+            "name": "M. Maignan",
+            "photo": "https://media.api-sports.io/football/players/22221.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Ankle Injury",
-            "cat": "Structural",
+            "type": "Missing Fixture: Red Card",
+            "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "2-4 Months",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
@@ -3117,6 +3089,20 @@
             "photo": "https://media.api-sports.io/football/players/1696.png",
             "pos": "First Team Squad",
             "type": "Missing Fixture: Hip Injury",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
+            "name": "W. Bondo",
+            "photo": "https://media.api-sports.io/football/players/266813.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Off The Roster",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
