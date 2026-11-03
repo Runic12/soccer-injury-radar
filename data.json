@@ -1459,6 +1459,20 @@
             ]
           },
           {
+            "name": "H. Diarra",
+            "photo": "https://media.api-sports.io/football/players/327631.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Muscle Injury",
+            "cat": "Soft-Tissue",
+            "status": "Sidelined",
+            "return": "3-4 Weeks",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "J. Angulo",
             "photo": "https://media.api-sports.io/football/players/646252.png",
             "pos": "First Team Squad",
@@ -1504,7 +1518,7 @@
             "name": "N. Mukiele",
             "photo": "https://media.api-sports.io/football/players/1146.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Face Injury",
+            "type": "Questionable: Concussion",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
@@ -3834,14 +3848,14 @@
             "name": "W. McKennie",
             "photo": "https://media.api-sports.io/football/players/415.png",
             "pos": "First Team Squad",
-            "type": "Questionable: Groin Injury",
+            "type": "Missing Fixture: Groin Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Questionable"
+              "Missing Fixture"
             ]
           },
           {
