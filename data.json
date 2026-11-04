@@ -828,28 +828,28 @@
             "name": "J. Grealish",
             "photo": "https://media.api-sports.io/football/players/19187.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Coach'S Decision",
+            "type": "Questionable: Coach'S Decision",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
             "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
-            "name": "V. Mykolenko",
-            "photo": "https://media.api-sports.io/football/players/2165.png",
+            "name": "T. George",
+            "photo": "https://media.api-sports.io/football/players/334037.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Knock",
+            "type": "Questionable: Injury",
             "cat": "Trauma/Impact",
             "status": "Sidelined",
-            "return": "Day-to-Day",
+            "return": "Pending Assessment",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
@@ -2624,6 +2624,20 @@
         "name": "Real Betis",
         "injured": [
           {
+            "name": "A. Fidalgo",
+            "photo": "https://media.api-sports.io/football/players/750.png",
+            "pos": "First Team Squad",
+            "type": "Missing Fixture: Illness",
+            "cat": "Trauma/Impact",
+            "status": "Sidelined",
+            "return": "Pending Assessment",
+            "daysLost": "N/A",
+            "durability": "Active Casualty",
+            "history": [
+              "Missing Fixture"
+            ]
+          },
+          {
             "name": "C. Hernandez",
             "photo": "https://media.api-sports.io/football/players/47582.png",
             "pos": "First Team Squad",
@@ -4162,14 +4176,14 @@
             "name": "A. Zanoli",
             "photo": "https://media.api-sports.io/football/players/162907.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
@@ -4204,28 +4218,28 @@
             "name": "O. Solet",
             "photo": "https://media.api-sports.io/football/players/656.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Muscle Injury",
+            "type": "Questionable: Muscle Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           },
           {
             "name": "V. Bayo",
             "photo": "https://media.api-sports.io/football/players/1134.png",
             "pos": "First Team Squad",
-            "type": "Missing Fixture: Thigh Injury",
+            "type": "Questionable: Thigh Injury",
             "cat": "Soft-Tissue",
             "status": "Sidelined",
             "return": "3-4 Weeks",
             "daysLost": "N/A",
             "durability": "Active Casualty",
             "history": [
-              "Missing Fixture"
+              "Questionable"
             ]
           }
         ]
